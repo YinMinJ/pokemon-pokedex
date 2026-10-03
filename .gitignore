@@ -1,0 +1,33 @@
+# ===== 依赖 =====
+node_modules/
+package-lock.json
+.venv/
+venv/
+
+# ===== 体积大的构建产物：可一条命令重建，不入库 =====
+# 单文件离线版（28MB，图片全 base64），跑 python build_site.py 会重新生成
+pokedex-offline.html
+# 旧版单文件页（已被 site/ 部署版取代）
+/index.html
+
+# ===== 抓取过程中的中间素材：脚本会重新下载 =====
+raw_badges/
+raw_fandom/
+
+# ===== 验证截图与临时探测文件 =====
+ui_*.png
+final_*.png
+shot_*.png
+daily_*.png
+_badge_check.png
+_fairy_*.png
+_m*.js
+_probe*.js
+
+# ===== 工具元数据（WorkBuddy 的工作记录，不属于项目产物）=====
+.workbuddy/
+
+# ===== 系统杂物 =====
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,544 @@
+{
+ "leaders": {
+  "Brock": {
+   "file": "FireRed LeafGreen Brock.png",
+   "url": "https://archives.bulbagarden.net/media/upload/a/aa/FireRed_LeafGreen_Brock.png",
+   "w": 1406,
+   "h": 2755,
+   "prio": 0
+  },
+  "Lt. Surge": {
+   "file": "FireRed LeafGreen Lt Surge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/0f/FireRed_LeafGreen_Lt_Surge.png",
+   "w": 1040,
+   "h": 2549,
+   "prio": 1000
+  },
+  "Misty": {
+   "file": "FireRed LeafGreen Misty.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/05/FireRed_LeafGreen_Misty.png",
+   "w": 1550,
+   "h": 2611,
+   "prio": 0
+  },
+  "Erika": {
+   "file": "FireRed LeafGreen Erika.png",
+   "url": "https://archives.bulbagarden.net/media/upload/3/38/FireRed_LeafGreen_Erika.png",
+   "w": 1100,
+   "h": 2131,
+   "prio": 0
+  },
+  "Koga": {
+   "file": "FireRed LeafGreen Koga.png",
+   "url": "https://archives.bulbagarden.net/media/upload/3/35/FireRed_LeafGreen_Koga.png",
+   "w": 1347,
+   "h": 2376,
+   "prio": 0
+  },
+  "Sabrina": {
+   "file": "FireRed LeafGreen Sabrina.png",
+   "url": "https://archives.bulbagarden.net/media/upload/9/9f/FireRed_LeafGreen_Sabrina.png",
+   "w": 1368,
+   "h": 2427,
+   "prio": 0
+  },
+  "Blaine": {
+   "file": "FireRed LeafGreen Blaine.png",
+   "url": "https://archives.bulbagarden.net/media/upload/9/92/FireRed_LeafGreen_Blaine.png",
+   "w": 1603,
+   "h": 2251,
+   "prio": 0
+  },
+  "Giovanni": {
+   "file": "FireRed LeafGreen Giovanni.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/0b/FireRed_LeafGreen_Giovanni.png",
+   "w": 1077,
+   "h": 2304,
+   "prio": 0
+  },
+  "Falkner": {
+   "file": "HeartGold SoulSilver Falkner.png",
+   "url": "https://archives.bulbagarden.net/media/upload/e/e0/HeartGold_SoulSilver_Falkner.png",
+   "w": 1880,
+   "h": 2951,
+   "prio": 0
+  },
+  "Bugsy": {
+   "file": "HeartGold SoulSilver Bugsy.png",
+   "url": "https://archives.bulbagarden.net/media/upload/6/6b/HeartGold_SoulSilver_Bugsy.png",
+   "w": 1453,
+   "h": 2741,
+   "prio": 0
+  },
+  "Whitney": {
+   "file": "HeartGold SoulSilver Whitney.png",
+   "url": "https://archives.bulbagarden.net/media/upload/e/e1/HeartGold_SoulSilver_Whitney.png",
+   "w": 1928,
+   "h": 2903,
+   "prio": 0
+  },
+  "Morty": {
+   "file": "HeartGold SoulSilver Morty.png",
+   "url": "https://archives.bulbagarden.net/media/upload/1/1c/HeartGold_SoulSilver_Morty.png",
+   "w": 1521,
+   "h": 2983,
+   "prio": 0
+  },
+  "Chuck": {
+   "file": "HeartGold SoulSilver Chuck.png",
+   "url": "https://archives.bulbagarden.net/media/upload/b/bd/HeartGold_SoulSilver_Chuck.png",
+   "w": 2634,
+   "h": 3021,
+   "prio": 0
+  },
+  "Jasmine": {
+   "file": "HeartGold SoulSilver Jasmine.png",
+   "url": "https://archives.bulbagarden.net/media/upload/b/b3/HeartGold_SoulSilver_Jasmine.png",
+   "w": 1361,
+   "h": 3083,
+   "prio": 0
+  },
+  "Pryce": {
+   "file": "HeartGold SoulSilver Pryce.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/02/HeartGold_SoulSilver_Pryce.png",
+   "w": 539,
+   "h": 1280,
+   "prio": 0
+  },
+  "Roxanne": {
+   "file": "Omega Ruby Alpha Sapphire Roxanne.png",
+   "url": "https://archives.bulbagarden.net/media/upload/b/bd/Omega_Ruby_Alpha_Sapphire_Roxanne.png",
+   "w": 676,
+   "h": 1280,
+   "prio": 0
+  },
+  "Brawly": {
+   "file": "Omega Ruby Alpha Sapphire Brawly.png",
+   "url": "https://archives.bulbagarden.net/media/upload/2/23/Omega_Ruby_Alpha_Sapphire_Brawly.png",
+   "w": 726,
+   "h": 1280,
+   "prio": 0
+  },
+  "Clair": {
+   "file": "HeartGold SoulSilver Clair.png",
+   "url": "https://archives.bulbagarden.net/media/upload/f/fe/HeartGold_SoulSilver_Clair.png",
+   "w": 2248,
+   "h": 3137,
+   "prio": 0
+  },
+  "Wattson": {
+   "file": "Omega Ruby Alpha Sapphire Wattson.png",
+   "url": "https://archives.bulbagarden.net/media/upload/a/a0/Omega_Ruby_Alpha_Sapphire_Wattson.png",
+   "w": 677,
+   "h": 1280,
+   "prio": 0
+  },
+  "Flannery": {
+   "file": "Omega Ruby Alpha Sapphire Flannery.png",
+   "url": "https://archives.bulbagarden.net/media/upload/b/ba/Omega_Ruby_Alpha_Sapphire_Flannery.png",
+   "w": 649,
+   "h": 1280,
+   "prio": 0
+  },
+  "Winona": {
+   "file": "Omega Ruby Alpha Sapphire Winona.png",
+   "url": "https://archives.bulbagarden.net/media/upload/9/96/Omega_Ruby_Alpha_Sapphire_Winona.png",
+   "w": 720,
+   "h": 949,
+   "prio": 0
+  },
+  "Norman": {
+   "file": "Omega Ruby Alpha Sapphire Norman.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/05/Omega_Ruby_Alpha_Sapphire_Norman.png",
+   "w": 434,
+   "h": 1280,
+   "prio": 0
+  },
+  "Tate & Liza": {
+   "file": "Omega Ruby Alpha Sapphire Liza & Tate.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/09/Omega_Ruby_Alpha_Sapphire_Liza_%26_Tate.png",
+   "w": 514,
+   "h": 724,
+   "prio": 3000
+  },
+  "Juan": {
+   "file": "Emerald Juan.png",
+   "url": "https://archives.bulbagarden.net/media/upload/d/d0/Emerald_Juan.png",
+   "w": 166,
+   "h": 384,
+   "prio": 2
+  },
+  "Roark": {
+   "file": "Diamond Pearl Roark.png",
+   "url": "https://archives.bulbagarden.net/media/upload/8/86/Diamond_Pearl_Roark.png",
+   "w": 630,
+   "h": 1425,
+   "prio": 0
+  },
+  "Gardenia": {
+   "file": "Diamond Pearl Gardenia.png",
+   "url": "https://archives.bulbagarden.net/media/upload/e/e9/Diamond_Pearl_Gardenia.png",
+   "w": 351,
+   "h": 607,
+   "prio": 0
+  },
+  "Maylene": {
+   "file": "Diamond Pearl Maylene.png",
+   "url": "https://archives.bulbagarden.net/media/upload/1/15/Diamond_Pearl_Maylene.png",
+   "w": 854,
+   "h": 1107,
+   "prio": 0
+  },
+  "Crasher Wake": {
+   "file": "Diamond Pearl Crasher Wake.png",
+   "url": "https://archives.bulbagarden.net/media/upload/a/a1/Diamond_Pearl_Crasher_Wake.png",
+   "w": 363,
+   "h": 443,
+   "prio": 0
+  },
+  "Fantina": {
+   "file": "Diamond Pearl Fantina.png",
+   "url": "https://archives.bulbagarden.net/media/upload/e/ef/Diamond_Pearl_Fantina.png",
+   "w": 1527,
+   "h": 1920,
+   "prio": 0
+  },
+  "Candice": {
+   "file": "Diamond Pearl Candice.png",
+   "url": "https://archives.bulbagarden.net/media/upload/1/1a/Diamond_Pearl_Candice.png",
+   "w": 307,
+   "h": 599,
+   "prio": 0
+  },
+  "Byron": {
+   "file": "Diamond Pearl Byron.png",
+   "url": "https://archives.bulbagarden.net/media/upload/2/25/Diamond_Pearl_Byron.png",
+   "w": 596,
+   "h": 1235,
+   "prio": 0
+  },
+  "Volkner": {
+   "file": "Diamond Pearl Volkner.png",
+   "url": "https://archives.bulbagarden.net/media/upload/8/83/Diamond_Pearl_Volkner.png",
+   "w": 1340,
+   "h": 2528,
+   "prio": 0
+  },
+  "Cilan / Chili / Cress": {
+   "file": "Black White Cilan.png",
+   "url": "https://archives.bulbagarden.net/media/upload/f/fc/Black_White_Cilan.png",
+   "w": 354,
+   "h": 1000,
+   "prio": 2000
+  },
+  "Lenora": {
+   "file": "Black White Lenora.png",
+   "url": "https://archives.bulbagarden.net/media/upload/a/a6/Black_White_Lenora.png",
+   "w": 185,
+   "h": 366,
+   "prio": 0
+  },
+  "Burgh": {
+   "file": "Black White Burgh.png",
+   "url": "https://archives.bulbagarden.net/media/upload/a/ae/Black_White_Burgh.png",
+   "w": 539,
+   "h": 844,
+   "prio": 0
+  },
+  "Elesa": {
+   "file": "Black White Elesa.png",
+   "url": "https://archives.bulbagarden.net/media/upload/e/e9/Black_White_Elesa.png",
+   "w": 236,
+   "h": 391,
+   "prio": 0
+  },
+  "Clay": {
+   "file": "Black White Clay.png",
+   "url": "https://archives.bulbagarden.net/media/upload/d/d0/Black_White_Clay.png",
+   "w": 210,
+   "h": 292,
+   "prio": 0
+  },
+  "Skyla": {
+   "file": "Black White Skyla.png",
+   "url": "https://archives.bulbagarden.net/media/upload/8/80/Black_White_Skyla.png",
+   "w": 216,
+   "h": 348,
+   "prio": 0
+  },
+  "Brycen": {
+   "file": "Black White Brycen.png",
+   "url": "https://archives.bulbagarden.net/media/upload/b/b5/Black_White_Brycen.png",
+   "w": 606,
+   "h": 1280,
+   "prio": 0
+  },
+  "Iris": {
+   "file": "Black White Iris.png",
+   "url": "https://archives.bulbagarden.net/media/upload/e/eb/Black_White_Iris.png",
+   "w": 578,
+   "h": 531,
+   "prio": 0
+  },
+  "Viola": {
+   "file": "XY Viola.png",
+   "url": "https://archives.bulbagarden.net/media/upload/2/2a/XY_Viola.png",
+   "w": 454,
+   "h": 1280,
+   "prio": 1
+  },
+  "Grant": {
+   "file": "XY Grant.png",
+   "url": "https://archives.bulbagarden.net/media/upload/3/37/XY_Grant.png",
+   "w": 955,
+   "h": 1280,
+   "prio": 1
+  },
+  "Korrina": {
+   "file": "XY Korrina.png",
+   "url": "https://archives.bulbagarden.net/media/upload/2/2b/XY_Korrina.png",
+   "w": 1041,
+   "h": 1280,
+   "prio": 1
+  },
+  "Ramos": {
+   "file": "XY Ramos.png",
+   "url": "https://archives.bulbagarden.net/media/upload/b/b8/XY_Ramos.png",
+   "w": 215,
+   "h": 382,
+   "prio": 1
+  },
+  "Clemont": {
+   "file": "XY Clemont.png",
+   "url": "https://archives.bulbagarden.net/media/upload/d/d1/XY_Clemont.png",
+   "w": 921,
+   "h": 1280,
+   "prio": 1
+  },
+  "Valerie": {
+   "file": "XY Valerie.png",
+   "url": "https://archives.bulbagarden.net/media/upload/1/18/XY_Valerie.png",
+   "w": 604,
+   "h": 421,
+   "prio": 1
+  },
+  "Wulfric": {
+   "file": "XY Wulfric.png",
+   "url": "https://archives.bulbagarden.net/media/upload/c/c7/XY_Wulfric.png",
+   "w": 415,
+   "h": 396,
+   "prio": 1
+  },
+  "Olympia": {
+   "file": "XY Olympia.png",
+   "url": "https://archives.bulbagarden.net/media/upload/5/53/XY_Olympia.png",
+   "w": 470,
+   "h": 441,
+   "prio": 1
+  },
+  "Ilima": {
+   "file": "Sun Moon Ilima.png",
+   "url": "https://archives.bulbagarden.net/media/upload/4/47/Sun_Moon_Ilima.png",
+   "w": 417,
+   "h": 1280,
+   "prio": 0
+  },
+  "Lana": {
+   "file": "Sun Moon Lana.png",
+   "url": "https://archives.bulbagarden.net/media/upload/f/f0/Sun_Moon_Lana.png",
+   "w": 2459,
+   "h": 2882,
+   "prio": 0
+  },
+  "Hala": {
+   "file": "Sun Moon Hala.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/08/Sun_Moon_Hala.png",
+   "w": 915,
+   "h": 1280,
+   "prio": 0
+  },
+  "Olivia": {
+   "file": "Sun Moon Olivia.png",
+   "url": "https://archives.bulbagarden.net/media/upload/4/49/Sun_Moon_Olivia.png",
+   "w": 656,
+   "h": 1280,
+   "prio": 0
+  },
+  "Mallow": {
+   "file": "Sun Moon Mallow.png",
+   "url": "https://archives.bulbagarden.net/media/upload/3/30/Sun_Moon_Mallow.png",
+   "w": 1710,
+   "h": 3447,
+   "prio": 0
+  },
+  "Sophocles": {
+   "file": "Sun Moon Sophocles.png",
+   "url": "https://archives.bulbagarden.net/media/upload/4/41/Sun_Moon_Sophocles.png",
+   "w": 2160,
+   "h": 2313,
+   "prio": 0
+  },
+  "Kiawe": {
+   "file": "Sun Moon Kiawe.png",
+   "url": "https://archives.bulbagarden.net/media/upload/d/d7/Sun_Moon_Kiawe.png",
+   "w": 2252,
+   "h": 3236,
+   "prio": 0
+  },
+  "Nanu": {
+   "file": "Sun Moon Nanu.png",
+   "url": "https://archives.bulbagarden.net/media/upload/6/67/Sun_Moon_Nanu.png",
+   "w": 430,
+   "h": 1280,
+   "prio": 0
+  },
+  "Acerola": {
+   "file": "Sun Moon Acerola.png",
+   "url": "https://archives.bulbagarden.net/media/upload/1/1e/Sun_Moon_Acerola.png",
+   "w": 784,
+   "h": 1280,
+   "prio": 0
+  },
+  "Mina": {
+   "file": "Sun Moon Mina.png",
+   "url": "https://archives.bulbagarden.net/media/upload/7/71/Sun_Moon_Mina.png",
+   "w": 438,
+   "h": 1308,
+   "prio": 0
+  },
+  "Hapu": {
+   "file": "Sun Moon Hapu.png",
+   "url": "https://archives.bulbagarden.net/media/upload/2/2a/Sun_Moon_Hapu.png",
+   "w": 482,
+   "h": 867,
+   "prio": 0
+  },
+  "Milo": {
+   "file": "Sword Shield Milo.png",
+   "url": "https://archives.bulbagarden.net/media/upload/e/ed/Sword_Shield_Milo.png",
+   "w": 2064,
+   "h": 3934,
+   "prio": 0
+  },
+  "Nessa": {
+   "file": "Sword Shield Nessa.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/0e/Sword_Shield_Nessa.png",
+   "w": 2296,
+   "h": 4152,
+   "prio": 0
+  },
+  "Kabu": {
+   "file": "Sword Shield Kabu.png",
+   "url": "https://archives.bulbagarden.net/media/upload/3/3e/Sword_Shield_Kabu.png",
+   "w": 1461,
+   "h": 4082,
+   "prio": 0
+  },
+  "Bea": {
+   "file": "Sword Shield Bea.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/02/Sword_Shield_Bea.png",
+   "w": 1712,
+   "h": 4184,
+   "prio": 0
+  },
+  "Allister": {
+   "file": "Sword Shield Allister.png",
+   "url": "https://archives.bulbagarden.net/media/upload/b/b1/Sword_Shield_Allister.png",
+   "w": 1741,
+   "h": 2807,
+   "prio": 0
+  },
+  "Opal": {
+   "file": "Sword Shield Opal.png",
+   "url": "https://archives.bulbagarden.net/media/upload/a/a7/Sword_Shield_Opal.png",
+   "w": 2069,
+   "h": 3754,
+   "prio": 0
+  },
+  "Gordie": {
+   "file": "Sword Shield Gordie.png",
+   "url": "https://archives.bulbagarden.net/media/upload/5/5e/Sword_Shield_Gordie.png",
+   "w": 2552,
+   "h": 4244,
+   "prio": 0
+  },
+  "Melony": {
+   "file": "Sword Shield Melony.png",
+   "url": "https://archives.bulbagarden.net/media/upload/8/8f/Sword_Shield_Melony.png",
+   "w": 2479,
+   "h": 4110,
+   "prio": 0
+  },
+  "Piers": {
+   "file": "Sword Shield Piers.png",
+   "url": "https://archives.bulbagarden.net/media/upload/f/fd/Sword_Shield_Piers.png",
+   "w": 2177,
+   "h": 4285,
+   "prio": 0
+  },
+  "Raihan": {
+   "file": "Sword Shield Raihan.png",
+   "url": "https://archives.bulbagarden.net/media/upload/4/45/Sword_Shield_Raihan.png",
+   "w": 2454,
+   "h": 4172,
+   "prio": 0
+  },
+  "Brassius": {
+   "file": "Scarlet Violet Brassius.png",
+   "url": "https://archives.bulbagarden.net/media/upload/f/fd/Scarlet_Violet_Brassius.png",
+   "w": 1290,
+   "h": 3557,
+   "prio": 0
+  },
+  "Iono": {
+   "file": "Scarlet Violet Iono.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/00/Scarlet_Violet_Iono.png",
+   "w": 3309,
+   "h": 3501,
+   "prio": 0
+  },
+  "Katy": {
+   "file": "Scarlet Violet Katy.png",
+   "url": "https://archives.bulbagarden.net/media/upload/e/ef/Scarlet_Violet_Katy.png",
+   "w": 1533,
+   "h": 3656,
+   "prio": 0
+  },
+  "Ryme": {
+   "file": "Scarlet Violet Ryme.png",
+   "url": "https://archives.bulbagarden.net/media/upload/5/58/Scarlet_Violet_Ryme.png",
+   "w": 1821,
+   "h": 3577,
+   "prio": 0
+  },
+  "Larry": {
+   "file": "Scarlet Violet Larry.png",
+   "url": "https://archives.bulbagarden.net/media/upload/4/41/Scarlet_Violet_Larry.png",
+   "w": 1826,
+   "h": 4781,
+   "prio": 0
+  },
+  "Kofu": {
+   "file": "Scarlet Violet Kofu.png",
+   "url": "https://archives.bulbagarden.net/media/upload/e/e3/Scarlet_Violet_Kofu.png",
+   "w": 1865,
+   "h": 3666,
+   "prio": 0
+  },
+  "Grusha": {
+   "file": "Scarlet Violet Grusha.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/01/Scarlet_Violet_Grusha.png",
+   "w": 1125,
+   "h": 2999,
+   "prio": 0
+  },
+  "Tulip": {
+   "file": "Scarlet Violet Tulip.png",
+   "url": "https://archives.bulbagarden.net/media/upload/d/d1/Scarlet_Violet_Tulip.png",
+   "w": 1673,
+   "h": 3730,
+   "prio": 0
+  }
+ },
+ "_miss": []
+}

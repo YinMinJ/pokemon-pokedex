@@ -1,0 +1,2093 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全国宝可梦图鉴 · 全世代全形态</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23f2f4fa' stroke='%232b3244' stroke-width='2.5'/><path d='M2 16a14 14 0 0 1 28 0z' fill='%23e3350d'/><rect x='2' y='14.4' width='28' height='3.2' fill='%232b3244'/><circle cx='16' cy='16' r='5' fill='%23fff' stroke='%232b3244' stroke-width='2.5'/></svg>">
+<style>
+/* ========== 设计令牌（浅色） ========== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #f2f4fa; --bg2: #e9ecf6; --card: #ffffff; --card2: #f7f9fd;
+  --text: #171b26; --text2: #454d63; --muted: #858ea6;
+  --accent: #e3350d; --accent2: #ff7a45; --accent-soft: rgba(227,53,13,.09);
+  --violet: #7b68ee;
+  --line: #e4e8f2; --line2: #eef1f8; --input: #f4f6fc; --bar-track: #eaeef7;
+  --glass: rgba(255,255,255,.78);
+  --sh1: 0 1px 2px rgba(18,26,48,.05), 0 1px 3px rgba(18,26,48,.04);
+  --sh2: 0 4px 14px rgba(18,26,48,.07), 0 2px 5px rgba(18,26,48,.04);
+  --sh3: 0 16px 40px rgba(18,26,48,.14), 0 6px 14px rgba(18,26,48,.06);
+  --r-s: 9px; --r: 13px; --r-l: 18px; --r-xl: 24px;
+  --shadow: var(--sh1);
+}
+/* ========== 设计令牌（深色） ========== */
+body.dark {
+  --bg: #0e1016; --bg2: #171a23; --card: #181c25; --card2: #1f242f;
+  --text: #eef1f9; --text2: #b9c0d2; --muted: #79839a;
+  --accent-soft: rgba(227,53,13,.16);
+  --line: #272d3a; --line2: #21262f; --input: #1c212b; --bar-track: #2a3040;
+  --glass: rgba(16,19,26,.80);
+  --sh1: 0 1px 2px rgba(0,0,0,.42), 0 1px 3px rgba(0,0,0,.3);
+  --sh2: 0 4px 14px rgba(0,0,0,.52), 0 2px 5px rgba(0,0,0,.36);
+  --sh3: 0 18px 44px rgba(0,0,0,.64), 0 6px 16px rgba(0,0,0,.42);
+}
+body {
+  font-family: "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei", "Segoe UI", system-ui, sans-serif;
+  background: var(--bg); color: var(--text); transition: background .3s, color .3s;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--line); border-radius: 6px; border: 3px solid transparent; background-clip: content-box; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); background-clip: content-box; }
+::selection { background: var(--accent); color: #fff; }
+
+/* ========== 顶栏 Hero ========== */
+header { position: relative; overflow: hidden; padding: 26px 20px 24px; }
+header::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(56% 130% at 6% 0%, var(--glowA, rgba(227,53,13,.22)), transparent 62%),
+    radial-gradient(48% 130% at 94% 8%, var(--glowB, rgba(123,104,238,.20)), transparent 64%),
+    linear-gradient(180deg, var(--card) 0%, var(--card) 58%, transparent 100%);
+}
+header::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .55;
+  background-image: radial-gradient(var(--line) 1px, transparent 1px);
+  background-size: 22px 22px;
+  -webkit-mask-image: linear-gradient(180deg, #000, transparent 80%);
+  mask-image: linear-gradient(180deg, #000, transparent 80%);
+}
+.heroInner {
+  position: relative; z-index: 1; max-width: 1500px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr auto; gap: 22px; align-items: center;
+}
+.heroTag {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 10.5px; letter-spacing: 2.4px; font-weight: 700;
+  color: #fff; background: linear-gradient(135deg, var(--accent), var(--accent2));
+  padding: 3px 11px; border-radius: 999px; box-shadow: 0 3px 10px rgba(227,53,13,.28);
+}
+header h1 { font-size: 31px; font-weight: 800; letter-spacing: -.8px; margin-top: 11px; line-height: 1.15; }
+header h1 small { font-size: 13px; font-weight: 500; color: var(--muted); letter-spacing: .5px; margin-left: 9px; }
+header .heroSub { margin-top: 7px; font-size: 12.5px; color: var(--text2); line-height: 1.7; max-width: 620px; }
+.heroStats { display: flex; gap: 8px; margin-top: 15px; flex-wrap: wrap; }
+.heroStats div {
+  background: var(--glass); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--line); border-radius: var(--r); padding: 8px 15px; min-width: 88px;
+  transition: transform .2s, border-color .2s;
+}
+.heroStats div:hover { transform: translateY(-2px); border-color: var(--accent); }
+.heroStats b { display: block; font-size: 20px; font-weight: 750; font-variant-numeric: tabular-nums; letter-spacing: -.4px; }
+.heroStats span { font-size: 10.5px; color: var(--muted); letter-spacing: .4px; }
+
+/* 每日一宠卡片 */
+.daily {
+  position: relative; display: flex; align-items: center; gap: 14px; cursor: pointer;
+  background: var(--card); border: 1px solid var(--line);   border-radius: var(--r-xl);
+  padding: 12px 38px 12px 12px; box-shadow: var(--sh2); min-width: 348px;
+  transition: transform .26s cubic-bezier(.2,.7,.3,1), box-shadow .26s, border-color .26s;
+  overflow: hidden;
+}
+.daily::before {
+  content: ''; position: absolute; inset: 0; opacity: .5;
+  background: radial-gradient(80% 130% at 12% 50%, var(--tcg, rgba(0,0,0,.05)), transparent 68%);
+}
+.daily:hover { transform: translateY(-3px); box-shadow: var(--sh3); border-color: var(--tc, var(--accent)); }
+.daily > * { position: relative; z-index: 1; }
+.daily .dArt {
+  width: 84px; height: 84px; border-radius: var(--r); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.daily .dArt img { width: 80px; height: 80px; object-fit: contain; filter: drop-shadow(0 5px 12px rgba(20,28,50,.2)); }
+.daily .dLabel { font-size: 9.5px; letter-spacing: 1.8px; color: var(--accent); font-weight: 800; }
+.daily h3 { font-size: 17px; margin-top: 3px; letter-spacing: -.3px; }
+.daily .dSub { font-size: 11px; color: var(--muted); margin-top: 2px; white-space: nowrap; }
+.daily .dTypes { display: flex; gap: 4px; margin-top: 8px; }
+.daily .dTypes .badge { font-size: 10px; padding: 2px 9px; border-radius: 7px; color: #fff; font-weight: 600; letter-spacing: .6px; }
+/* 更换倒计时：让「今天不换」这件事看起来是有意为之，而不是坏了 */
+.daily .dNext {
+  font-size: 10px; color: var(--muted); margin-top: 4px; white-space: nowrap;
+  display: flex; align-items: center; gap: 4px; opacity: .9;
+  overflow: hidden; text-overflow: ellipsis;   /* 窄屏兜底：宁可省略也不硬切 */
+}
+.daily .dNext .dot {
+  width: 5px; height: 5px; border-radius: 50%; background: var(--tc, var(--accent));
+  flex-shrink: 0; animation: dPulse 2.4s ease-in-out infinite;
+}
+@keyframes dPulse { 0%,100% { opacity: 1; } 50% { opacity: .28; } }
+/* 换一只按钮：桌面悬停浮现，触屏常驻 */
+.daily .dDice {
+  position: absolute; top: 9px; right: 9px; width: 26px; height: 26px; z-index: 3;
+  border-radius: 50%; border: 1px solid var(--line); background: var(--card);
+  color: var(--muted); font-size: 14px; line-height: 1; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; font-family: inherit;
+  opacity: 0; transform: scale(.82) rotate(-90deg);
+  transition: opacity .2s, transform .28s cubic-bezier(.2,.7,.3,1), color .2s, border-color .2s;
+}
+.daily:hover .dDice, .daily .dDice:focus-visible { opacity: 1; transform: none; }
+.daily .dDice:hover { color: var(--accent); border-color: var(--accent); transform: rotate(180deg); }
+@media (hover: none) { .daily .dDice { opacity: 1; transform: none; } }
+/* 窄屏（手机 / 小窗口）没有悬停习惯，按钮常驻 */
+@media (max-width: 860px) { .daily .dDice { opacity: 1; transform: none; } }
+
+/* ========== 工具栏（玻璃拟态） ========== */
+.toolbar {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--glass); backdrop-filter: blur(16px) saturate(1.6);
+  -webkit-backdrop-filter: blur(16px) saturate(1.6);
+  border-bottom: 1px solid var(--line);
+  padding: 11px 20px; display: flex; flex-direction: column; gap: 9px;
+  transition: box-shadow .25s;
+}
+.toolbar.scrolled { box-shadow: var(--sh2); }
+.search-row { display: flex; gap: 9px; flex-wrap: wrap; align-items: center; }
+.searchWrap { position: relative; flex: 1; min-width: 236px; display: flex; align-items: center; }
+.searchWrap .si { position: absolute; left: 13px; font-size: 14px; opacity: .45; pointer-events: none; }
+.searchWrap .kbd {
+  position: absolute; right: 10px; font-size: 10px; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 5px; padding: 1.5px 6px; pointer-events: none;
+}
+#search {
+  width: 100%; padding: 10px 46px 10px 36px; border: 1px solid var(--line);
+  border-radius: var(--r); font-size: 14px; outline: none;
+  background: var(--input); color: var(--text); font-family: inherit;
+  transition: border-color .2s, box-shadow .2s, background .2s;
+}
+#search::placeholder { color: var(--muted); }
+#search:focus { border-color: var(--accent); background: var(--card); box-shadow: 0 0 0 3px var(--accent-soft); }
+
+/* 分段控件（视图切换） */
+.seg { display: inline-flex; background: var(--input); border: 1px solid var(--line); border-radius: var(--r); padding: 3px; gap: 2px; }
+.seg button {
+  border: none; background: none; color: var(--muted); font-family: inherit;
+  padding: 7px 15px; border-radius: 10px; font-size: 13px; cursor: pointer; white-space: nowrap;
+  transition: all .2s;
+}
+.seg button:hover { color: var(--text); }
+.seg button.on { background: var(--card); color: var(--text); box-shadow: var(--sh1); font-weight: 650; }
+
+.tool-btn {
+  display: inline-flex; align-items: center; gap: 5px;
+  border: 1px solid var(--line); background: var(--card); color: var(--text2);
+  border-radius: var(--r); padding: 9px 14px; font-size: 13px; cursor: pointer;
+  font-family: inherit; white-space: nowrap; transition: all .2s;
+}
+.tool-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); transform: translateY(-1px); }
+.tool-btn.on { background: linear-gradient(135deg, var(--accent), var(--accent2)); border-color: transparent; color: #fff; box-shadow: 0 4px 12px rgba(227,53,13,.26); }
+.tool-btn .ic { font-size: 14px; }
+
+.chip-row { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.chip-row .lbl {
+  font-size: 10.5px; color: var(--muted); margin-right: 3px; white-space: nowrap;
+  letter-spacing: .8px; font-weight: 700;
+}
+.chip {
+  border: 1px solid var(--line); background: var(--card); color: var(--text2);
+  border-radius: var(--r-s); padding: 5px 12px; font-size: 12px; cursor: pointer;
+  user-select: none; transition: all .18s; position: relative;
+}
+.chip:hover { border-color: var(--muted); transform: translateY(-1px); }
+.chip.on { color: #fff !important; border-color: transparent !important; box-shadow: var(--sh1); }
+.chip.gen.on { background: linear-gradient(135deg, #2b3244, #14181f); }
+body.dark .chip.gen.on { background: linear-gradient(135deg, #6c7793, #454e63); }
+.chip.form.on { background: linear-gradient(135deg, #8b7bf0, #5b47d6); }
+.chip .ord {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 13px; height: 13px; border-radius: 50%; background: rgba(255,255,255,.92);
+  color: #2b3244; font-size: 9px; font-weight: 800; margin-right: 4px; vertical-align: 1px;
+}
+#count { font-size: 12px; color: var(--muted); margin-left: auto; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.mini-select {
+  -webkit-appearance: none; appearance: none;
+  border: 1px solid var(--line); background: var(--card); color: var(--text2);
+  border-radius: var(--r-s); padding: 5px 27px 5px 11px; font-size: 12px;
+  cursor: pointer; font-family: inherit; transition: border-color .2s;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><path d='M2 3.6l3 3 3-3' fill='none' stroke='%23888ea6' stroke-width='1.4' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat; background-position: right 9px center;
+}
+.mini-select:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ========== 卡片网格 ========== */
+#grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(166px, 1fr));
+  gap: 13px; padding: 18px 20px; max-width: 1500px; margin: 0 auto;
+}
+.card {
+  position: relative; background: var(--card); border-radius: var(--r-l);
+  border: 1px solid var(--line); padding: 9px 9px 11px;
+  text-align: center; cursor: pointer; overflow: hidden; box-shadow: var(--sh1);
+  transition: transform .24s cubic-bezier(.2,.7,.3,1), box-shadow .24s, border-color .24s;
+  animation: cardIn .28s cubic-bezier(.2,.7,.3,1) both;
+}
+@keyframes cardIn { from { opacity: 0; transform: translateY(8px) scale(.98); } to { opacity: 1; transform: none; } }
+.card:hover { transform: translateY(-5px); box-shadow: var(--sh3); border-color: var(--tc, var(--line)); }
+.card .cTop { display: flex; align-items: center; justify-content: space-between; gap: 5px; padding: 0 2px; min-height: 18px; }
+.card .num { font-size: 10px; color: var(--muted); font-variant-numeric: tabular-nums; letter-spacing: .5px; font-weight: 650; }
+.card .photo {
+  position: relative; margin: 5px 0 8px; border-radius: var(--r); height: 118px;
+  display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(58% 58% at 50% 52%, var(--tcg, rgba(0,0,0,.04)), transparent 74%);
+}
+.card .photo img {
+  width: 104px; height: 104px; object-fit: contain; display: block;
+  transition: transform .32s cubic-bezier(.2,.7,.3,1);
+  filter: drop-shadow(0 5px 10px rgba(20,28,50,.14));
+}
+.card:hover .photo img { transform: scale(1.08) translateY(-3px); }
+.card .fav {
+  position: absolute; right: 6px; top: 6px; z-index: 3;
+  width: 25px; height: 25px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 13px; color: var(--muted); opacity: 0; transition: all .2s;
+  background: var(--glass); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+}
+.card:hover .fav { opacity: .75; }
+.card .fav:hover { opacity: 1 !important; transform: scale(1.14); color: #f6b93b; }
+.card .fav.on { opacity: 1; color: #f6b93b; }
+.card .zh { font-size: 14px; font-weight: 650; letter-spacing: .2px; }
+.card .en { font-size: 10px; color: var(--muted); text-transform: capitalize; margin-top: 1.5px; letter-spacing: .3px; }
+.card .types { margin-top: 7px; display: flex; justify-content: center; gap: 4px; }
+.card .badge {
+  font-size: 10px; color: #fff; border-radius: 7px; padding: 2.5px 9px;
+  letter-spacing: .8px; font-weight: 600; box-shadow: inset 0 -1px 0 rgba(0,0,0,.16);
+}
+.card .form-tag { font-size: 9.5px; color: #fff; background: var(--violet); border-radius: 6px; padding: 2px 7px; letter-spacing: .4px; font-weight: 650; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 96px; }
+.card .form-tag.mega { background: #e17055; }
+.card .form-tag.gmax { background: #d63031; }
+.card .form-tag.region { background: #0984e3; }
+#more {
+  display: block; margin: 12px auto 44px; padding: 11px 46px;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--card); color: var(--text); font-size: 13px; cursor: pointer;
+  font-family: inherit; box-shadow: var(--sh1); transition: all .2s;
+}
+#more:hover { border-color: var(--accent); color: var(--accent); box-shadow: var(--sh2); transform: translateY(-1px); }
+.empty { grid-column: 1/-1; text-align: center; color: var(--muted); padding: 70px 0; font-size: 14px; }
+
+/* ========== 详情弹窗（宽版双栏） ========== */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes popIn { from { opacity: 0; transform: translateY(20px) scale(.975); } to { opacity: 1; transform: none; } }
+#mask {
+  display: none; position: fixed; inset: 0; z-index: 100; padding: 20px;
+  background: rgba(10,14,26,.5); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  align-items: center; justify-content: center;
+}
+#mask.show { display: flex; animation: fadeIn .2s both; }
+#modal {
+  background: var(--card); border-radius: var(--r-xl); max-width: 960px; width: 100%;
+  max-height: 90vh; overflow-y: auto; position: relative; color: var(--text);
+  box-shadow: var(--sh3); border: 1px solid var(--line);
+  animation: popIn .3s cubic-bezier(.2,.8,.3,1) both;
+}
+#modal .close {
+  position: absolute; top: 14px; right: 16px; z-index: 6;
+  width: 32px; height: 32px; border-radius: 50%; border: none; line-height: 1;
+  background: rgba(255,255,255,.2); backdrop-filter: blur(8px);
+  font-size: 18px; color: #fff; cursor: pointer; transition: all .25s;
+}
+#modal .close:hover { background: rgba(255,255,255,.4); transform: rotate(90deg); }
+
+/* — 属性色头图 — */
+.dTop {
+  position: relative; overflow: hidden; padding: 24px 26px 22px;
+  display: grid; grid-template-columns: 186px 1fr; gap: 22px; align-items: center;
+  background: linear-gradient(135deg, var(--g1, #e3350d), var(--g2, #b8240a));
+  border-radius: var(--r-xl) var(--r-xl) 0 0;
+}
+.dTop::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(88% 140% at 86% -10%, rgba(255,255,255,.32), transparent 58%),
+    radial-gradient(76% 120% at 0% 108%, rgba(0,0,0,.24), transparent 60%);
+}
+.dTop > * { position: relative; z-index: 1; }
+.dTop .dArt { display: flex; align-items: center; justify-content: center; position: relative; }
+.dTop .dArt::before {
+  content: ''; position: absolute; width: 150px; height: 150px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,.3), transparent 68%);
+}
+.dTop .dArt img {
+  width: 168px; height: 168px; object-fit: contain; display: block; position: relative;
+  filter: drop-shadow(0 12px 24px rgba(0,0,0,.36));
+  animation: artIn .45s cubic-bezier(.2,.8,.3,1) both;
+}
+@keyframes artIn { from { opacity: 0; transform: scale(.86) translateY(14px); } to { opacity: 1; transform: none; } }
+.dInfo { color: #fff; min-width: 0; }
+.dInfo .dNum { font-size: 10.5px; letter-spacing: 2.2px; font-weight: 700; opacity: .82; }
+.dInfo h2 { font-size: 30px; font-weight: 800; letter-spacing: -.6px; margin-top: 3px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; line-height: 1.1; }
+.dInfo h2 em { font-size: 13px; font-weight: 500; font-style: normal; opacity: .76; text-transform: capitalize; letter-spacing: .5px; }
+.dInfo .dTypes { display: flex; gap: 6px; margin-top: 13px; flex-wrap: wrap; }
+.dInfo .dTypes .badge {
+  font-size: 12px; padding: 4px 15px; border-radius: 8px; font-weight: 650; letter-spacing: 1.5px;
+  color: #fff; background: rgba(255,255,255,.2) !important;
+  border: 1px solid rgba(255,255,255,.34); backdrop-filter: blur(6px);
+}
+.dInfo .dQuick { display: flex; gap: 7px; flex-wrap: wrap; margin-top: 13px; }
+.dInfo .dQuick span {
+  font-size: 11.5px; padding: 4px 11px; border-radius: 8px;
+  background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.14);
+  backdrop-filter: blur(6px);
+}
+.dActions { display: flex; gap: 8px; margin-top: 15px; flex-wrap: wrap; }
+.dActions button {
+  border: 1px solid rgba(255,255,255,.36); background: rgba(255,255,255,.14); color: #fff;
+  border-radius: 10px; padding: 7px 15px; font-size: 12.5px; cursor: pointer;
+  font-family: inherit; backdrop-filter: blur(8px); transition: all .2s;
+}
+.dActions button:hover { background: rgba(255,255,255,.3); transform: translateY(-1px); }
+.dActions button.on { background: #fff; color: #2b3244; border-color: transparent; font-weight: 650; }
+
+/* — 双栏主体 — */
+.dBody { padding: 22px 26px 26px; display: grid; grid-template-columns: 336px 1fr; gap: 26px; align-items: start; }
+.dCol { min-width: 0; }
+.sec { margin-bottom: 22px; }
+.sec:last-child { margin-bottom: 0; }
+.sec-title {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 11px;
+  font-size: 11.5px; font-weight: 750; color: var(--muted); letter-spacing: 1.2px; text-transform: uppercase;
+}
+.sec-title::before { content: ''; width: 3px; height: 12px; border-radius: 2px; background: var(--accent); flex-shrink: 0; }
+.sec-title .cnt { margin-left: auto; font-weight: 600; letter-spacing: .3px; text-transform: none; font-size: 11px; }
+
+/* 种族值 */
+#modal .stat-row { display: flex; align-items: center; gap: 9px; margin: 6px 0; font-size: 12px; }
+#modal .stat-row .sn { width: 40px; color: var(--muted); flex-shrink: 0; font-size: 11.5px; }
+#modal .stat-row .sv { width: 33px; text-align: right; flex-shrink: 0; font-weight: 700; font-variant-numeric: tabular-nums; }
+#modal .stat-row .bar { flex: 1; height: 7px; background: var(--bar-track); border-radius: 4px; overflow: hidden; }
+#modal .stat-row .bar i { display: block; height: 100%; border-radius: 4px; transition: width .55s cubic-bezier(.2,.8,.3,1); }
+#modal .stat-row.total { border-top: 1px dashed var(--line); padding-top: 10px; margin-top: 10px; font-weight: 750; }
+#modal .stat-row.total .sn, #modal .stat-row.total .sv { color: var(--text); }
+
+/* 种族值雷达图 */
+.radar { display: flex; justify-content: center; padding: 2px 0 4px; }
+.radar svg { overflow: visible; }
+
+/* 属性相性 */
+.mu { display: flex; flex-direction: column; gap: 9px; }
+.muRow { display: flex; gap: 9px; align-items: flex-start; }
+.muLbl {
+  width: 44px; flex-shrink: 0; text-align: center; font-size: 10.5px; font-weight: 800;
+  border-radius: 6px; padding: 3px 0; color: #fff; letter-spacing: .3px; margin-top: 1px;
+}
+.muLbl.x4 { background: #b71540; }
+.muLbl.x2 { background: #e55039; }
+.muLbl.h { background: #3d8ee0; }
+.muLbl.q { background: #1e5fa8; }
+.muLbl.i { background: #6b7280; }
+.muList { display: flex; flex-wrap: wrap; gap: 5px; }
+.muList .t {
+  font-size: 11px; color: #fff; border-radius: 7px; padding: 3px 9px;
+  font-weight: 600; letter-spacing: .4px; cursor: default;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.16);
+}
+.muList .none { font-size: 11px; color: var(--muted); padding: 3px 2px; }
+
+/* 特性 */
+#modal .abil { display: flex; flex-direction: column; gap: 7px; }
+#modal .abil .ab {
+  border: 1px solid var(--line); border-radius: var(--r); padding: 9px 13px; font-size: 13px;
+  display: flex; align-items: center; gap: 9px; background: var(--card2);
+  transition: border-color .2s, transform .2s;
+}
+#modal .abil .ab:hover { border-color: var(--accent); transform: translateX(2px); }
+#modal .abil .ab .hid {
+  font-size: 10px; color: var(--violet); font-weight: 650; margin-left: auto;
+  background: rgba(123,104,238,.12); border-radius: 5px; padding: 1.5px 7px; flex-shrink: 0;
+}
+
+/* 进化链 */
+#modal .evo { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
+#modal .evo .ebtn {
+  border: 1px solid var(--line); border-radius: var(--r); padding: 8px 11px; font-size: 12px;
+  cursor: pointer; background: var(--card2); display: flex; align-items: center; gap: 8px;
+  color: var(--text); text-align: left; transition: all .2s;
+}
+#modal .evo .ebtn:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: var(--sh1); }
+#modal .evo .ebtn img { width: 40px; height: 40px; margin: 0; object-fit: contain; }
+#modal .evo .ebtn.cur { border-color: var(--accent); background: var(--accent-soft); }
+#modal .evo .arrow { color: var(--muted); font-size: 15px; }
+#modal .evo .cond { display: block; font-size: 10px; color: var(--muted); max-width: 120px; line-height: 1.45; margin-top: 1px; }
+#modal .evo .cond b { color: var(--accent); font-weight: 650; }
+
+/* 其它形态 */
+#modal .forms { display: flex; flex-wrap: wrap; gap: 7px; }
+#modal .forms .fbtn {
+  border: 1px solid var(--line); border-radius: var(--r); padding: 7px 10px; font-size: 11.5px;
+  cursor: pointer; background: var(--card2); display: flex; align-items: center; gap: 7px;
+  color: var(--text); transition: all .2s;
+}
+#modal .forms .fbtn:hover { border-color: var(--accent); transform: translateY(-2px); }
+#modal .forms .fbtn img { width: 36px; height: 36px; margin: 0; object-fit: contain; }
+#modal .forms .fbtn.cur { border-color: var(--accent); background: var(--accent-soft); font-weight: 650; }
+
+/* 招式表 */
+.moves { max-height: 430px; overflow-y: auto; border: 1px solid var(--line); border-radius: var(--r); }
+table.mv { width: 100%; border-collapse: collapse; font-size: 12px; }
+table.mv td, table.mv th { padding: 8px 10px; border-bottom: 1px solid var(--line2); text-align: left; }
+table.mv th {
+  color: var(--muted); font-weight: 650; font-size: 10.5px; letter-spacing: .7px;
+  position: sticky; top: 0; background: var(--card2); z-index: 1;
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+table.mv tbody tr { transition: background .15s; }
+table.mv tbody tr:hover { background: var(--card2); }
+table.mv tbody tr:last-child td { border-bottom: none; }
+table.mv .mv-badge { font-size: 10px; color: #fff; border-radius: 6px; padding: 2px 8px; font-weight: 600; letter-spacing: .5px; }
+table.mv .nm { font-weight: 600; }
+table.mv .num { font-variant-numeric: tabular-nums; color: var(--text2); }
+
+/* 搜索框（招式筛选） */
+.mvFilter {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap;
+}
+.mvFilter input {
+  flex: 1; min-width: 140px; padding: 7px 12px; border: 1px solid var(--line);
+  border-radius: var(--r-s); font-size: 12px; outline: none;
+  background: var(--input); color: var(--text); font-family: inherit;
+}
+.mvFilter input:focus { border-color: var(--accent); }
+
+/* ========== 属性克制表弹窗 ========== */
+#typeMask {
+  display: none; position: fixed; inset: 0; z-index: 100; padding: 20px;
+  background: rgba(10,14,26,.5); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  align-items: center; justify-content: center;
+}
+#typeMask.show { display: flex; animation: fadeIn .2s both; }
+#typeModal {
+  background: var(--card); border-radius: var(--r-xl); max-width: 800px; width: 100%;
+  max-height: 88vh; overflow: auto; padding: 24px; color: var(--text);
+  box-shadow: var(--sh3); border: 1px solid var(--line);
+  animation: popIn .3s cubic-bezier(.2,.8,.3,1) both;
+}
+#typeModal h3 { margin-bottom: 6px; font-size: 19px; font-weight: 750; letter-spacing: -.3px; }
+#typeModal .tsub { font-size: 12px; color: var(--muted); margin-bottom: 15px; }
+#typeModal table { border-collapse: separate; border-spacing: 2px; width: 100%; font-size: 11px; }
+#typeModal table td, #typeModal table th { border-radius: 6px; padding: 6px 3px; text-align: center; min-width: 30px; font-variant-numeric: tabular-nums; }
+#typeModal table th { background: var(--bg2); position: sticky; top: 0; z-index: 1; }
+#typeModal table td { background: var(--card2); }
+#typeModal .x2 { color: #c0392b; font-weight: 750; background: rgba(214,48,49,.11); }
+#typeModal .x05 { color: #2471a3; background: rgba(9,132,227,.10); }
+#typeModal .x0 { color: var(--muted); background: rgba(120,130,150,.09); }
+body.dark #typeModal .x2 { color: #ff8a80; background: rgba(214,48,49,.2); }
+body.dark #typeModal .x05 { color: #7fb8ef; background: rgba(9,132,227,.18); }
+#typeModal .legend { margin-top: 14px; font-size: 12px; color: var(--muted); display: flex; gap: 16px; flex-wrap: wrap; }
+#typeModal .legend i { font-style: normal; font-weight: 700; margin-right: 3px; }
+
+/* ========== 组队栏（浮岛） ========== */
+#teamBar {
+  position: fixed; bottom: 18px; left: 50%; z-index: 60; display: none;
+  transform: translateX(-50%) translateY(12px); opacity: 0;
+  background: var(--glass); backdrop-filter: blur(18px) saturate(1.7);
+  -webkit-backdrop-filter: blur(18px) saturate(1.7);
+  border: 1px solid var(--line); border-radius: var(--r-xl);
+  padding: 11px 18px; align-items: center; gap: 13px;
+  box-shadow: var(--sh3); transition: opacity .26s, transform .26s;
+}
+#teamBar.show { display: flex; opacity: 1; transform: translateX(-50%) translateY(0); }
+#teamBar .tinfo { font-size: 11px; color: var(--muted); white-space: nowrap; line-height: 1.5; }
+#teamBar .tinfo b { display: block; font-size: 15px; color: var(--text); font-variant-numeric: tabular-nums; }
+#teamBar .slots { display: flex; gap: 7px; flex-wrap: wrap; }
+#teamBar .slot {
+  width: 50px; height: 50px; border: 1.5px dashed var(--line); border-radius: var(--r);
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+  transition: all .2s; background: var(--card);
+}
+#teamBar .slot:hover { border-color: var(--accent); }
+#teamBar .slot img { width: 100%; height: 100%; object-fit: contain; }
+#teamBar button {
+  border: 1px solid var(--line); background: var(--card); color: var(--text2);
+  border-radius: var(--r-s); padding: 7px 14px; font-size: 12px; cursor: pointer;
+  font-family: inherit; white-space: nowrap; transition: all .2s;
+}
+#teamBar button:hover { border-color: var(--accent); color: var(--accent); }
+#teamBar button.primary { background: linear-gradient(135deg, var(--accent), var(--accent2)); border-color: transparent; color: #fff; }
+#teamBar button.primary:hover { filter: brightness(1.08); }
+
+/* ========== 队伍分析面板 ========== */
+#anaMask {
+  display: none; position: fixed; inset: 0; z-index: 100; padding: 20px;
+  background: rgba(10,14,26,.5); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  align-items: center; justify-content: center;
+}
+#anaMask.show { display: flex; animation: fadeIn .2s both; }
+#anaModal {
+  background: var(--card); border-radius: var(--r-xl); max-width: 780px; width: 100%;
+  max-height: 88vh; overflow-y: auto; padding: 24px; position: relative; color: var(--text);
+  box-shadow: var(--sh3); border: 1px solid var(--line);
+  animation: popIn .3s cubic-bezier(.2,.8,.3,1) both;
+}
+#anaModal .close {
+  position: absolute; top: 14px; right: 16px; width: 32px; height: 32px; border-radius: 50%;
+  border: none; background: var(--bg2); font-size: 18px; color: var(--muted); cursor: pointer;
+  line-height: 1; transition: all .25s;
+}
+#anaModal .close:hover { background: var(--accent); color: #fff; transform: rotate(90deg); }
+#anaModal h3 { font-size: 19px; font-weight: 750; letter-spacing: -.3px; }
+#anaModal .asub { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.anaRow { display: flex; gap: 12px; align-items: center; padding: 11px 0; border-bottom: 1px solid var(--line2); }
+.anaRow:last-child { border-bottom: none; }
+.anaRow img { width: 46px; height: 46px; object-fit: contain; flex-shrink: 0; }
+.anaRow .anm { font-size: 13px; font-weight: 650; }
+.anaRow .anm small { color: var(--muted); font-weight: 400; font-size: 10.5px; margin-left: 5px; }
+.anaRow .atypes { display: flex; gap: 4px; margin-top: 4px; }
+.anaRow .atypes .badge { font-size: 9.5px; padding: 1.5px 7px; border-radius: 6px; color: #fff; font-weight: 600; }
+.anaRow .astat { font-size: 10.5px; color: var(--muted); margin-top: 4px; font-variant-numeric: tabular-nums; }
+.anaRow .adel {
+  border: none; background: none; color: var(--muted); font-size: 17px; cursor: pointer;
+  padding: 3px 7px; border-radius: 7px; transition: all .2s; flex-shrink: 0;
+}
+.anaRow .adel:hover { background: rgba(214,48,49,.12); color: #d63031; }
+.coverage { display: flex; flex-wrap: wrap; gap: 5px; }
+.coverage .cv { font-size: 11px; border-radius: 7px; padding: 3px 9px; color: #fff; font-weight: 600; letter-spacing: .4px; }
+.coverage .cv.off {
+  background: transparent !important; color: var(--muted); font-weight: 500;
+  border: 1px dashed var(--line); text-decoration: line-through; text-decoration-color: var(--line);
+}
+.anaBar { display: flex; height: 8px; border-radius: 5px; overflow: hidden; margin: 10px 0 4px; background: var(--bar-track); }
+.anaBar i { display: block; height: 100%; }
+.anaMetric { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+.anaMetric div {
+  flex: 1; min-width: 96px; background: var(--card2); border: 1px solid var(--line);
+  border-radius: var(--r); padding: 10px 13px;
+}
+.anaMetric b { display: block; font-size: 19px; font-weight: 750; font-variant-numeric: tabular-nums; letter-spacing: -.4px; }
+.anaMetric span { font-size: 10.5px; color: var(--muted); }
+.threatRow { display: flex; gap: 8px; align-items: center; font-size: 12px; margin: 6px 0; }
+.threatRow .thBar { flex: 1; height: 6px; background: var(--bar-track); border-radius: 3px; overflow: hidden; }
+.threatRow .thBar i { display: block; height: 100%; background: linear-gradient(90deg, #fdcb6e, #d63031); border-radius: 3px; }
+.threatRow .thN { width: 62px; font-size: 11px; color: var(--muted); }
+
+footer { text-align: center; color: var(--muted); font-size: 11.5px; padding: 26px 20px 90px; line-height: 1.9; }
+footer b { color: var(--text2); font-weight: 650; }
+
+/* ========== 道馆馆主 ========== */
+#gymView { max-width: 1500px; margin: 0 auto; padding: 18px 20px 60px; }
+.gymGenRow { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-bottom: 10px; }
+.genHead { margin: 24px 0 14px; padding-left: 14px; border-left: 3px solid var(--accent); }
+.genHead h3 { font-size: 18px; font-weight: 750; letter-spacing: -.3px; }
+.genHead .gmeta { font-size: 12px; color: var(--muted); margin-top: 4px; line-height: 1.65; }
+.gnotice {
+  margin-top: 9px; font-size: 12px; background: var(--card2); border-radius: var(--r);
+  padding: 10px 14px; color: var(--text2); line-height: 1.75; border-left: 3px solid var(--violet);
+}
+.leaderGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(302px, 1fr)); gap: 13px; }
+.leaderCard {
+  background: var(--card); border-radius: var(--r-l); padding: 13px; display: flex; gap: 13px;
+  box-shadow: var(--sh1); cursor: pointer; border: 1px solid var(--line);
+  transition: transform .22s cubic-bezier(.2,.7,.3,1), box-shadow .22s, border-color .22s;
+  animation: cardIn .34s cubic-bezier(.2,.7,.3,1) both;
+}
+.leaderCard:hover { transform: translateY(-4px); box-shadow: var(--sh3); border-color: var(--tc, var(--accent)); }
+.emblem {
+  width: 54px; height: 54px; border-radius: 50%; flex-shrink: 0; color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700;
+  box-shadow: inset 0 -3px 8px rgba(0,0,0,.18);
+}
+/* 馆主立绘头像（卡片） */
+.lavatar {
+  width: 90px; height: 90px; flex-shrink: 0; border-radius: var(--r); position: relative;
+  background: var(--card2); border: 2px solid var(--tc, var(--line));
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+.lavatar img { width: 100%; height: 100%; object-fit: contain; padding: 3px; display: block; }
+.lavatar .ltypePill {
+  position: absolute; left: 0; right: 0; bottom: 0; text-align: center;
+  font-size: 9px; line-height: 15px; color: #fff; background: var(--tc, var(--accent));
+  letter-spacing: .5px; font-weight: 600;
+}
+.lavatar .noname { font-size: 22px; font-weight: 700; color: var(--tc, var(--muted)); opacity: .75; }
+.noname { font-size: 24px; font-weight: 700; color: var(--tc, var(--muted)); opacity: .75; }
+.linfo { flex: 1; min-width: 0; }
+.lname { font-size: 15px; font-weight: 680; letter-spacing: -.2px; }
+.lname .len { font-size: 11px; color: var(--muted); font-weight: 400; margin-left: 5px; }
+.lrow { margin-top: 5px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
+.lbadge { margin-top: 6px; font-size: 12px; display: flex; align-items: center; gap: 6px; min-height: 26px; }
+.lbadge .badgeImg { width: 26px; height: 26px; flex-shrink: 0; object-fit: contain; filter: drop-shadow(0 1px 2px rgba(0,0,0,.18)); }
+.lbadge b { color: var(--accent); font-size: 12px; }
+.lbadge small { color: var(--muted); font-size: 10px; }
+.verTag { font-size: 10px; color: var(--violet); border: 1px solid rgba(123,104,238,.4); background: rgba(123,104,238,.09); border-radius: 6px; padding: 0 6px; font-weight: 600; }
+.trialTag { font-size: 10px; color: #00b894; border: 1px solid rgba(0,184,148,.4); background: rgba(0,184,148,.09); border-radius: 6px; padding: 0 6px; font-weight: 600; }
+.typePill { font-size: 11px; color: #fff; border-radius: 8px; padding: 2px 8px; letter-spacing: 1px; }
+
+/* 馆主详情弹窗 */
+#gymMask {
+  display: none; position: fixed; inset: 0; z-index: 100; padding: 20px;
+  background: rgba(10,14,26,.5); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  align-items: center; justify-content: center;
+}
+#gymMask.show { display: flex; animation: fadeIn .2s both; }
+#gymModal {
+  background: var(--card); border-radius: var(--r-xl); max-width: 680px; width: 100%;
+  max-height: 88vh; overflow-y: auto; padding: 24px; position: relative; color: var(--text);
+  box-shadow: var(--sh3); border: 1px solid var(--line);
+  animation: popIn .3s cubic-bezier(.2,.8,.3,1) both;
+}
+#gymModal .close {
+  position: absolute; top: 14px; right: 16px; width: 32px; height: 32px; border-radius: 50%;
+  border: none; background: var(--bg2); font-size: 18px; color: var(--muted); cursor: pointer;
+  line-height: 1; transition: all .25s;
+}
+#gymModal .close:hover { background: var(--accent); color: #fff; transform: rotate(90deg); }
+.gdetailHead { display: flex; gap: 17px; align-items: flex-start; }
+.gdetailHead .emblem { width: 64px; height: 64px; font-size: 26px; }
+.gdetailHead h2 { font-size: 23px; font-weight: 780; letter-spacing: -.4px; }
+.gdetailHead .gsub { font-size: 12px; color: var(--muted); margin-top: 5px; line-height: 1.65; }
+/* 馆主立绘（详情弹窗大图） */
+.gdetailHead .lart {
+  width: 136px; height: 172px; flex-shrink: 0; border-radius: var(--r-l); background: var(--card2);
+  border: 2px solid var(--tc, var(--line)); overflow: hidden; position: relative;
+  display: flex; align-items: center; justify-content: center;
+}
+.gdetailHead .lart img { width: 100%; height: 100%; object-fit: contain; padding: 5px; display: block; }
+.gdetailHead .lart .artTag {
+  position: absolute; left: 0; right: 0; bottom: 0; text-align: center; font-size: 9px;
+  color: #fff; background: rgba(0,0,0,.45); line-height: 17px; letter-spacing: .5px;
+}
+.badgeBox {
+  margin-top: 16px; border-radius: var(--r-l); padding: 16px 18px;
+  display: flex; align-items: center; gap: 18px;
+  background: var(--card2); border: 1px solid var(--line);
+}
+.badgeBox .bicon { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 18px; flex-shrink: 0; }
+/* 徽章展示台：衬出官方素材的实物感 */
+.badgeBox .bshow {
+  width: 118px; height: 118px; flex-shrink: 0; border-radius: var(--r-l);
+  display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(circle at 34% 26%, #ffffff, #eaedf2 62%, #d7dce4);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.9), 0 3px 12px rgba(0,0,0,.10);
+}
+body.dark .badgeBox .bshow {
+  background: radial-gradient(circle at 34% 26%, #434b5c, #2a3140 66%, #1e232c);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 3px 12px rgba(0,0,0,.45);
+}
+.badgeBox .badgeImg {
+  width: 58px; height: 58px; object-fit: contain; flex-shrink: 0;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,.22));
+}
+.badgeBox .bshow .badgeImg { width: 94px; height: 94px; }
+.badgeBox .badgeImg.sm { width: 46px; height: 46px; }
+.badgeBox .btxt { min-width: 0; }
+.badgeBox .btxt b { font-size: 17px; font-weight: 700; }
+.badgeBox .btxt small { display: block; color: var(--muted); font-size: 12px; margin-top: 4px; line-height: 1.5; }
+.badgeBox .btxt .bsrc { font-size: 11px; opacity: .85; }
+.monRow { display: flex; gap: 13px; padding: 13px 0; border-bottom: 1px solid var(--line2); align-items: flex-start; }
+.monRow:last-child { border-bottom: none; }
+.monRow img { width: 64px; height: 64px; object-fit: contain; flex-shrink: 0; }
+.monRow .minfo { flex: 1; min-width: 0; }
+.monRow .mname { font-size: 14px; font-weight: 650; }
+.monRow .mname small { font-weight: 400; color: var(--muted); font-size: 11px; margin-left: 5px; }
+.monRow .mlv { font-size: 11px; color: var(--accent); margin-left: 6px; font-weight: 650; }
+.mchips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.mchip {
+  font-size: 11px; color: #fff; border-radius: 7px; padding: 3px 9px; white-space: nowrap;
+  font-weight: 600; transition: transform .18s; cursor: default;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+}
+.mchip:hover { transform: translateY(-1px); }
+.mchip small { opacity: .78; margin-left: 4px; font-size: 10px; font-weight: 500; }
+.gsource {
+  margin: 28px auto 10px; max-width: 760px; text-align: center; font-size: 11px;
+  color: var(--muted); line-height: 1.95; border-top: 1px dashed var(--line); padding-top: 16px;
+}
+
+/* ========== 响应式 ========== */
+@media (max-width: 900px) {
+  .heroInner { grid-template-columns: 1fr; }
+  .daily { min-width: 0; width: 100%; }
+  header h1 { font-size: 25px; }
+  /* 窄屏：搜索框独占一行，功能按钮不挤 */
+  .searchWrap { flex: 1 1 100%; min-width: 0; order: -1; }
+  .search-row .tool-btn { padding: 8px 12px; font-size: 12.5px; }
+  .seg { flex: 1 1 100%; justify-content: center; }
+  .seg button { flex: 1; }
+  /* 窄屏招式表：隐藏命中与 Z 威力两列 */
+  #modal table.mv th:nth-child(5), #modal table.mv td:nth-child(5),
+  #modal table.mv th:nth-child(6), #modal table.mv td:nth-child(6) { display: none; }
+  #modal table.mv td, #modal table.mv th { padding: 7px 7px; }
+  /* 窄屏：筛选 chips 横向滚动，标签吸左，省竖向空间 */
+  .chip-row { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; scrollbar-width: none; }
+  .chip-row::-webkit-scrollbar { display: none; }
+  .chip-row .chip { flex-shrink: 0; }
+  .chip-row .lbl {
+    position: sticky; left: 0; z-index: 2; padding-right: 7px; margin-right: 0;
+    background: var(--glass); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    align-self: stretch; display: flex; align-items: center;
+  }
+  #count { flex-shrink: 0; }
+  .mini-select { flex-shrink: 0; }
+  .dBody { grid-template-columns: 1fr; gap: 20px; }
+  .dTop { grid-template-columns: 128px 1fr; gap: 14px; padding: 18px; }
+  .dTop .dArt img { width: 118px; height: 118px; }
+  .dTop .dArt::before { width: 108px; height: 108px; }
+  .dInfo h2 { font-size: 22px; }
+  #grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; padding: 14px; }
+  .card .photo { height: 104px; }
+  .card .photo img { width: 92px; height: 92px; }
+  #teamBar { left: 10px; right: 10px; transform: none; border-radius: var(--r-l); padding: 10px 12px; }
+  #teamBar.show { transform: none; }
+  #teamBar .slots { gap: 5px; }
+  #teamBar .slot { width: 42px; height: 42px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="heroInner">
+    <div>
+      <span class="heroTag">POKÉDEX · GEN 1–9</span>
+      <h1>全国宝可梦图鉴<small>National Pokédex</small></h1>
+      <div class="heroSub">
+        收录第 1–9 世代全部宝可梦：官方立绘、属性相性、特性、种族值、进化链、招式表；
+        并含 Mega 进化 / 原始回归 / 地区形态 / 超极巨化等全部特殊形态。
+      </div>
+      <div class="heroStats">
+        <div><b id="st-total">-</b><span>形态记录</span></div>
+        <div><b id="st-species">-</b><span>宝可梦种类</span></div>
+        <div><b id="st-forms">-</b><span>特殊形态</span></div>
+        <div><b id="st-moves">-</b><span>收录招式</span></div>
+      </div>
+    </div>
+    <div class="daily" id="daily" title="每天 0 点自动更换 · 点右上角 ↻ 换一只 · 点卡片看详情">
+      <div class="dArt"><img id="dailyImg" alt="" loading="lazy"></div>
+      <div style="min-width:0">
+        <div class="dLabel" id="dailyLabel">TODAY'S POKÉMON</div>
+        <h3 id="dailyName">—</h3>
+        <div class="dSub" id="dailySub">—</div>
+        <div class="dNext" id="dailyNext"></div>
+        <div class="dTypes" id="dailyTypes"></div>
+      </div>
+      <button class="dDice" id="dailyDice" type="button" title="换一只（随机）" aria-label="换一只">↻</button>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar" id="toolbar">
+  <div class="search-row">
+    <div class="seg">
+      <button id="btn-dex" class="on">📕 图鉴</button>
+      <button id="btn-gym">🏅 道馆馆主</button>
+    </div>
+    <div class="searchWrap">
+      <span class="si">🔍</span>
+      <input id="search" type="text" autocomplete="off"
+             placeholder="搜索中文名 / 英文名 / 编号，如：喷火龙、charizard、006">
+      <span class="kbd">/</span>
+    </div>
+    <button class="tool-btn" id="btn-typechart" title="18 属性攻防相性速查"><span class="ic">⚔</span>属性克制表</button>
+    <button class="tool-btn" id="btn-team" title="显示 / 隐藏队伍栏"><span class="ic">👥</span>队伍</button>
+    <button class="tool-btn" id="btn-random" title="随机跳转到一只宝可梦"><span class="ic">🎲</span>手气不错</button>
+    <button class="tool-btn" id="btn-dark" title="切换深色 / 浅色模式"><span class="ic">🌙</span>深色</button>
+  </div>
+  <div class="chip-row" id="gen-row">
+    <span class="lbl">世代</span>
+    <span id="count"></span>
+  </div>
+  <div class="chip-row" id="type-row"><span class="lbl">属性</span><!-- JS 生成 --></div>
+  <div class="chip-row" id="form-row">
+    <span class="lbl">形态</span>
+    <div class="chip form on" data-v="all">全部</div>
+    <div class="chip form" data-v="default">仅基础形态</div>
+    <div class="chip form" data-v="special">仅特殊形态</div>
+    <span class="lbl" style="margin-left:12px">收藏</span>
+    <div class="chip form" data-v="fav">⭐ 只看收藏</div>
+  </div>
+  <div class="chip-row" id="sort-row">
+    <span class="lbl">排序</span>
+    <select class="mini-select" id="sortSel">
+      <option value="dex">图鉴编号</option>
+      <option value="total">种族值合计</option>
+      <option value="attack">攻击</option>
+      <option value="special-attack">特攻</option>
+      <option value="defense">防御</option>
+      <option value="speed">速度</option>
+      <option value="hp">HP</option>
+    </select>
+    <span class="lbl" style="margin-left:12px">排序方向</span>
+    <div class="chip form on" id="sortDir">↓ 降序</div>
+    <span id="statHint" style="font-size:11px;color:var(--muted);margin-left:auto;flex-shrink:0;white-space:nowrap"></span>
+  </div>
+</div>
+
+<div id="grid"></div>
+<button id="more">加载更多</button>
+
+<!-- 道馆馆主视图 -->
+<div id="gymView" style="display:none"></div>
+
+<!-- 馆主详情弹窗 -->
+<div id="gymMask">
+  <div id="gymModal">
+    <button class="close">×</button>
+    <div id="gymBody"></div>
+  </div>
+</div>
+
+<!-- 组队栏 -->
+<div id="teamBar">
+  <div class="tinfo">我的队伍<b id="teamCount">0/6</b></div>
+  <div class="slots" id="teamSlots"></div>
+  <button class="primary" id="teamAnalyze">📊 队伍分析</button>
+  <button id="teamClear">清空</button>
+</div>
+
+<!-- 队伍分析面板 -->
+<div id="anaMask">
+  <div id="anaModal">
+    <button class="close">×</button>
+    <div id="anaBody"></div>
+  </div>
+</div>
+
+<!-- 详情弹窗 -->
+<div id="mask">
+  <div id="modal">
+    <button class="close">×</button>
+    <div id="m-body"></div>
+  </div>
+</div>
+
+<!-- 属性克制表弹窗 -->
+<div id="typeMask">
+  <div id="typeModal">
+    <button class="close" style="position:sticky;top:0;float:right;border:none;background:none;font-size:22px;color:var(--muted);cursor:pointer" onclick="document.getElementById('typeMask').classList.remove('show')">×</button>
+    <h3>属性克制表（攻击方 → 防守方）</h3>
+    <div class="tsub">行 = 攻击方属性，列 = 防守方属性，数值为伤害倍率（第六世代起规则）</div>
+    <div id="typeChart"></div>
+    <div class="legend">
+      <span class="x2">2</span> 效果拔群 ·
+      <span class="x05">½</span> 效果不好 ·
+      <span class="x0">0</span> 无效 · 空白 = 正常（1×）
+    </div>
+  </div>
+</div>
+
+<footer>
+  数据来源 <b>PokéAPI</b> · 馆主立绘 <b>Pokémon Showdown</b> · 徽章素材 <b>Bulbagarden Archives / 宝可梦维基</b>，图片均已压缩本地化，断网可用。<br>
+  全国图鉴 <b>1025</b> 种；含 Mega 进化、原始回归、地区形态、超极巨化等特殊形态合计 <b>1351</b> 条记录 ·
+  <b id="ftMoves">—</b> 个招式 · <b id="ftLeaders">—</b> 位道馆馆主 / 队长。<br>
+  仅供个人学习收录使用，宝可梦相关内容版权归属 Nintendo / Game Freak / The Pokémon Company。
+</footer>
+
+<script>
+/* ================= 数据（构建时注入） ================= */
+const DEX = /*__DATA__*/[];
+const EXTRA = /*__EXTRA__*/{};
+const EVO2 = /*__EVO2__*/{};   // { evoChains, speciesChain, items, locations }
+const GYMS = /*__GYMS__*/{};   // 道馆馆主数据
+const LIMG = /*__LIMG__*/{};   // 馆主立绘映射：英文名 -> 图片 slug
+const BIMG = /*__BIMG__*/{};   // 徽章图片映射：徽章英文名 -> 图片 slug
+const MOVES = /*__MOVES__*/{};
+const TIERS = /*__TIERS__*/[];
+
+/* ================= 常量 ================= */
+const TYPE_ZH = {
+  normal:'一般', fire:'火', water:'水', electric:'电', grass:'草', ice:'冰',
+  fighting:'格斗', poison:'毒', ground:'地面', flying:'飞行', psychic:'超能力',
+  bug:'虫', rock:'岩石', ghost:'幽灵', dragon:'龙', dark:'恶', steel:'钢', fairy:'妖精'
+};
+const TYPE_COLOR = {
+  normal:'#9099a1', fire:'#ff9d55', water:'#5090d6', electric:'#f4d23c', grass:'#63bc5a',
+  ice:'#73cec0', fighting:'#ce4069', poison:'#ab6ac8', ground:'#d97845', flying:'#89aae0',
+  psychic:'#fa7179', bug:'#90c12c', rock:'#c7b78b', ghost:'#5269ac', dragon:'#0b6dc3',
+  dark:'#5a5366', steel:'#5a8ea1', fairy:'#ec8fe6'
+};
+const TYPE_ORDER = ['normal','fire','water','electric','grass','ice','fighting','poison','ground','flying','psychic','bug','rock','ghost','dragon','dark','steel','fairy'];
+const STAT_ZH = { hp:'HP', attack:'攻击', defense:'防御', 'special-attack':'特攻', 'special-defense':'特防', speed:'速度' };
+// 属性克制表（官方第六世代起）：[攻][防] = 倍率
+const CHART = {
+  normal:{rock:.5,ghost:0,steel:.5}, fire:{fire:.5,water:.5,grass:2,ice:2,bug:2,rock:.5,dragon:.5,steel:2},
+  water:{fire:2,water:.5,grass:.5,ground:2,rock:2,dragon:.5}, electric:{water:2,electric:.5,grass:.5,ground:0,flying:2,dragon:.5},
+  grass:{fire:.5,water:2,grass:.5,poison:.5,ground:2,flying:.5,bug:.5,rock:2,dragon:.5,steel:.5},
+  ice:{fire:.5,water:.5,grass:2,ice:.5,ground:2,flying:2,dragon:2,steel:.5},
+  fighting:{normal:2,ice:2,poison:.5,flying:.5,psychic:.5,bug:.5,rock:2,ghost:0,dark:2,steel:2,fairy:.5},
+  poison:{grass:2,poison:.5,ground:.5,rock:.5,ghost:.5,steel:0,fairy:2},
+  ground:{fire:2,electric:2,grass:.5,poison:2,flying:0,bug:.5,rock:2,steel:2},
+  flying:{electric:.5,grass:2,fighting:2,bug:2,rock:.5,steel:.5},
+  psychic:{fighting:2,poison:2,psychic:.5,dark:0,steel:.5},
+  bug:{fire:.5,grass:2,fighting:.5,poison:.5,flying:.5,psychic:2,ghost:.5,dark:2,steel:.5,fairy:.5},
+  rock:{fire:2,ice:2,fighting:.5,ground:.5,flying:2,bug:2,steel:.5},
+  ghost:{normal:0,psychic:2,ghost:2,dark:.5},
+  dragon:{dragon:2,steel:.5,fairy:0}, dark:{fighting:.5,psychic:2,ghost:2,dark:.5,fairy:.5},
+  steel:{fire:.5,water:.5,electric:.5,ice:2,rock:2,steel:.5,fairy:2},
+  fairy:{fire:.5,fighting:2,poison:.5,dragon:2,dark:2,steel:.5}
+};
+const FORM_MAP = {
+  'mega':'Mega进化','mega-x':'Mega X','mega-y':'Mega Y','primal':'原始回归',
+  'gmax':'超极巨化','galar':'伽勒尔形态','alola':'阿罗拉形态','hisui':'洗翠形态','paldea':'帕底亚形态',
+  'origin':'起源形态','altered':'异变形态','land':'陆地形态','sky':'天空形态',
+  'incarnate':'化身形态','therian':'灵兽形态','black':'暗黑形态','white':'洁白形态',
+  'standard':'标准模式','zen':'达摩模式','ordinary':'普通','small':'小尺寸','large':'大尺寸','super':'超大尺寸',
+  'average':'平均尺寸','sandy':'砂蓑','trash':'垃圾蓑','plant':'草木蓑','fan':'风扇蓑','frost':'冰雪蓑','heat':'火焰蓑','wash':'洗涤蓑','mow':'切割蓑',
+  'attack':'攻击形态','defense':'防御形态','speed':'速度形态','complete':'完全体形态','10%':'10%形态','50%':'50%形态','10':'10%形态','50':'50%形态','power-construct':'力量构造',
+  'single-strike':'一击流','rapid-strike':'连击流','strike':'打击形态','school':'鱼群形态','solo':'独行形态','dusk':'黄昏形态','dawn':'白昼形态','midnight':'黑夜形态','day':'白昼形态','night':'黑夜形态',
+  'confined':'解放形态','unbound':'惩戒形态','male':'雄性','female':'雌性','f':'♀','m':'♂',
+  'red-scaled':'红色鳞片','white-striped':'白条纹','blue-striped':'蓝条纹','striped':'条纹形态',
+  'crowned':'王者形态','hero':'勇者形态','full-belly':'饱腹','hangry':'空腹','four':'四形态','anchor':'锚形态',
+  'droopy':'垂耳','stretchy':'长耳','starter':'初始形态','battle':'战斗形态','awesome':'极限形态',
+  'special':'特别形态','original':'原始形态','three-segment':'三节','two-segment':'两节',
+  'family-of-four':'四口之家','family-of-three':'三口之家','four-form':'四形态','three-form':'三形态',
+  'galarian-standard':'伽勒尔·标准','galarian-zen':'伽勒尔·达摩','alolan':'阿罗拉','galarian':'伽勒尔','hisuian':'洗翠','paldean':'帕底亚',
+  'limited-build':'限荷','sprinting-build':'疾驰','swimming-build':'游泳','gliding-build':'滑翔',
+  'low-power-mode':'低功率','drive-mode':'行驶','aquatic-mode':'水中','glide-mode':'滑翔模式'
+};
+const REGION_SET = new Set(['galar','alola','hisui','paldea','galarian','alolan','hisuian','paldean']);
+
+function formLabel(p) {
+  if (p.default) return null;
+  const sp = p.species;
+  let rest = p.name.startsWith(sp + '-') ? p.name.slice(sp.length + 1) : p.name.split('-').slice(1).join('-');
+  if (!rest) return '其他形态';
+  if (FORM_MAP[rest]) return FORM_MAP[rest];
+  const words = rest.split('-');
+  for (let n = Math.min(2, words.length); n >= 1; n--) {
+    const key = words.slice(-n).join('-');
+    if (FORM_MAP[key]) return FORM_MAP[key];
+  }
+  return rest.replace(/-/g, ' ');
+}
+function formClass(label) {
+  if (!label) return '';
+  if (label.includes('Mega')) return 'mega';
+  if (label.includes('超极巨')) return 'gmax';
+  if (/形态|模式|流|家|尺寸|节|样式/.test(label) || /阿罗拉|伽勒尔|洗翠|帕底亚/.test(label)) return 'region';
+  return 'mega';
+}
+function genOf(id) {
+  const G = [[151,1],[251,2],[386,3],[493,4],[649,5],[721,6],[809,7],[905,8],[1025,9]];
+  for (const [max,g] of G) if (id <= max) return g;
+  return 9;
+}
+// Z 招式威力（官方档位）
+function zPowerOf(power, cls) {
+  if (cls === 'status' || !power) return null;
+  for (const [k, v] of TIERS) if (power >= k) return v;
+  return null;
+}
+// 进化条件 → 中文描述（道具/携带物/地点用抓取的中文名）
+const GENDER_ZH = { 1: '♀ 性别限定', 2: '♂ 性别限定' };
+function condText(c) {
+  if (!c) return '';
+  const parts = [];
+  const itemName = n => (EVO2.items && EVO2.items[n]) || n;
+  const locName = n => (EVO2.locations && EVO2.locations[n]) || n;
+  const moveName = n => (MOVES[n] && MOVES[n].zh) || n;
+  if (c.trigger === 'use-item' && c.item) return '使用 ' + itemName(c.item);
+  if (c.trigger === 'trade') {
+    parts.push('通信交换');
+    if (c.heldItem) parts.push('携带 ' + itemName(c.heldItem));
+    if (c.tradeSpecies) parts.push('换得 ' + itemName(c.tradeSpecies));
+    return parts.join(' · ');
+  }
+  if (c.trigger === 'shed') return '脱皮（队伍有空位+精灵球）';
+  if (c.trigger === 'spin') return '旋转';
+  if (c.trigger === 'tower-of-darkness') return '恶之塔修行';
+  if (c.trigger === 'tower-of-waters') return '水之塔修行';
+  if (c.trigger === 'three-critical-hits') return '一场对战中会心一击 3 次';
+  if (c.trigger === 'take-damage') return '受到伤害后';
+  if (c.trigger === 'agile-style-move') return '以敏捷招式使用 ' + moveName(c.usedMove);
+  if (c.trigger === 'strong-style-move') return '以刚猛招式使用 ' + moveName(c.usedMove);
+  if (c.trigger === 'recoil-damage') return '累计反作用力伤害';
+  if (c.trigger === 'other') { if (c.item) return itemName(c.item); }
+  // level-up 类
+  if (c.trigger === 'level-up' || !c.trigger) {
+    if (c.item) parts.push('使用 ' + itemName(c.item));
+    else if (c.knownMove) parts.push('学会 ' + moveName(c.knownMove));
+    else if (c.knownMoveType) parts.push('学会' + (TYPE_ZH[c.knownMoveType] || c.knownMoveType) + '属性招式');
+    else if (c.location) parts.push('在' + locName(c.location) + '升级');
+    else if (c.needsOverworldRain) parts.push('雨天升级');
+    else if (c.turnUpsideDown) parts.push('倒置主机升级');
+    else if (c.partySpecies) parts.push('队伍中有 ' + itemName(c.partySpecies));
+    else if (c.partyType) parts.push('队伍中有' + (TYPE_ZH[c.partyType] || c.partyType) + '属性宝可梦');
+    else if (c.relativePhysicalStats === 1) parts.push('攻击>防御时升级');
+    else if (c.relativePhysicalStats === -1) parts.push('攻击<防御时升级');
+    else if (c.relativePhysicalStats === 0) parts.push('攻击=防御时升级');
+    else if (c.minBeauty) parts.push('美丽度 ' + c.minBeauty);
+    else if (c.minAffection) parts.push('亲密度 ' + c.minAffection + '+');
+    else if (c.minHappiness) parts.push('亲密度 ' + c.minHappiness + '+');
+    else if (c.timeOfDay === 'day') parts.push('白天升级');
+    else if (c.timeOfDay === 'night') parts.push('夜晚升级');
+    else if (c.gender) parts.push(GENDER_ZH[c.gender] || '性别限定');
+    else if (c.minLevel) parts.push('Lv.' + c.minLevel);
+    else parts.push('升级');
+  }
+  return parts.join(' · ');
+}
+
+/* ================= 预处理 ================= */
+const allTypes = [...new Set(DEX.flatMap(p => p.types))];
+const bySpecies = {};
+DEX.forEach(p => { (bySpecies[p.species] = bySpecies[p.species] || []).push(p); });
+Object.values(bySpecies).forEach(group => {
+  const base = group.find(p => p.default) || group[0];
+  group.forEach(p => { p.baseId = base.id; p.gen = genOf(base.id); });
+});
+const SORTED = DEX.slice().sort((a,b) => a.baseId - b.baseId || a.id - b.id);
+const speciesCount = new Set(DEX.map(p => p.species)).size;
+const formCount = DEX.filter(p => !p.default).length;
+const moveCount = Object.keys(MOVES).length;
+const leaderCount = (GYMS.gens || []).reduce((a, g) => a + g.leaders.length, 0);
+document.getElementById('st-total').textContent = DEX.length;
+document.getElementById('st-species').textContent = speciesCount;
+document.getElementById('st-forms').textContent = formCount;
+document.getElementById('st-moves').textContent = moveCount;
+document.getElementById('ftMoves').textContent = moveCount;
+document.getElementById('ftLeaders').textContent = leaderCount;
+
+/* ================= 通用工具 ================= */
+/** hex → rgba，用于属性色做柔和底纹 */
+function hexA(hex, a) {
+  if (!hex || hex[0] !== '#') return 'transparent';
+  const n = parseInt(hex.slice(1), 16);
+  return `rgba(${(n>>16)&255},${(n>>8)&255},${n&255},${a})`;
+}
+/** 种族值（按物种缓存，1351 条只查一次） */
+const statCache = new Map();
+function statsOf(p) {
+  if (statCache.has(p.species)) return statCache.get(p.species);
+  const s = (EXTRA.pokemon?.[p.species]?.stats) || null;
+  statCache.set(p.species, s);
+  return s;
+}
+/** 种族值合计，无数据返回 -1 */
+function statTotal(p) {
+  const s = statsOf(p);
+  return s ? Object.values(s).reduce((a,b) => a+b, 0) : -1;
+}
+
+/* ================= 属性相性计算 ================= */
+/** 由防守属性组合推出弱点 / 抗性 / 免疫 */
+function matchupOf(types) {
+  const r = { x4: [], x2: [], h: [], q: [], i: [] };
+  TYPE_ORDER.forEach(atk => {
+    let m = 1;
+    types.forEach(def => { const v = CHART[atk]?.[def]; if (v !== undefined) m *= v; });
+    if (m === 0) r.i.push(atk);
+    else if (m >= 4) r.x4.push(atk);
+    else if (m >= 2) r.x2.push(atk);
+    else if (m === 0.25) r.q.push(atk);
+    else if (m === 0.5) r.h.push(atk);
+  });
+  return r;
+}
+function matchupHTML(types) {
+  const m = matchupOf(types);
+  const pill = t => `<span class="t" style="background:${TYPE_COLOR[t]}">${TYPE_ZH[t]}</span>`;
+  const row = (cls, lbl, arr) => `<div class="muRow"><span class="muLbl ${cls}">${lbl}</span>
+    <div class="muList">${arr.length ? arr.map(pill).join('') : '<span class="none">—</span>'}</div></div>`;
+  return `<div class="mu">${row('x4','×4',m.x4)}${row('x2','×2',m.x2)}
+    ${row('h','½',m.h)}${row('q','¼',m.q)}${row('i','0',m.i)}</div>`;
+}
+
+/* ================= 种族值雷达图 ================= */
+const STAT_ORDER = ['hp','attack','defense','special-attack','special-defense','speed'];
+function radarSVG(stats) {
+  if (!stats) return '';
+  const vals = STAT_ORDER.map(k => stats[k] || 0);
+  const MAX = 160, S = 224, cx = S/2, cy = 112, R = 72;
+  const ang = i => (Math.PI * 2 * i) / 6 - Math.PI / 2;
+  const pt = (i, r) => [cx + r*Math.cos(ang(i)), cy + r*Math.sin(ang(i))];
+  let grid = '', axes = '';
+  [.25,.5,.75,1].forEach(f => {
+    grid += `<polygon points="${STAT_ORDER.map((_,i)=>pt(i,R*f).map(v=>v.toFixed(1)).join(',')).join(' ')}"
+      fill="none" stroke="var(--line)" stroke-width="1"/>`;
+  });
+  STAT_ORDER.forEach((_, i) => {
+    const [x,y] = pt(i, R);
+    axes += `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="var(--line)" stroke-width="1"/>`;
+  });
+  const dp = vals.map((v,i) => pt(i, R*Math.min(1, v/MAX)).map(x=>x.toFixed(1)).join(',')).join(' ');
+  let labels = '', dots = '';
+  STAT_ORDER.forEach((k, i) => {
+    const [x,y] = pt(i, R + 20);
+    const anchor = Math.abs(x - cx) < 6 ? 'middle' : (x > cx ? 'start' : 'end');
+    labels += `<text x="${x.toFixed(1)}" y="${(y+3.5).toFixed(1)}" text-anchor="${anchor}" font-size="10.5"
+      fill="var(--muted)" font-family="inherit">${STAT_ZH[k]} ${vals[i]}</text>`;
+    const [dx,dy] = pt(i, R*Math.min(1, vals[i]/MAX));
+    dots += `<circle cx="${dx.toFixed(1)}" cy="${dy.toFixed(1)}" r="2.8" fill="#7b68ee"/>`;
+  });
+  return `<div class="radar"><svg width="${S}" height="${S}" viewBox="0 0 ${S} ${S}" role="img" aria-label="种族值雷达图">
+    ${grid}${axes}
+    <polygon points="${dp}" fill="rgba(123,104,238,.24)" stroke="#7b68ee" stroke-width="2" stroke-linejoin="round"/>
+    ${dots}${labels}
+  </svg></div>`;
+}
+
+/* ================= 本地存储：收藏 / 组队 / 主题 ================= */
+const store = {
+  get(k, d) { try { return JSON.parse(localStorage.getItem('pdx_'+k)) ?? d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem('pdx_'+k, JSON.stringify(v)); } catch {} }
+};
+let favs = new Set(store.get('favs', []));     // 存形态 id
+let team = store.get('team', []);              // 存形态 id 数组（最多6）
+
+/* ================= 筛选状态 ================= */
+const state = { q:'', gen:0, types:[], form:'all', favOnly:false, sort:'dex', desc:true };
+
+/* ================= 生成筛选 chips ================= */
+const genRow = document.getElementById('gen-row');
+const genDefs = [[0,'全部']].concat([...Array(9)].map((_,i)=>[i+1,`第${i+1}世代`]));
+genDefs.forEach(([v,label]) => {
+  const c = document.createElement('div');
+  c.className = 'chip gen' + (v===0?' on':'');
+  c.textContent = label; c.dataset.v = v;
+  c.onclick = () => { state.gen = v; [...genRow.querySelectorAll('.chip')].forEach(x=>x.classList.remove('on')); c.classList.add('on'); apply(); };
+  genRow.insertBefore(c, document.getElementById('count'));
+});
+
+const typeRow = document.getElementById('type-row');
+const tAll = document.createElement('div'); tAll.className = 'chip type on'; tAll.textContent = '全部';
+tAll.onclick = () => { state.types = []; syncTypeChips(); apply(); };
+typeRow.appendChild(tAll);
+allTypes.forEach(t => {
+  const c = document.createElement('div');
+  c.className = 'chip type'; c.dataset.t = t; c.textContent = TYPE_ZH[t] || t;
+  c.style.borderColor = TYPE_COLOR[t];
+  c.onclick = () => {
+    const i = state.types.indexOf(t);
+    if (i >= 0) state.types.splice(i, 1);
+    else {
+      if (state.types.length >= 2) state.types.shift();   // 最多 2 个，超出挤掉最早的
+      state.types.push(t);
+    }
+    syncTypeChips(); apply();
+  };
+  typeRow.appendChild(c);
+});
+const typeHintEl = document.createElement('span');
+typeHintEl.style.cssText = 'font-size:10.5px;color:var(--muted);margin-left:5px';
+typeRow.appendChild(typeHintEl);
+function syncTypeChips() {
+  const n = state.types.length;
+  tAll.classList.toggle('on', !n);
+  tAll.style.background = !n ? 'linear-gradient(135deg,#2b3244,#14181f)' : '';
+  [...typeRow.querySelectorAll('.chip.type[data-t]')].forEach(c => {
+    const t = c.dataset.t, idx = state.types.indexOf(t), on = idx >= 0;
+    c.classList.toggle('on', on);
+    c.style.background = on ? (TYPE_COLOR[t] || '#999') : '';
+    c.style.borderColor = on ? 'transparent' : TYPE_COLOR[t];
+    c.innerHTML = (on && n > 1) ? `<span class="ord">${idx+1}</span>${TYPE_ZH[t]||t}` : (TYPE_ZH[t] || t);
+  });
+  typeHintEl.textContent = n === 0 ? '可点选 2 个（需同时具备）'
+    : n === 1 ? '再点 1 个可做交集' : '已选 2 个 · 点选中的可取消';
+}
+syncTypeChips();
+
+/* 形态 + 只看收藏（同一行） */
+document.querySelectorAll('#form-row .chip').forEach(c => {
+  c.onclick = () => {
+    if (c.dataset.v === 'fav') {
+      state.favOnly = !state.favOnly;
+      c.classList.toggle('on', state.favOnly);
+    } else {
+      state.form = c.dataset.v;
+      [...document.querySelectorAll('#form-row .chip[data-v]:not([data-v="fav"])')].forEach(x => x.classList.remove('on'));
+      c.classList.add('on');
+    }
+    apply();
+  };
+});
+
+/* 排序 */
+const sortSel = document.getElementById('sortSel');
+const sortDirEl = document.getElementById('sortDir');
+const statHintEl = document.getElementById('statHint');
+sortSel.onchange = () => { state.sort = sortSel.value; apply(); };
+sortDirEl.onclick = () => {
+  state.desc = !state.desc;
+  sortDirEl.textContent = state.desc ? '↓ 降序' : '↑ 升序';
+  apply();
+};
+
+const searchEl = document.getElementById('search');
+let deb;
+searchEl.oninput = () => { clearTimeout(deb); deb = setTimeout(() => { state.q = searchEl.value.trim().toLowerCase(); if (curView === 'gym') renderGyms(); else apply(); }, 200); };
+
+/* ================= 过滤 + 排序 + 分页渲染 ================= */
+const PAGE = 96;
+let view = [], shown = 0;
+function matchTypes(p) {
+  // 选 2 个属性 = 必须同时具备（交集）
+  return state.types.every(t => p.types.includes(t));
+}
+function apply() {
+  view = SORTED.filter(p => {
+    if (state.gen && p.gen !== state.gen) return false;
+    if (!matchTypes(p)) return false;
+    if (state.form === 'default' && !p.default) return false;
+    if (state.form === 'special' && p.default) return false;
+    if (state.favOnly && !favs.has(p.id)) return false;
+    if (state.q) {
+      const raw = searchEl.value.trim();
+      const num = String(p.baseId).padStart(3,'0');
+      const hit = (p.zh||'').includes(raw) || p.name.includes(state.q) || String(p.id).includes(state.q) || num.includes(state.q);
+      if (!hit) return false;
+    }
+    return true;
+  });
+  // 排序
+  if (state.sort === 'dex') {
+    if (!state.desc) view = view.slice().reverse();
+  } else {
+    const k = state.sort;
+    const val = p => k === 'total' ? statTotal(p) : (statsOf(p)?.[k] ?? -1);
+    view = view.slice().sort((a,b) => {
+      const d = state.desc ? val(b) - val(a) : val(a) - val(b);
+      return d || (a.baseId - b.baseId) || (a.id - b.id);
+    });
+  }
+  shown = 0;
+  const grid = document.getElementById('grid');
+  grid.innerHTML = '';
+  render();
+  document.getElementById('count').textContent = `共 ${view.length} 条`;
+  statHintEl.textContent = state.sort === 'dex' ? ''
+    : `${view.filter(p => statsOf(p)).length} 条有种族值数据`;
+  window.scrollTo({ top: 0 });
+}
+function render() {
+  const grid = document.getElementById('grid');
+  const frag = document.createDocumentFragment();
+  const slice = view.slice(shown, shown + PAGE);
+  slice.forEach((p, i) => frag.appendChild(card(p, i)));
+  shown += PAGE;
+  grid.appendChild(frag);
+  document.getElementById('more').style.display = view.length > shown ? 'block' : 'none';
+  if (!view.length) grid.innerHTML = '<div class="empty">没有匹配的宝可梦，试试放宽筛选条件</div>';
+}
+document.getElementById('more').onclick = render;
+
+function card(p, i) {
+  const d = document.createElement('div');
+  d.className = 'card';
+  const label = formLabel(p);
+  const tag = label ? `<span class="form-tag ${formClass(label)}" title="${label}">${label}</span>` : '';
+  const fav = favs.has(p.id);
+  const tc = TYPE_COLOR[p.types[0]] || '#9099a1';
+  d.style.setProperty('--tc', tc);
+  d.style.setProperty('--tcg', hexA(tc, .17));
+  d.style.animationDelay = Math.min(i || 0, 14) * 14 + 'ms';
+  const types = p.types.map(t => `<span class="badge" style="background:${TYPE_COLOR[t]||'#999'}">${TYPE_ZH[t]||t}</span>`).join('');
+  d.innerHTML = `
+    <div class="cTop">
+      <span class="num">No.${String(p.baseId).padStart(4,'0')}</span>
+      ${tag}
+    </div>
+    <div class="photo">
+      <img loading="lazy" src="${p.img||''}" alt="${p.zh||p.name}" onerror="this.style.opacity=.15">
+      <span class="fav ${fav?'on':''}" title="收藏">★</span>
+    </div>
+    <div class="zh">${p.zh || '—'}</div>
+    <div class="en">${p.name.replace(/-/g,' ')}</div>
+    <div class="types">${types}</div>`;
+  d.querySelector('.fav').onclick = e => { e.stopPropagation(); toggleFav(p.id, e.target); };
+  d.onclick = () => showModal(p);
+  return d;
+}
+function toggleFav(id, el) {
+  if (favs.has(id)) favs.delete(id); else favs.add(id);
+  store.set('favs', [...favs]);
+  if (el) el.classList.toggle('on', favs.has(id));
+  syncTeamBar();
+}
+
+/* ================= 详情弹窗 ================= */
+const mask = document.getElementById('mask');
+mask.onclick = e => { if (e.target === mask) mask.classList.remove('show'); };
+document.querySelector('#modal .close').onclick = () => mask.classList.remove('show');
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { mask.classList.remove('show'); typeMask.classList.remove('show'); document.getElementById('gymMask').classList.remove('show'); } });
+
+let curP = null;   // 当前详情对象（供键盘 ← → 上下翻）
+function showModal(p) {
+  curP = p;
+  const ex = EXTRA.pokemon?.[p.species] || {};
+  const stats = ex.stats || {};
+  const hasStats = Object.keys(stats).length > 0;
+  const label = formLabel(p);
+  const group = bySpecies[p.species] || [p];
+  const c0 = TYPE_COLOR[p.types[0]] || '#9099a1';
+  const c1 = TYPE_COLOR[p.types[1]] || c0;
+  const fav = favs.has(p.id);
+  const inTeam = team.includes(p.id);
+  const types = p.types.map(t => `<span class="badge">${TYPE_ZH[t]||t}</span>`).join('');
+
+  // 种族值条
+  let total = 0, bars = '';
+  STAT_ORDER.forEach(k => {
+    const v = stats[k]; if (v == null) return;
+    total += v;
+    const color = v >= 120 ? '#00b894' : v >= 90 ? '#0984e3' : v >= 60 ? '#fdcb6e' : '#e17055';
+    bars += `<div class="stat-row"><span class="sn">${STAT_ZH[k]}</span><span class="sv">${v}</span>
+      <span class="bar"><i style="width:${Math.min(100, v/160*100)}%;background:${color}"></i></span></div>`;
+  });
+  if (total) bars += `<div class="stat-row total"><span class="sn">合计</span><span class="sv">${total}</span>
+    <span class="bar"><i style="width:${Math.min(100,total/720*100)}%;background:linear-gradient(90deg,#7b68ee,#a29bfe)"></i></span></div>`;
+
+  // 特性
+  let abilHtml = '';
+  if (ex.abilities?.length) {
+    abilHtml = `<div class="sec"><div class="sec-title">特性<span class="cnt">${ex.abilities.length}</span></div>
+      <div class="abil">` + ex.abilities.map(a =>
+        `<div class="ab">${EXTRA.abilities?.[a.name] || a.name}${a.hidden ? '<span class="hid">隐藏特性</span>' : ''}</div>`
+      ).join('') + '</div></div>';
+  }
+
+  // 进化链（用 EVO2 的完整条件数据）
+  let evoHtml = '';
+  const cid2 = EVO2.speciesChain?.[p.species];
+  const chain2 = cid2 && EVO2.evoChains?.[cid2];
+  if (chain2) {
+    const flat = [];
+    (function walk2(n, depth) { flat.push({ n, depth }); (n.kids||[]).forEach(k => walk2(k, depth+1)); })(chain2, 0);
+    let inner = '', prev = null;
+    flat.forEach((f, i) => {
+      const spData = bySpecies[f.n.sp]?.find(x=>x.default) || bySpecies[f.n.sp]?.[0];
+      if (!spData) return;
+      if (prev !== null && f.depth <= prev) inner += `<span class="arrow">→</span>`;
+      else if (i > 0 && f.depth > prev) inner += `<span class="arrow">↳</span>`;
+      const cond = (f.n.cond || [])[0];
+      const condTxt = condText(cond);
+      inner += `<div class="ebtn ${spData.species === p.species ? 'cur' : ''}" data-sp="${f.n.sp}">
+        <img src="${spData.img||''}" loading="lazy" onerror="this.style.opacity=.15">
+        <span>${spData.zh || f.n.sp}<small class="cond">${condTxt ? '<b>' + condTxt + '</b>' : (i===0?'起点形态':'')}</small></span>
+      </div>`;
+      prev = f.depth;
+    });
+    evoHtml = `<div class="sec"><div class="sec-title">进化链<span class="cnt">${flat.length} 阶段</span></div><div class="evo">${inner}</div></div>`;
+  }
+
+  // 招式表（本 species 的并集）
+  const mvNames = ex.moves || [];
+  const rows = mvNames.map(n => MOVES[n] ? { n, ...MOVES[n] } : null).filter(Boolean)
+    .sort((a,b) => (b.power||0)-(a.power||0) || (a.zh||a.n).localeCompare(b.zh||b.n, 'zh'));
+  let movesHtml;
+  if (rows.length) {
+    const body = rows.map(m => {
+      const zp = zPowerOf(m.power, m.cls);
+      return `<tr data-n="${(m.zh||m.n).toLowerCase()}" data-e="${m.n}" data-t="${TYPE_ZH[m.type]||m.type}">
+        <td class="nm">${m.zh || m.n}</td>
+        <td><span class="mv-badge" style="background:${TYPE_COLOR[m.type]||'#999'}">${TYPE_ZH[m.type]||m.type}</span></td>
+        <td>${m.cls==='physical'?'物理':m.cls==='special'?'特殊':'变化'}</td>
+        <td class="num">${m.power||'—'}</td>
+        <td class="num">${m.acc==null?'—':m.acc}</td>
+        <td class="num">${zp ? zp : (m.cls==='status'?'—':'')}</td>
+      </tr>`;
+    }).join('');
+    movesHtml = `<div class="sec">
+      <div class="sec-title">可学招式<span class="cnt">${rows.length}</span></div>
+      <div class="mvFilter"><input id="mvQ" placeholder="筛选招式名或属性，如：火焰 / 龙" autocomplete="off"></div>
+      <div class="moves"><table class="mv"><thead><tr>
+        <th>招式</th><th>属性</th><th>分类</th><th>威力</th><th>命中</th><th>Z威力</th>
+      </tr></thead><tbody>${body}</tbody></table></div>
+    </div>`;
+  } else {
+    movesHtml = `<div class="sec"><div class="sec-title">可学招式</div>
+      <div style="color:var(--muted);font-size:12px">暂无招式数据</div></div>`;
+  }
+
+  // 其它形态
+  let formsHtml = '';
+  if (group.length > 1) {
+    formsHtml = `<div class="sec"><div class="sec-title">其它形态<span class="cnt">${group.length}</span></div>
+      <div class="forms">${group.map(x =>
+        `<div class="fbtn ${x.id===p.id?'cur':''}" data-id="${x.id}">
+          <img src="${x.img||''}" loading="lazy" onerror="this.style.opacity=.15">
+          <span>${formLabel(x) || '基础形态'}</span>
+        </div>`).join('')}</div></div>`;
+  }
+
+  document.getElementById('m-body').innerHTML = `
+    <div class="dTop" style="--g1:${tone(c0,-0.05)};--g2:${tone(c1,-0.5)}">
+      <div class="dArt"><img src="${p.img||''}" alt="" onerror="this.style.opacity=.15"></div>
+      <div class="dInfo">
+        <div class="dNum">NO.${String(p.baseId).padStart(4,'0')}${p.id>10000?` · 形态 ${p.id}`:''} · 第 ${p.gen} 世代</div>
+        <h2>${p.zh||'—'}<em>${p.name.replace(/-/g,' ')}</em></h2>
+        <div class="dTypes">${types}</div>
+        <div class="dQuick">
+          <span>身高 ${(p.height/10).toFixed(1)} m</span>
+          <span>体重 ${(p.weight/10).toFixed(1)} kg</span>
+          ${label ? `<span>${label}</span>` : ''}
+          ${total ? `<span>种族值 ${total}</span>` : ''}
+        </div>
+        <div class="dActions">
+          <button id="mFav" class="${fav?'on':''}">${fav?'★ 已收藏':'☆ 收藏'}</button>
+          <button id="mTeam" class="${inTeam?'on':''}">${inTeam?'✓ 已在队伍':'+ 加入队伍'}</button>
+          <button id="mLink">🔗 复制链接</button>
+        </div>
+      </div>
+    </div>
+    <div class="dBody">
+      <div class="dCol">
+        ${bars ? `<div class="sec"><div class="sec-title">种族值</div>${bars}</div>` : ''}
+        ${hasStats ? `<div class="sec"><div class="sec-title">种族值分布</div>${radarSVG(stats)}</div>` : ''}
+        <div class="sec"><div class="sec-title">属性相性<span class="cnt">防御视角</span></div>${matchupHTML(p.types)}</div>
+      </div>
+      <div class="dCol">
+        ${abilHtml}${evoHtml}${movesHtml}${formsHtml}
+      </div>
+    </div>`;
+
+  // ---- 事件绑定 ----
+  document.getElementById('mFav').onclick = function() {
+    toggleFav(p.id);
+    this.classList.toggle('on', favs.has(p.id));
+    this.textContent = favs.has(p.id) ? '★ 已收藏' : '☆ 收藏';
+  };
+  document.getElementById('mTeam').onclick = function() {
+    const i = team.indexOf(p.id);
+    if (i >= 0) team.splice(i, 1);
+    else {
+      if (team.length >= 6) {
+        this.textContent = '队伍已满（6/6）';
+        setTimeout(() => { this.textContent = '+ 加入队伍'; }, 1400);
+        return;
+      }
+      team.push(p.id);
+    }
+    store.set('team', team);
+    this.classList.toggle('on', team.includes(p.id));
+    this.textContent = team.includes(p.id) ? '✓ 已在队伍' : '+ 加入队伍';
+    syncTeamBar();
+  };
+  document.getElementById('mLink').onclick = function() {
+    const url = location.origin + location.pathname + '#p/' + p.id;
+    history.replaceState(null, '', '#p/' + p.id);
+    const done = () => { this.textContent = '✓ 链接已复制'; setTimeout(() => { this.textContent = '🔗 复制链接'; }, 1400); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, done);
+    else done();
+  };
+  const mvQ = document.getElementById('mvQ');
+  if (mvQ) mvQ.oninput = () => {
+    const q = mvQ.value.trim().toLowerCase();
+    document.querySelectorAll('#m-body .moves tbody tr').forEach(tr => {
+      tr.style.display = (!q || tr.dataset.n.includes(q) || tr.dataset.e.includes(q) || tr.dataset.t.includes(q)) ? '' : 'none';
+    });
+  };
+  document.querySelectorAll('#m-body .fbtn').forEach(b => {
+    b.onclick = () => { const t = DEX.find(x => x.id == b.dataset.id); if (t) showModal(t); };
+  });
+  document.querySelectorAll('#m-body .ebtn').forEach(b => {
+    b.onclick = () => { const t = (bySpecies[b.dataset.sp]||[]).find(x=>x.default) || (bySpecies[b.dataset.sp]||[])[0]; if (t) showModal(t); };
+  });
+  mask.classList.add('show');
+  document.getElementById('modal').scrollTop = 0;
+}
+
+/* ================= 属性克制表 ================= */
+const typeMask = document.getElementById('typeMask');
+typeMask.onclick = e => { if (e.target === typeMask) typeMask.classList.remove('show'); };
+document.getElementById('btn-typechart').onclick = () => {
+  let html = '<table><tr><th>攻↓防→</th>' + TYPE_ORDER.map(t => `<th><span class="mv-badge" style="background:${TYPE_COLOR[t]};display:inline-block">${TYPE_ZH[t]}</span></th>`).join('') + '</tr>';
+  TYPE_ORDER.forEach(atk => {
+    html += `<tr><th><span class="mv-badge" style="background:${TYPE_COLOR[atk]};display:inline-block">${TYPE_ZH[atk]}</span></th>`;
+    TYPE_ORDER.forEach(def => {
+      const m = CHART[atk]?.[def];
+      const cls = m === 2 || m === 4 ? 'x2' : m === .5 ? 'x05' : m === 0 ? 'x0' : '';
+      html += `<td class="${cls}">${m === undefined ? '' : (m === 0 ? '0' : m === .5 ? '½' : m)}</td>`;
+    });
+    html += '</tr>';
+  });
+  html += '</table>';
+  document.getElementById('typeChart').innerHTML = html;
+  typeMask.classList.add('show');
+};
+
+/* ================= 组队栏 ================= */
+const teamBar = document.getElementById('teamBar');
+document.getElementById('btn-team').onclick = function() {
+  const on = teamBar.classList.toggle('show');
+  this.classList.toggle('on', on);
+  syncTeamBar();
+};
+function syncTeamBar() {
+  if (!teamBar.classList.contains('show')) return;
+  document.getElementById('teamCount').textContent = team.length + '/6';
+  const slots = document.getElementById('teamSlots');
+  slots.innerHTML = '';
+  for (let i = 0; i < 6; i++) {
+    const s = document.createElement('div'); s.className = 'slot';
+    const id = team[i];
+    if (id) {
+      const p = DEX.find(x => x.id === id);
+      if (p) {
+        s.style.borderStyle = 'solid';
+        s.style.borderColor = TYPE_COLOR[p.types[0]] || 'var(--line)';
+        s.innerHTML = `<img src="${p.img||''}" alt="${p.zh||p.name}">`;
+        s.title = `${p.zh || p.name}（点击移出）`;
+        s.onclick = () => { team.splice(i, 1); store.set('team', team); syncTeamBar(); };
+      }
+    } else {
+      s.textContent = '+';
+      s.style.color = 'var(--muted)';
+      s.style.cursor = 'pointer';
+      s.title = '随机加入一只（优先从收藏里取）';
+      s.onclick = () => {
+        const pool = [...favs].filter(x => !team.includes(x));
+        const src = pool.length ? pool : SORTED.filter(x => x.default).map(x => x.id);
+        if (src.length) { team.push(src[Math.floor(Math.random()*src.length)]); store.set('team', team); syncTeamBar(); }
+      };
+    }
+    slots.appendChild(s);
+  }
+}
+document.getElementById('teamClear').onclick = () => { team = []; store.set('team', team); syncTeamBar(); };
+
+/* ================= 队伍分析 ================= */
+const anaMask = document.getElementById('anaMask');
+anaMask.onclick = e => { if (e.target === anaMask) anaMask.classList.remove('show'); };
+document.querySelector('#anaModal .close').onclick = () => anaMask.classList.remove('show');
+document.getElementById('teamAnalyze').onclick = () => { renderAnalysis(); anaMask.classList.add('show'); };
+
+function renderAnalysis() {
+  const box = document.getElementById('anaBody');
+  const members = team.map(id => DEX.find(x => x.id === id)).filter(Boolean);
+  if (!members.length) {
+    box.innerHTML = `<h3>队伍分析</h3><div class="asub">队伍还是空的 —— 在图鉴里打开任意宝可梦，点「+ 加入队伍」即可。</div>`;
+    return;
+  }
+  // 打击面：本系属性（STAB）能打出 2× 以上的防守属性
+  const covered = new Set();
+  members.forEach(m => m.types.forEach(t => {
+    TYPE_ORDER.forEach(def => { if ((CHART[t]?.[def] || 1) > 1) covered.add(def); });
+  }));
+  // 防守弱点：每个属性被几只成员弱克
+  const weakCount = {};
+  members.forEach(m => {
+    const mu = matchupOf(m.types);
+    [...mu.x4, ...mu.x2].forEach(t => { weakCount[t] = (weakCount[t] || 0) + 1; });
+  });
+  const threats = Object.entries(weakCount).filter(([,n]) => n >= 2).sort((a,b) => b[1] - a[1]);
+  const totals = members.map(statTotal).filter(v => v > 0);
+  const avg = totals.length ? Math.round(totals.reduce((a,b) => a+b, 0) / totals.length) : 0;
+  const maxWeak = threats.length ? threats[0][1] : 1;
+  const fastest = members.map(m => m).sort((a,b) => ((statsOf(b)?.speed||0) - (statsOf(a)?.speed||0)))[0];
+
+  box.innerHTML = `
+    <h3>队伍分析</h3>
+    <div class="asub">基于本系属性（STAB）的打击面与共同弱点诊断，帮你发现阵容缺口</div>
+    <div class="anaMetric" style="margin-top:16px">
+      <div><b>${members.length}<span style="font-size:12px;color:var(--muted)">/6</span></b><span>队伍成员</span></div>
+      <div><b>${avg || '—'}</b><span>平均种族值</span></div>
+      <div><b>${covered.size}<span style="font-size:12px;color:var(--muted)">/18</span></b><span>打击面覆盖</span></div>
+      <div><b style="${threats.length?'color:#d63031':''}">${threats.length}</b><span>共同弱点属性</span></div>
+    </div>
+    <div class="anaBar"><i style="width:${covered.size/18*100}%;background:linear-gradient(90deg,#00b894,#55efc4)"></i></div>
+    <div style="font-size:11px;color:var(--muted)">打击面 = 队伍本系招式中能造成 2× 以上伤害的属性种类</div>
+
+    <div class="sec-title" style="margin-top:20px">对 18 属性的打击覆盖</div>
+    <div class="coverage">${TYPE_ORDER.map(t =>
+      `<span class="cv ${covered.has(t) ? '' : 'off'}"${covered.has(t) ? ` style="background:${TYPE_COLOR[t]}"` : ''}>${TYPE_ZH[t]}</span>`
+    ).join('')}</div>
+
+    <div class="sec-title" style="margin-top:22px">防守诊断</div>
+    ${threats.length
+      ? threats.map(([t, n]) => `<div class="threatRow">
+          <span class="mchip" style="background:${TYPE_COLOR[t]}">${TYPE_ZH[t]}</span>
+          <span class="thBar"><i style="width:${n/maxWeak*100}%"></i></span>
+          <span class="thN">${n} 只弱</span>
+        </div>`).join('') +
+        `<div style="font-size:11.5px;color:var(--muted);margin-top:8px">
+          ⚠ 这些属性是阵容的结构性缺口，建议补一只抗性成员，或准备对策招式。</div>`
+      : `<div style="font-size:12.5px;color:var(--text2);line-height:1.8">
+          ✅ 没有 2 只以上成员被同一属性弱克，防守结构健康。<br>
+          速度最快：<b>${fastest ? (fastest.zh || fastest.name) : '—'}</b>${fastest && statsOf(fastest) ? '（速度 ' + statsOf(fastest).speed + '）' : ''}
+        </div>`}
+
+    <div class="sec-title" style="margin-top:22px">成员明细<span class="cnt">${members.length} 只</span></div>
+    ${members.map((m, i) => {
+      const s = statsOf(m);
+      const tot = s ? Object.values(s).reduce((a,b) => a+b, 0) : null;
+      return `<div class="anaRow">
+        <img src="${m.img||''}" loading="lazy" onerror="this.style.opacity=.15">
+        <div style="flex:1;min-width:0">
+          <div class="anm">${m.zh || m.name}<small>${m.name.replace(/-/g,' ')}</small></div>
+          <div class="atypes">${m.types.map(t =>
+            `<span class="badge" style="background:${TYPE_COLOR[t]}">${TYPE_ZH[t]}</span>`).join('')}</div>
+          ${tot ? `<div class="astat">种族值 ${tot}${s.speed >= 100 ? ' · 速度 ' + s.speed : ''}</div>` : ''}
+        </div>
+        <button class="adel" title="移出队伍" data-i="${i}">×</button>
+      </div>`;
+    }).join('')}`;
+
+  box.querySelectorAll('.adel').forEach(b => b.onclick = () => {
+    team.splice(+b.dataset.i, 1);
+    store.set('team', team);
+    syncTeamBar();
+    renderAnalysis();
+  });
+}
+
+/* ================= 每日一宠 ================= */
+/* 规则：以当天日期做种，每天 0 点自动换一只（同一天刷新不变，这是「每日」的本意）；
+   右上角 ↻ 可随时手动换一只，手动结果在当天内保持，跨日自动复位。 */
+const DAILY_POOL = SORTED.filter(p => p.default && p.zh);
+const dailyEl = document.getElementById('daily');
+
+/** 当天日期戳：20261003 */
+function todayStamp() {
+  const d = new Date();
+  return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
+}
+
+/** 32 位整型哈希。原来写 seed*2654435761 会超出 2^53，低位被浮点吃掉，这里换成安全写法 */
+function hash32(n) {
+  n = n | 0;
+  n = Math.imul(n ^ (n >>> 16), 0x45d9f3b);
+  n = Math.imul(n ^ (n >>> 16), 0x45d9f3b);
+  return (n ^ (n >>> 16)) >>> 0;
+}
+
+/** 按日期取固定的一只 */
+function dailyIndexOf(stamp, len) {
+  return hash32(stamp) % len;
+}
+
+/** 距次日 0 点的剩余时间，用于让用户看出这张卡是「会变的」 */
+function msToMidnight() {
+  const n = new Date();
+  const t = new Date(n.getFullYear(), n.getMonth(), n.getDate() + 1, 0, 0, 0, 0);
+  return t - n;
+}
+
+let dailyPick = null;      // 当前展示的对象
+let dailyManual = false;   // 是否被手动换过
+
+/** 渲染每日一宠卡片 */
+function paintDaily(p, manual) {
+  if (!p) return;
+  dailyPick = p;
+  dailyManual = !!manual;
+  const tc = TYPE_COLOR[p.types[0]] || '#9099a1';
+  const tc2 = TYPE_COLOR[p.types[1]] || tc;
+  document.getElementById('dailyImg').src = p.img || '';
+  document.getElementById('dailyName').textContent = p.zh;
+  document.getElementById('dailyLabel').textContent = manual ? 'RANDOM PICK' : "TODAY'S POKÉMON";
+  const tot = statTotal(p);
+  document.getElementById('dailySub').textContent =
+    `No.${String(p.baseId).padStart(4,'0')} · 第 ${p.gen} 世代${tot > 0 ? ' · 种族值 ' + tot : ''}`;
+  document.getElementById('dailyTypes').innerHTML = p.types.map(t =>
+    `<span class="badge" style="background:${TYPE_COLOR[t]}">${TYPE_ZH[t]}</span>`).join('');
+  dailyEl.style.setProperty('--tc', tc);
+  dailyEl.style.setProperty('--tcg', hexA(tc, .22));
+  dailyEl.onclick = () => showModal(p);
+  paintDailyNext();
+  // Hero 光晕跟随每日一宠的属性色；灰调属性（一般 / 恶 / 钢 等）保留品牌红紫更耐看
+  const vivid = hex => {
+    const n = parseInt(hex.slice(1), 16);
+    const r = (n>>16)&255, g = (n>>8)&255, b = n&255;
+    const mx = Math.max(r,g,b), mn = Math.min(r,g,b);
+    return mx ? (mx - mn) / mx : 0;
+  };
+  const head = document.querySelector('header');
+  head.style.removeProperty('--glowA');
+  head.style.removeProperty('--glowB');
+  if (vivid(tc) >= 0.28) head.style.setProperty('--glowA', hexA(tc, .24));
+  if (vivid(tc2) >= 0.28) head.style.setProperty('--glowB', hexA(tc2, .17));
+}
+
+/** 倒计时文案：明说这张卡什么时候会换 */
+function paintDailyNext() {
+  const el = document.getElementById('dailyNext');
+  if (!el) return;
+  const m = Math.max(0, msToMidnight());
+  const h = Math.floor(m / 3600000), mi = Math.floor(m % 3600000 / 60000);
+  const cd = h > 0 ? `${h} 小时 ${mi} 分` : `${mi} 分钟`;
+  el.innerHTML = dailyManual
+    ? `<span class="dot"></span>已手动更换 · 明日 0 点自动复位`
+    : `<span class="dot"></span>每天 0 点自动更换 · 距下次 ${cd}`;
+}
+
+(function initDaily() {
+  const stamp = todayStamp();
+  const saved = store.get('dailyPick', null);
+  let p = null, manual = false;
+  if (saved && saved.d === stamp && saved.manual) {
+    p = DAILY_POOL.find(x => x.id === saved.id) || null;
+    manual = !!p;
+  }
+  if (!p) {
+    p = DAILY_POOL[dailyIndexOf(stamp, DAILY_POOL.length)];
+    manual = false;
+  }
+  paintDaily(p, manual);
+
+  // 换一只：随机，避开当前这只
+  document.getElementById('dailyDice').onclick = e => {
+    e.stopPropagation();
+    if (DAILY_POOL.length < 2) return;
+    let n = dailyPick;
+    while (n === dailyPick) n = DAILY_POOL[Math.floor(Math.random() * DAILY_POOL.length)];
+    store.set('dailyPick', { d: todayStamp(), id: n.id, manual: true });
+    paintDaily(n, true);
+  };
+
+  // 每分钟刷一次倒计时；跨过 0 点就自动换新
+  let curStamp = stamp;
+  setInterval(() => {
+    const now = todayStamp();
+    if (now !== curStamp) {
+      curStamp = now;
+      store.set('dailyPick', null);
+      paintDaily(DAILY_POOL[dailyIndexOf(now, DAILY_POOL.length)], false);
+    } else {
+      paintDailyNext();
+    }
+  }, 30000);
+})();
+
+/* ================= 哈希路由（可分享链接） ================= */
+function routeFromHash() {
+  const h = location.hash.replace(/^#/, '');
+  const m1 = h.match(/^p\/(\d+)$/);
+  if (m1) {
+    const p = DEX.find(x => x.id == m1[1]);
+    if (p) { if (curView !== 'dex') setView('dex'); showModal(p); }
+    return;
+  }
+  const m2 = h.match(/^g\/(\d+)\/(\d+)$/);
+  if (m2) { if (curView !== 'gym') setView('gym'); showGym(+m2[1], +m2[2]); }
+}
+window.addEventListener('hashchange', routeFromHash);
+
+/* ================= 键盘导航 ================= */
+document.addEventListener('keydown', e => {
+  const tag = (e.target.tagName || '').toLowerCase();
+  const typing = tag === 'input' || tag === 'textarea' || tag === 'select';
+  if (e.key === '/' && !typing) { e.preventDefault(); searchEl.focus(); return; }
+  if (mask.classList.contains('show') && curP && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) {
+    const i = SORTED.findIndex(x => x.id === curP.id);
+    const j = e.key === 'ArrowLeft' ? i - 1 : i + 1;
+    if (j >= 0 && j < SORTED.length) {
+      e.preventDefault();
+      const np = SORTED[j];
+      showModal(np);
+      history.replaceState(null, '', '#p/' + np.id);
+    }
+  }
+});
+
+/* ================= 工具栏滚动阴影 ================= */
+const toolbarEl = document.getElementById('toolbar');
+window.addEventListener('scroll', () => {
+  toolbarEl.classList.toggle('scrolled', window.scrollY > 8);
+}, { passive: true });
+
+/* ================= 深色模式 ================= */
+const btnDark = document.getElementById('btn-dark');
+if (store.get('dark', false)) document.body.classList.add('dark');
+function paintDarkBtn() {
+  btnDark.innerHTML = document.body.classList.contains('dark')
+    ? '<span class="ic">☀</span>浅色' : '<span class="ic">🌙</span>深色';
+}
+paintDarkBtn();
+btnDark.onclick = () => {
+  document.body.classList.toggle('dark');
+  store.set('dark', document.body.classList.contains('dark'));
+  paintDarkBtn();
+};
+
+/* ================= 随机一只 ================= */
+document.getElementById('btn-random').onclick = () => {
+  const p = SORTED[Math.floor(Math.random() * SORTED.length)];
+  showModal(p);
+};
+
+/* ================= 视图切换（图鉴 / 道馆馆主） ================= */
+let curView = 'dex';
+function setView(v) {
+  curView = v;
+  document.getElementById('btn-dex').classList.toggle('on', v === 'dex');
+  document.getElementById('btn-gym').classList.toggle('on', v === 'gym');
+  document.getElementById('grid').style.display = v === 'dex' ? '' : 'none';
+  document.getElementById('gymView').style.display = v === 'gym' ? '' : 'none';
+  ['gen-row','type-row','form-row','sort-row'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = v === 'dex' ? '' : 'none';
+  });
+  searchEl.placeholder = v === 'gym'
+    ? '搜索馆主姓名 / 城市 / 徽章 / 队伍宝可梦，如：小霞、灰色徽章、大岩蛇'
+    : '搜索中文名 / 英文名 / 编号，如：喷火龙、charizard、006';
+  if (v === 'gym') {
+    document.getElementById('more').style.display = 'none';   // 道馆视图不显示图鉴的「加载更多」
+    renderGyms();
+  } else { apply(); }
+}
+document.getElementById('btn-dex').onclick = () => setView('dex');
+document.getElementById('btn-gym').onclick = () => setView('gym');
+
+/* ================= 道馆馆主模块 ================= */
+let gymGen = 0;
+
+/* ---- 馆主立绘 / 徽章图片路径 ---- */
+function leaderImg(en) {
+  const v = LIMG[en];
+  if (!v) return null;
+  if (typeof v === 'object') return v.u || null;   // {u:地址, g:游戏标签}，离线版里 u 是 base64
+  return `images/leaders/${v}.webp`;               // 纯 slug 兜底
+}
+function badgeMeta(badgeEn, gen) {
+  // 优先按「世代|徽章名」查（第8世代伽勒尔与第9世代帕底亚有同名徽章），再退回全局键
+  return BIMG[gen + '|' + badgeEn] || BIMG[badgeEn] || null;
+}
+function badgeImg(badgeEn, gen) {
+  const v = badgeMeta(badgeEn, gen);
+  if (!v) return null;
+  return typeof v === 'object' ? (v.u || null) : v;
+}
+
+/* ---- 属性中文单字（用于 Z 纯晶 / 兜底徽章中央） ---- */
+const TYPE_ONE = {
+  normal:'一', fire:'火', water:'水', electric:'电', grass:'草', ice:'冰',
+  fighting:'格', poison:'毒', ground:'地', flying:'飞', psychic:'超', bug:'虫',
+  rock:'岩', ghost:'幽', dragon:'龙', dark:'恶', steel:'钢', fairy:'妖'
+};
+
+/* ================= 徽章矢量图 =================
+   设计：世代决定外形轮廓，属性决定配色，中央是属性单字。
+   阿罗拉（第7世代）没有道馆徽章，是「试炼」，用 Z 纯晶造型（菱形水晶）。
+   官方徽章位图可用时优先用位图；这个矢量版是兜底重绘，UI 上会如实标注。
+*/
+const BADGE_SHAPE_BY_GEN = {
+  1: 'circle', 2: 'hex', 3: 'shield', 4: 'octagon',
+  5: 'rounded', 6: 'diamond', 7: 'crystal', 8: 'ring', 9: 'star'
+};
+
+/** 星形顶点（第9世代帕底亚） */
+function starPoints(cx, cy, spikes, outer, inner) {
+  const pts = [];
+  for (let i = 0; i < spikes * 2; i++) {
+    const r = i % 2 === 0 ? outer : inner;
+    const a = (Math.PI / spikes) * i - Math.PI / 2;
+    pts.push(`${(cx + r * Math.cos(a)).toFixed(1)},${(cy + r * Math.sin(a)).toFixed(1)}`);
+  }
+  return pts.join(' ');
+}
+
+/** 按世代返回徽章外形元素 */
+function badgeShapeEl(gen, attrs) {
+  switch (BADGE_SHAPE_BY_GEN[gen] || 'circle') {
+    case 'hex':     return `<polygon points="32,3 57,17.5 57,46.5 32,61 7,46.5 7,17.5" ${attrs}/>`;
+    case 'shield':  return `<path d="M32 3 L58 13 V33 C58 47 46 57 32 62 C18 57 6 47 6 33 V13 Z" ${attrs}/>`;
+    case 'octagon': return `<polygon points="32,3 52.5,11.5 61,32 52.5,52.5 32,61 11.5,52.5 3,32 11.5,11.5" ${attrs}/>`;
+    case 'rounded': return `<rect x="5" y="5" width="54" height="54" rx="16" ${attrs}/>`;
+    case 'diamond': return `<polygon points="32,3 61,32 32,61 3,32" ${attrs}/>`;
+    case 'crystal': return `<polygon points="32,2 52,25 32,62 12,25" ${attrs}/>`;
+    case 'star':    return `<polygon points="${starPoints(32, 32, 6, 30, 24)}" ${attrs}/>`;
+    case 'ring':    return `<circle cx="32" cy="32" r="29" ${attrs}/>`;
+    default:        return `<circle cx="32" cy="32" r="29" ${attrs}/>`;
+  }
+}
+
+/** 生成一枚徽章矢量图 */
+function badgeSVG(gen, type, size) {
+  size = size || 58;
+  const c = TYPE_COLOR[type] || '#999';
+  const dk = tone(c, -0.5), lt = tone(c, 0.55);
+  const ch = TYPE_ONE[type] || '?';
+  const id = 'bd' + Math.random().toString(36).slice(2, 7);
+  const shape = BADGE_SHAPE_BY_GEN[gen] || 'circle';
+  const main = badgeShapeEl(gen, `fill="url(#${id})" stroke="${dk}" stroke-width="2" stroke-linejoin="round"`);
+  const inner = badgeShapeEl(gen,
+    `fill="none" stroke="#fff" stroke-opacity=".38" stroke-width="1.4" stroke-linejoin="round"` +
+    ` transform="translate(32,32) scale(.78) translate(-32,-32)"`);
+  const facet = shape === 'crystal' ? '<path d="M12 25 L52 25" stroke="#fff" stroke-opacity=".45" stroke-width="1.2"/>' : '';
+  // 第8世代（伽勒尔）圆形徽章外加一圈齿轮刻度，与第1世代区分
+  const ticks = shape === 'ring'
+    ? Array.from({ length: 12 }, (_, i) => {
+        const a = i * Math.PI / 6;
+        return `<circle cx="${(32 + 29 * Math.cos(a)).toFixed(1)}" cy="${(32 + 29 * Math.sin(a)).toFixed(1)}" r="1.8" fill="${dk}"/>`;
+      }).join('')
+    : '';
+  return `<svg class="badgeImg" viewBox="0 0 64 64" width="${size}" height="${size}" aria-hidden="true">
+    <defs>
+      <linearGradient id="${id}" x1="0.15" y1="0" x2="0.85" y2="1">
+        <stop offset="0" stop-color="${lt}"/>
+        <stop offset=".48" stop-color="${c}"/>
+        <stop offset="1" stop-color="${dk}"/>
+      </linearGradient>
+      <radialGradient id="${id}s" cx="0.3" cy="0.22" r="0.55">
+        <stop offset="0" stop-color="#fff" stop-opacity=".55"/>
+        <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    ${main}
+    ${ticks}
+    ${badgeShapeEl(gen, `fill="url(#${id}s)"`)}
+    ${inner}
+    ${facet}
+    <text x="32" y="40" text-anchor="middle" font-size="18.5" font-weight="700" fill="#fff"
+      stroke="rgba(0,0,0,.5)" stroke-width="1" paint-order="stroke"
+      font-family="inherit">${ch}</text>
+  </svg>`;
+}
+
+/** 徽章展示：官方游戏素材优先，确实没有才用矢量重绘兜底 */
+function badgeVisual(L, size, gen) {
+  size = size || 58;
+  const fb = badgeSVG(gen, L.type, size);
+  const meta = badgeMeta(L.badgeEn, gen);
+  const src = meta ? (typeof meta === 'object' ? meta.u : meta) : null;
+  if (!src) return { html: fb, official: false, meta: null };
+  return {
+    html: `<img class="badgeImg" src="${src}" alt="${L.badge}" loading="lazy" data-fb="${fb.replace(/"/g, '&quot;')}" onerror="this.outerHTML=this.dataset.fb">`,
+    official: true,
+    meta: typeof meta === 'object' ? meta : null
+  };
+}
+
+// 解析队伍成员：优先精确形态名，其次该物种的默认形态
+function monOf(sp) {
+  return DEX.find(p => p.name === sp)
+    || DEX.find(p => p.species === sp && p.default)
+    || DEX.find(p => p.species === sp) || null;
+}
+function shade(hex) {
+  const n = parseInt(hex.slice(1), 16);
+  return `rgb(${Math.max(0,(n>>16)-42)},${Math.max(0,((n>>8)&255)-42)},${Math.max(0,(n&255)-42)})`;
+}
+/** 明暗微调：amt>0 变亮，amt<0 变暗（用于渐变） */
+function tone(hex, amt) {
+  const n = parseInt(hex.slice(1), 16);
+  let r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255;
+  if (amt >= 0) { r += (255 - r) * amt; g += (255 - g) * amt; b += (255 - b) * amt; }
+  else { r *= (1 + amt); g *= (1 + amt); b *= (1 + amt); }
+  return `rgb(${r | 0},${g | 0},${b | 0})`;
+}
+function leaderMatch(L, g, q) {
+  if (!q) return true;
+  const bag = [L.name, L.en||'', L.city||'', L.badge||'', L.badgeEn||'', g.region||''].join(' ').toLowerCase();
+  if (bag.includes(q)) return true;
+  return (L.team||[]).some(t => {
+    const m = monOf(t.sp);
+    return m && ((m.zh||'').includes(q) || m.name.includes(q));
+  });
+}
+function renderGyms() {
+  const box = document.getElementById('gymView');
+  const q = searchEl.value.trim().toLowerCase();
+  const totalLeaders = GYMS.gens.reduce((a,g) => a + g.leaders.length, 0);
+  let html = '<div class="gymGenRow"><span class="lbl" style="font-size:12px;color:var(--muted);margin-right:2px">世代</span>';
+  html += `<div class="chip gen ${gymGen===0?'on':''}" data-g="0">全部</div>`;
+  GYMS.gens.forEach(g => {
+    const dim = g.leaders.length === 0;
+    html += `<div class="chip gen ${gymGen===g.gen?'on':''}" data-g="${g.gen}" ${dim?'style="opacity:.5"':''}>第${g.gen}世代</div>`;
+  });
+  html += `<span style="font-size:12px;color:var(--muted);margin-left:auto">共 ${totalLeaders} 位馆主</span></div>`;
+
+  let anyHit = false;
+  // 有搜索词时跨世代全局搜索（不受世代筛选限制），否则按选中的世代过滤
+  const useGen = q ? 0 : gymGen;
+  GYMS.gens.forEach(g => {
+    if (useGen && g.gen !== useGen) return;
+    const leaders = g.leaders.filter(L => leaderMatch(L, g, q));
+    if (!leaders.length && !g.gymNote) return;
+    if (leaders.length) anyHit = true;
+    html += `<div class="genHead"><h3>第 ${g.gen} 世代 · ${g.region}</h3><div class="gmeta">🎮 ${g.games}</div>`;
+    if (g.gymNote) html += `<div class="gnotice">${g.gymNote}</div>`;
+    html += '</div>';
+    if (!leaders.length) return;
+    html += '<div class="leaderGrid">';
+    leaders.forEach(L => {
+      const color = TYPE_COLOR[L.type] || '#999';
+      const art = leaderImg(L.en);
+      const bv = badgeVisual(L, 26, g.gen);
+      html += `<div class="leaderCard" data-g="${g.gen}" data-i="${g.leaders.indexOf(L)}">
+        <div class="lavatar" style="--tc:${color}">
+          ${art ? `<img src="${art}" alt="${L.name} 立绘" loading="lazy">`
+                : `<span class="noname">${(TYPE_ONE[L.type] || '?')}</span>`}
+          <span class="ltypePill">${TYPE_ZH[L.type] || L.type}</span>
+        </div>
+        <div class="linfo">
+          <div class="lname">${L.name}<span class="len">${L.en||''}</span></div>
+          <div class="lrow">
+            <span>${L.city||''}</span>
+            ${L.ver?`<span class="verTag">${L.ver}</span>`:''}
+            ${L.trial?`<span class="trialTag">试炼</span>`:''}
+          </div>
+          <div class="lbadge">${bv.html}<b>${L.badge}</b><small>${L.badgeEn||''}</small></div>
+          <div class="lrow">队伍 ${(L.team||[]).length} 只</div>
+        </div>
+      </div>`;
+    });
+    html += '</div>';
+  });
+  if (!anyHit && !GYMS.gens.some(g => (useGen===0 || g.gen===useGen) && g.gymNote))
+    html += '<div class="empty">没有匹配的馆主或宝可梦</div>';
+  html += `<div class="gsource">
+    馆主立绘：Pokémon Showdown 官方训练师立绘（原作像素风格）·
+    徽章：各世代游戏内官方徽章图（Bulbagarden Archives / 宝可梦维基素材，已本地化）
+  </div>`;
+  box.innerHTML = html;
+  box.querySelectorAll('.gymGenRow .chip').forEach(c => c.onclick = () => { gymGen = +c.dataset.g; renderGyms(); });
+  box.querySelectorAll('.leaderCard').forEach(c => c.onclick = () => showGym(+c.dataset.g, +c.dataset.i));
+}
+const gymMask = document.getElementById('gymMask');
+gymMask.onclick = e => { if (e.target === gymMask) gymMask.classList.remove('show'); };
+document.querySelector('#gymModal .close').onclick = () => gymMask.classList.remove('show');
+function showGym(gen, idx) {
+  const g = GYMS.gens.find(x => x.gen === gen);
+  const L = g && g.leaders[idx];
+  if (!L) return;
+  const color = TYPE_COLOR[L.type] || '#999';
+  const art = leaderImg(L.en);
+  const artGame = (LIMG[L.en] && LIMG[L.en].g) || '';
+  let html = `<div class="gdetailHead" style="--tc:${color}">
+    <div class="lart">
+      ${art ? `<img src="${art}" alt="${L.name} 立绘">`
+            : `<span class="noname">${(TYPE_ONE[L.type] || '?')}</span>`}
+      ${artGame ? `<span class="artTag">${artGame}</span>` : ''}
+    </div>
+    <div style="flex:1;min-width:0">
+      <h2>${L.name}</h2>
+      <div class="gsub">${L.en||''} · 第 ${gen} 世代 ${g.region}</div>
+      <div class="gsub">专精属性：<b style="color:${color}">${TYPE_ZH[L.type]||L.type}</b></div>
+      <div class="gsub">所在：${L.city||'—'}${L.ver?` · <span class="verTag">${L.ver}</span>`:''}${L.trial?` · <span class="trialTag">试炼</span>`:''}</div>
+    </div>
+  </div>`;
+  const bv = badgeVisual(L, 96, gen);
+  const srcNote = bv.official
+    ? `官方游戏素材${(bv.meta && bv.meta.from) ? ' · 原图 ' + bv.meta.from : ''}`
+    : '暂无官方图 · 示意重绘';
+  html += `<div class="badgeBox">
+    <div class="bshow">${bv.html}</div>
+    <div class="btxt">
+      <b>${L.badge}</b>
+      <small>${L.badgeEn||''}${L.trial?' · 试炼奖励（Z 纯晶）':' · 道馆徽章'}</small>
+      <small class="bsrc">${srcNote}</small>
+    </div>
+  </div>`;
+  if (L.note) html += `<div class="gnotice">${L.note}</div>`;
+  html += `<div class="sec-title" style="margin:16px 0 2px;font-size:13px;color:var(--muted)">使用宝可梦（${(L.team||[]).length} 只）</div>`;
+  (L.team||[]).forEach(t => {
+    const mon = monOf(t.sp);
+    const zh = mon ? (mon.zh || mon.name) : t.sp;
+    const mv = (t.moves||[]).map(m => {
+      const md = MOVES[m] || {};
+      const mc = TYPE_COLOR[md.type] || '#999';
+      const clsZh = md.cls === 'physical' ? '物理' : md.cls === 'special' ? '特殊' : '变化';
+      return `<span class="mchip" style="background:${mc}" title="${md.zh||m}｜${clsZh}｜威力 ${md.power||'—'}｜命中 ${md.acc==null?'—':md.acc}">${md.zh||m}${md.power?`<small>${md.power}</small>`:''}</span>`;
+    }).join('');
+    html += `<div class="monRow">
+      <img src="${mon&&mon.img?mon.img:''}" loading="lazy" onerror="this.style.opacity=.15">
+      <div class="minfo">
+        <div class="mname">${zh}<small>${t.sp.replace(/-/g,' ')}</small><span class="mlv">Lv.${t.lv}</span></div>
+        <div class="mchips">${mv}</div>
+      </div>
+    </div>`;
+  });
+  document.getElementById('gymBody').innerHTML = html;
+  gymMask.classList.add('show');
+  document.getElementById('gymModal').scrollTop = 0;
+  history.replaceState(null, '', '#g/' + gen + '/' + idx);
+}
+
+apply();
+routeFromHash();
+</script>
+</body>
+</html>

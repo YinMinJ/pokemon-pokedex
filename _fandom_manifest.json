@@ -1,0 +1,772 @@
+{
+ "g1_boulder_badge": {
+  "gen": "1",
+  "leader": "小刚",
+  "badgeEn": "Boulder Badge",
+  "badgeCn": "灰色徽章",
+  "src": "fandom",
+  "w": 1280,
+  "h": 1280,
+  "bytes": 58018
+ },
+ "g1_cascade_badge": {
+  "gen": "1",
+  "leader": "小霞",
+  "badgeEn": "Cascade Badge",
+  "badgeCn": "蓝色徽章",
+  "src": "fandom",
+  "w": 858,
+  "h": 1280,
+  "bytes": 41144
+ },
+ "g1_thunder_badge": {
+  "gen": "1",
+  "leader": "马志士",
+  "badgeEn": "Thunder Badge",
+  "badgeCn": "橙色徽章",
+  "src": "fandom",
+  "w": 1280,
+  "h": 1280,
+  "bytes": 108718
+ },
+ "g1_rainbow_badge": {
+  "gen": "1",
+  "leader": "莉佳",
+  "badgeEn": "Rainbow Badge",
+  "badgeCn": "彩虹徽章",
+  "src": "fandom",
+  "w": 1280,
+  "h": 1280,
+  "bytes": 95594
+ },
+ "g1_soul_badge": {
+  "gen": "1",
+  "leader": "阿桔",
+  "badgeEn": "Soul Badge",
+  "badgeCn": "粉色徽章",
+  "src": "fandom",
+  "w": 1280,
+  "h": 1280,
+  "bytes": 55438
+ },
+ "g1_marsh_badge": {
+  "gen": "1",
+  "leader": "娜姿",
+  "badgeEn": "Marsh Badge",
+  "badgeCn": "金色徽章",
+  "src": "fandom",
+  "w": 1280,
+  "h": 1280,
+  "bytes": 84308
+ },
+ "g1_volcano_badge": {
+  "gen": "1",
+  "leader": "夏伯",
+  "badgeEn": "Volcano Badge",
+  "badgeCn": "火山徽章",
+  "src": "fandom",
+  "w": 1280,
+  "h": 1280,
+  "bytes": 83532
+ },
+ "g1_earth_badge": {
+  "gen": "1",
+  "leader": "坂木",
+  "badgeEn": "Earth Badge",
+  "badgeCn": "绿色徽章",
+  "src": "fandom",
+  "w": 1280,
+  "h": 1190,
+  "bytes": 72672
+ },
+ "g2_zephyr_badge": {
+  "gen": "2",
+  "leader": "阿速",
+  "badgeEn": "Zephyr Badge",
+  "badgeCn": "飞翼徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 37,
+  "bytes": 2426
+ },
+ "g2_hive_badge": {
+  "gen": "2",
+  "leader": "阿笔",
+  "badgeEn": "Hive Badge",
+  "badgeCn": "昆虫徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 41,
+  "bytes": 2252
+ },
+ "g2_plain_badge": {
+  "gen": "2",
+  "leader": "小茜",
+  "badgeEn": "Plain Badge",
+  "badgeCn": "常规徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 37,
+  "bytes": 1752
+ },
+ "g2_fog_badge": {
+  "gen": "2",
+  "leader": "松叶",
+  "badgeEn": "Fog Badge",
+  "badgeCn": "雾滴徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 35,
+  "bytes": 2158
+ },
+ "g2_storm_badge": {
+  "gen": "2",
+  "leader": "阿四",
+  "badgeEn": "Storm Badge",
+  "badgeCn": "风暴徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 34,
+  "bytes": 2002
+ },
+ "g2_mineral_badge": {
+  "gen": "2",
+  "leader": "阿蜜",
+  "badgeEn": "Mineral Badge",
+  "badgeCn": "矿物徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 40,
+  "bytes": 1556
+ },
+ "g2_glacier_badge": {
+  "gen": "2",
+  "leader": "柳伯",
+  "badgeEn": "Glacier Badge",
+  "badgeCn": "冰河徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 46,
+  "bytes": 3122
+ },
+ "g2_rising_badge": {
+  "gen": "2",
+  "leader": "小椿",
+  "badgeEn": "Rising Badge",
+  "badgeCn": "升龙徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 43,
+  "bytes": 2362
+ },
+ "g3_stone_badge": {
+  "gen": "3",
+  "leader": "杜娟",
+  "badgeEn": "Stone Badge",
+  "badgeCn": "岩石徽章",
+  "src": "fandom",
+  "w": 346,
+  "h": 345,
+  "bytes": 25424
+ },
+ "g3_knuckle_badge": {
+  "gen": "3",
+  "leader": "藤树",
+  "badgeEn": "Knuckle Badge",
+  "badgeCn": "拳击徽章",
+  "src": "fandom",
+  "w": 310,
+  "h": 286,
+  "bytes": 21606
+ },
+ "g3_dynamo_badge": {
+  "gen": "3",
+  "leader": "亚莎",
+  "badgeEn": "Dynamo Badge",
+  "badgeCn": "电力徽章",
+  "src": "fandom",
+  "w": 268,
+  "h": 343,
+  "bytes": 29836
+ },
+ "g3_heat_badge": {
+  "gen": "3",
+  "leader": "卡吉",
+  "badgeEn": "Heat Badge",
+  "badgeCn": "热量徽章",
+  "src": "fandom",
+  "w": 348,
+  "h": 353,
+  "bytes": 28954
+ },
+ "g3_balance_badge": {
+  "gen": "3",
+  "leader": "千代",
+  "badgeEn": "Balance Badge",
+  "badgeCn": "平衡徽章",
+  "src": "fandom",
+  "w": 346,
+  "h": 345,
+  "bytes": 27884
+ },
+ "g3_feather_badge": {
+  "gen": "3",
+  "leader": "娜琪",
+  "badgeEn": "Feather Badge",
+  "badgeCn": "羽毛徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 40,
+  "bytes": 1790
+ },
+ "g3_mind_badge": {
+  "gen": "3",
+  "leader": "小枫 & 小南",
+  "badgeEn": "Mind Badge",
+  "badgeCn": "心灵徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 38,
+  "bytes": 1862
+ },
+ "g3_rain_badge": {
+  "gen": "3",
+  "leader": "米可利",
+  "badgeEn": "Rain Badge",
+  "badgeCn": "雨滴徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 48,
+  "bytes": 2756
+ },
+ "g4_coal_badge": {
+  "gen": "4",
+  "leader": "瓢太",
+  "badgeEn": "Coal Badge",
+  "badgeCn": "煤炭徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 40,
+  "bytes": 2286
+ },
+ "g4_forest_badge": {
+  "gen": "4",
+  "leader": "菜种",
+  "badgeEn": "Forest Badge",
+  "badgeCn": "森林徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 40,
+  "bytes": 1984
+ },
+ "g4_cobble_badge": {
+  "gen": "4",
+  "leader": "阿李",
+  "badgeEn": "Cobble Badge",
+  "badgeCn": "圆石徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 40,
+  "bytes": 1604
+ },
+ "g4_fen_badge": {
+  "gen": "4",
+  "leader": "吉宪",
+  "badgeEn": "Fen Badge",
+  "badgeCn": "沼泽徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 40,
+  "bytes": 2250
+ },
+ "g4_relic_badge": {
+  "gen": "4",
+  "leader": "梅丽莎",
+  "badgeEn": "Relic Badge",
+  "badgeCn": "遗迹徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 40,
+  "bytes": 2386
+ },
+ "g4_mine_badge": {
+  "gen": "4",
+  "leader": "东瓜",
+  "badgeEn": "Mine Badge",
+  "badgeCn": "矿山徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 40,
+  "bytes": 2720
+ },
+ "g4_icicle_badge": {
+  "gen": "4",
+  "leader": "小菘",
+  "badgeEn": "Icicle Badge",
+  "badgeCn": "冰河徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 40,
+  "bytes": 2198
+ },
+ "g4_beacon_badge": {
+  "gen": "4",
+  "leader": "电次",
+  "badgeEn": "Beacon Badge",
+  "badgeCn": "灯塔徽章",
+  "src": "fandom",
+  "w": 40,
+  "h": 40,
+  "bytes": 2600
+ },
+ "g5_trio_badge": {
+  "gen": "5",
+  "leader": "天桐·伯特·寇恩",
+  "badgeEn": "Trio Badge",
+  "badgeCn": "三角徽章",
+  "src": "fandom",
+  "w": 45,
+  "h": 45,
+  "bytes": 2264
+ },
+ "g5_basic_badge": {
+  "gen": "5",
+  "leader": "阿乐",
+  "badgeEn": "Basic Badge",
+  "badgeCn": "基础徽章",
+  "src": "fandom",
+  "w": 45,
+  "h": 45,
+  "bytes": 3544
+ },
+ "g5_insect_badge": {
+  "gen": "5",
+  "leader": "阿铁",
+  "badgeEn": "Insect Badge",
+  "badgeCn": "昆虫徽章",
+  "src": "fandom",
+  "w": 45,
+  "h": 45,
+  "bytes": 2426
+ },
+ "g5_bolt_badge": {
+  "gen": "5",
+  "leader": "小菊儿",
+  "badgeEn": "Bolt Badge",
+  "badgeCn": "螺栓徽章",
+  "src": "fandom",
+  "w": 45,
+  "h": 45,
+  "bytes": 2328
+ },
+ "g5_quake_badge": {
+  "gen": "5",
+  "leader": "卡米兹",
+  "badgeEn": "Quake Badge",
+  "badgeCn": "震动徽章",
+  "src": "fandom",
+  "w": 45,
+  "h": 45,
+  "bytes": 2536
+ },
+ "g5_jet_badge": {
+  "gen": "5",
+  "leader": "莎莉",
+  "badgeEn": "Jet Badge",
+  "badgeCn": "喷射徽章",
+  "src": "fandom",
+  "w": 45,
+  "h": 45,
+  "bytes": 2574
+ },
+ "g5_legend_badge": {
+  "gen": "5",
+  "leader": "大宇",
+  "badgeEn": "Legend Badge",
+  "badgeCn": "传说徽章",
+  "src": "fandom",
+  "w": 45,
+  "h": 45,
+  "bytes": 2624
+ },
+ "g5_wave_badge": {
+  "gen": "5",
+  "leader": "艾莉丝",
+  "badgeEn": "Wave Badge",
+  "badgeCn": "波浪徽章",
+  "src": "fandom",
+  "w": 192,
+  "h": 224,
+  "bytes": 11694
+ },
+ "g6_bug_badge": {
+  "gen": "6",
+  "leader": "薇薇安",
+  "badgeEn": "Bug Badge",
+  "badgeCn": "虫虫徽章",
+  "src": "fandom",
+  "w": 221,
+  "h": 221,
+  "bytes": 6918
+ },
+ "g6_cliff_badge": {
+  "gen": "6",
+  "leader": "查克洛",
+  "badgeEn": "Cliff Badge",
+  "badgeCn": "岩壁徽章",
+  "src": "fandom",
+  "w": 221,
+  "h": 221,
+  "bytes": 2224
+ },
+ "g6_rumble_badge": {
+  "gen": "6",
+  "leader": "可尔妮",
+  "badgeEn": "Rumble Badge",
+  "badgeCn": "战斗徽章",
+  "src": "fandom",
+  "w": 50,
+  "h": 50,
+  "bytes": 1182
+ },
+ "g6_plant_badge": {
+  "gen": "6",
+  "leader": "玛绣",
+  "badgeEn": "Plant Badge",
+  "badgeCn": "植物徽章",
+  "src": "fandom",
+  "w": 256,
+  "h": 256,
+  "bytes": 15826
+ },
+ "g6_voltage_badge": {
+  "gen": "6",
+  "leader": "希特隆",
+  "badgeEn": "Voltage Badge",
+  "badgeCn": "电压徽章",
+  "src": "fandom",
+  "w": 256,
+  "h": 256,
+  "bytes": 17454
+ },
+ "g6_fairy_badge": {
+  "gen": "6",
+  "leader": "玛琪艾儿",
+  "badgeEn": "Fairy Badge",
+  "badgeCn": "妖精徽章",
+  "src": "fandom",
+  "w": 256,
+  "h": 256,
+  "bytes": 7422
+ },
+ "g6_psychic_badge": {
+  "gen": "6",
+  "leader": "奥琳",
+  "badgeEn": "Psychic Badge",
+  "badgeCn": "超能徽章",
+  "src": "fandom",
+  "w": 256,
+  "h": 256,
+  "bytes": 14126
+ },
+ "g6_iceberg_badge": {
+  "gen": "6",
+  "leader": "乌尔夫",
+  "badgeEn": "Iceberg Badge",
+  "badgeCn": "冰山徽章",
+  "src": "fandom",
+  "w": 221,
+  "h": 221,
+  "bytes": 11842
+ },
+ "g7_normalium_z": {
+  "gen": "7",
+  "leader": "伊利马",
+  "badgeEn": "Normalium Z",
+  "badgeCn": "一般Z",
+  "src": "fandom",
+  "w": 160,
+  "h": 199,
+  "bytes": 5068
+ },
+ "g7_fightinium_z": {
+  "gen": "7",
+  "leader": "哈拉",
+  "badgeEn": "Fightinium Z",
+  "badgeCn": "格斗Z",
+  "src": "fandom",
+  "w": 147,
+  "h": 252,
+  "bytes": 6166
+ },
+ "g7_waterium_z": {
+  "gen": "7",
+  "leader": "水莲",
+  "badgeEn": "Waterium Z",
+  "badgeCn": "水Z",
+  "src": "fandom",
+  "w": 80,
+  "h": 45,
+  "bytes": 1710
+ },
+ "g7_rockium_z": {
+  "gen": "7",
+  "leader": "丽姿",
+  "badgeEn": "Rockium Z",
+  "badgeCn": "岩石Z",
+  "src": "fandom",
+  "w": 156,
+  "h": 197,
+  "bytes": 6986
+ },
+ "g7_firium_z": {
+  "gen": "7",
+  "leader": "卡奇",
+  "badgeEn": "Firium Z",
+  "badgeCn": "火Z",
+  "src": "fandom",
+  "w": 80,
+  "h": 45,
+  "bytes": 1632
+ },
+ "g7_grassium_z": {
+  "gen": "7",
+  "leader": "玛奥",
+  "badgeEn": "Grassium Z",
+  "badgeCn": "草Z",
+  "src": "fandom",
+  "w": 80,
+  "h": 45,
+  "bytes": 1690
+ },
+ "g7_electrium_z": {
+  "gen": "7",
+  "leader": "茉莉",
+  "badgeEn": "Electrium Z",
+  "badgeCn": "电Z",
+  "src": "fandom",
+  "w": 80,
+  "h": 45,
+  "bytes": 1614
+ },
+ "g7_darkinium_z": {
+  "gen": "7",
+  "leader": "纳普",
+  "badgeEn": "Darkinium Z",
+  "badgeCn": "恶Z",
+  "src": "fandom",
+  "w": 80,
+  "h": 45,
+  "bytes": 1580
+ },
+ "g7_ghostium_z": {
+  "gen": "7",
+  "leader": "阿塞萝拉",
+  "badgeEn": "Ghostium Z",
+  "badgeCn": "幽灵Z",
+  "src": "fandom",
+  "w": 80,
+  "h": 45,
+  "bytes": 1792
+ },
+ "g7_fairium_z": {
+  "gen": "7",
+  "leader": "米娜",
+  "badgeEn": "Fairium Z",
+  "badgeCn": "妖精Z",
+  "src": "fandom",
+  "w": 590,
+  "h": 590,
+  "bytes": 19288
+ },
+ "g7_groundium_z": {
+  "gen": "7",
+  "leader": "哈普乌",
+  "badgeEn": "Groundium Z",
+  "badgeCn": "地面Z",
+  "src": "fandom",
+  "w": 80,
+  "h": 45,
+  "bytes": 1746
+ },
+ "g8_grass_badge": {
+  "gen": "8",
+  "leader": "亚洛",
+  "badgeEn": "Grass Badge",
+  "badgeCn": "草之徽章",
+  "src": "fandom",
+  "w": 522,
+  "h": 522,
+  "bytes": 19302
+ },
+ "g8_water_badge": {
+  "gen": "8",
+  "leader": "露璃娜",
+  "badgeEn": "Water Badge",
+  "badgeCn": "水之徽章",
+  "src": "fandom",
+  "w": 522,
+  "h": 522,
+  "bytes": 15504
+ },
+ "g8_fire_badge": {
+  "gen": "8",
+  "leader": "卡芜",
+  "badgeEn": "Fire Badge",
+  "badgeCn": "火之徽章",
+  "src": "fandom",
+  "w": 522,
+  "h": 522,
+  "bytes": 20366
+ },
+ "g8_fighting_badge": {
+  "gen": "8",
+  "leader": "彩豆",
+  "badgeEn": "Fighting Badge",
+  "badgeCn": "格斗徽章",
+  "src": "fandom",
+  "w": 522,
+  "h": 522,
+  "bytes": 19192
+ },
+ "g8_ghost_badge": {
+  "gen": "8",
+  "leader": "欧尼奥",
+  "badgeEn": "Ghost Badge",
+  "badgeCn": "幽灵徽章",
+  "src": "fandom",
+  "w": 522,
+  "h": 522,
+  "bytes": 21324
+ },
+ "g8_fairy_badge": {
+  "gen": "8",
+  "leader": "波普",
+  "badgeEn": "Fairy Badge",
+  "badgeCn": "妖精徽章",
+  "src": "fandom",
+  "w": 522,
+  "h": 522,
+  "bytes": 13352
+ },
+ "g8_rock_badge": {
+  "gen": "8",
+  "leader": "哥德",
+  "badgeEn": "Rock Badge",
+  "badgeCn": "岩石徽章",
+  "src": "fandom",
+  "w": 522,
+  "h": 522,
+  "bytes": 16030
+ },
+ "g8_ice_badge": {
+  "gen": "8",
+  "leader": "美林",
+  "badgeEn": "Ice Badge",
+  "badgeCn": "冰之徽章",
+  "src": "fandom",
+  "w": 522,
+  "h": 522,
+  "bytes": 15966
+ },
+ "g8_dark_badge": {
+  "gen": "8",
+  "leader": "聂梓",
+  "badgeEn": "Dark Badge",
+  "badgeCn": "恶之徽章",
+  "src": "fandom",
+  "w": 522,
+  "h": 522,
+  "bytes": 18492
+ },
+ "g8_dragon_badge": {
+  "gen": "8",
+  "leader": "奇巴纳",
+  "badgeEn": "Dragon Badge",
+  "badgeCn": "龙之徽章",
+  "src": "fandom",
+  "w": 522,
+  "h": 522,
+  "bytes": 21896
+ },
+ "g9_bug_badge": {
+  "gen": "9",
+  "leader": "阿枫",
+  "badgeEn": "Bug Badge",
+  "badgeCn": "虫徽章",
+  "src": "fandom",
+  "w": 360,
+  "h": 360,
+  "bytes": 46536
+ },
+ "g9_grass_badge": {
+  "gen": "9",
+  "leader": "寇沙",
+  "badgeEn": "Grass Badge",
+  "badgeCn": "草徽章",
+  "src": "fandom",
+  "w": 360,
+  "h": 360,
+  "bytes": 47240
+ },
+ "g9_electric_badge": {
+  "gen": "9",
+  "leader": "奇树",
+  "badgeEn": "Electric Badge",
+  "badgeCn": "电徽章",
+  "src": "fandom",
+  "w": 360,
+  "h": 360,
+  "bytes": 46310
+ },
+ "g9_water_badge": {
+  "gen": "9",
+  "leader": "海岱",
+  "badgeEn": "Water Badge",
+  "badgeCn": "水徽章",
+  "src": "fandom",
+  "w": 360,
+  "h": 360,
+  "bytes": 46618
+ },
+ "g9_normal_badge": {
+  "gen": "9",
+  "leader": "青木",
+  "badgeEn": "Normal Badge",
+  "badgeCn": "一般徽章",
+  "src": "fandom",
+  "w": 360,
+  "h": 360,
+  "bytes": 46986
+ },
+ "g9_ghost_badge": {
+  "gen": "9",
+  "leader": "莱姆",
+  "badgeEn": "Ghost Badge",
+  "badgeCn": "幽灵徽章",
+  "src": "fandom",
+  "w": 360,
+  "h": 360,
+  "bytes": 45966
+ },
+ "g9_psychic_badge": {
+  "gen": "9",
+  "leader": "莉普",
+  "badgeEn": "Psychic Badge",
+  "badgeCn": "超能力徽章",
+  "src": "fandom",
+  "w": 360,
+  "h": 360,
+  "bytes": 48868
+ },
+ "g9_ice_badge": {
+  "gen": "9",
+  "leader": "古鲁夏",
+  "badgeEn": "Ice Badge",
+  "badgeCn": "冰徽章",
+  "src": "fandom",
+  "w": 360,
+  "h": 360,
+  "bytes": 46886
+ }
+}

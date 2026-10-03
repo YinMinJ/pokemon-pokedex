@@ -1,0 +1,418 @@
+{
+ "badges": {
+  "Boulder Badge": {
+   "file": "Boulder Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/d/dd/Boulder_Badge.png",
+   "w": 1280,
+   "h": 1280,
+   "size": 107530
+  },
+  "Cascade Badge": {
+   "file": "Cascade Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/9/9c/Cascade_Badge.png",
+   "w": 1280,
+   "h": 1280,
+   "size": 98244
+  },
+  "Thunder Badge": {
+   "file": "Thunder Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/a/a6/Thunder_Badge.png",
+   "w": 1280,
+   "h": 1280,
+   "size": 243077
+  },
+  "Rainbow Badge": {
+   "file": "Rainbow Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/b/b5/Rainbow_Badge.png",
+   "w": 1280,
+   "h": 1280,
+   "size": 251561
+  },
+  "Soul Badge": {
+   "file": "Soul Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/7/7d/Soul_Badge.png",
+   "w": 1280,
+   "h": 1280,
+   "size": 124082
+  },
+  "Marsh Badge": {
+   "file": "Marsh Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/6/6b/Marsh_Badge.png",
+   "w": 1280,
+   "h": 1280,
+   "size": 188912
+  },
+  "Volcano Badge": {
+   "file": "Volcano Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/1/12/Volcano_Badge.png",
+   "w": 1280,
+   "h": 1280,
+   "size": 216379
+  },
+  "Earth Badge": {
+   "file": "Earth Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/7/78/Earth_Badge.png",
+   "w": 1280,
+   "h": 1280,
+   "size": 26982
+  },
+  "Zephyr Badge": {
+   "file": "Zephyr Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/4/4a/Zephyr_Badge.png",
+   "w": 192,
+   "h": 187,
+   "size": 63371
+  },
+  "Hive Badge": {
+   "file": "Hive Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/08/Hive_Badge.png",
+   "w": 189,
+   "h": 190,
+   "size": 81605
+  },
+  "Plain Badge": {
+   "file": "Plain Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/a/a7/Plain_Badge.png",
+   "w": 205,
+   "h": 197,
+   "size": 61857
+  },
+  "Fog Badge": {
+   "file": "Fog Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/4/48/Fog_Badge.png",
+   "w": 190,
+   "h": 168,
+   "size": 70463
+  },
+  "Storm Badge": {
+   "file": "Storm Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/b/b9/Storm_Badge.png",
+   "w": 227,
+   "h": 186,
+   "size": 86458
+  },
+  "Mineral Badge": {
+   "file": "Mineral Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/7/7b/Mineral_Badge.png",
+   "w": 187,
+   "h": 190,
+   "size": 79221
+  },
+  "Glacier Badge": {
+   "file": "Glacier Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/e/e6/Glacier_Badge.png",
+   "w": 174,
+   "h": 201,
+   "size": 77532
+  },
+  "Rising Badge": {
+   "file": "Rising Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/5/58/Rising_Badge.png",
+   "w": 760,
+   "h": 841,
+   "size": 1206698
+  },
+  "Stone Badge": {
+   "file": "Stone Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/6/63/Stone_Badge.png",
+   "w": 154,
+   "h": 154,
+   "size": 24238
+  },
+  "Knuckle Badge": {
+   "file": "Knuckle Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/9/97/Knuckle_Badge.png",
+   "w": 141,
+   "h": 141,
+   "size": 18963
+  },
+  "Dynamo Badge": {
+   "file": "Dynamo Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/3/34/Dynamo_Badge.png",
+   "w": 151,
+   "h": 151,
+   "size": 26549
+  },
+  "Heat Badge": {
+   "file": "Heat Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/c/c4/Heat_Badge.png",
+   "w": 149,
+   "h": 149,
+   "size": 26032
+  },
+  "Balance Badge": {
+   "file": "Balance Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/6/63/Balance_Badge.png",
+   "w": 147,
+   "h": 147,
+   "size": 24247
+  },
+  "Feather Badge": {
+   "file": "Feather Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/6/62/Feather_Badge.png",
+   "w": 139,
+   "h": 139,
+   "size": 21905
+  },
+  "Mind Badge": {
+   "file": "Mind Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/c/cc/Mind_Badge.png",
+   "w": 143,
+   "h": 143,
+   "size": 25453
+  },
+  "Rain Badge": {
+   "file": "Rain Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/9/9b/Rain_Badge.png",
+   "w": 146,
+   "h": 146,
+   "size": 25597
+  },
+  "Coal Badge": {
+   "file": "Coal Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/0b/Coal_Badge.png",
+   "w": 736,
+   "h": 688,
+   "size": 585751
+  },
+  "Forest Badge": {
+   "file": "Forest Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/8/8c/Forest_Badge.png",
+   "w": 749,
+   "h": 698,
+   "size": 579907
+  },
+  "Cobble Badge": {
+   "file": "Cobble Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/2/27/Cobble_Badge.png",
+   "w": 713,
+   "h": 725,
+   "size": 504456
+  },
+  "Fen Badge": {
+   "file": "Fen Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/1/13/Fen_Badge.png",
+   "w": 665,
+   "h": 659,
+   "size": 599151
+  },
+  "Relic Badge": {
+   "file": "Relic Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/2/28/Relic_Badge.png",
+   "w": 764,
+   "h": 692,
+   "size": 537066
+  },
+  "Mine Badge": {
+   "file": "Mine Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/f/fe/Mine_Badge.png",
+   "w": 739,
+   "h": 683,
+   "size": 699852
+  },
+  "Icicle Badge": {
+   "file": "Icicle Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/09/Icicle_Badge.png",
+   "w": 713,
+   "h": 648,
+   "size": 618128
+  },
+  "Beacon Badge": {
+   "file": "Beacon Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/0c/Beacon_Badge.png",
+   "w": 702,
+   "h": 677,
+   "size": 574123
+  },
+  "Trio Badge": {
+   "file": "Trio Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/7/74/Trio_Badge.png",
+   "w": 44,
+   "h": 44,
+   "size": 1550
+  },
+  "Basic Badge": {
+   "file": "Basic Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/8/85/Basic_Badge.png",
+   "w": 48,
+   "h": 48,
+   "size": 1249
+  },
+  "Insect Badge": {
+   "file": "Insect Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/8/8a/Insect_Badge.png",
+   "w": 48,
+   "h": 48,
+   "size": 2141
+  },
+  "Bolt Badge": {
+   "file": "Bolt Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/5/5b/Bolt_Badge.png",
+   "w": 49,
+   "h": 49,
+   "size": 1931
+  },
+  "Quake Badge": {
+   "file": "Quake Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/2/29/Quake_Badge.png",
+   "w": 48,
+   "h": 48,
+   "size": 1415
+  },
+  "Jet Badge": {
+   "file": "Jet Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/9/9c/Jet_Badge.png",
+   "w": 49,
+   "h": 49,
+   "size": 1927
+  },
+  "Legend Badge": {
+   "file": "Legend Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/c/c0/Legend_Badge.png",
+   "w": 47,
+   "h": 47,
+   "size": 1823
+  },
+  "Wave Badge": {
+   "file": "Wave Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/00/Wave_Badge.png",
+   "w": 49,
+   "h": 49,
+   "size": 1833
+  },
+  "Bug Badge": {
+   "file": "Bug Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/a/a5/Bug_Badge.png",
+   "w": 143,
+   "h": 143,
+   "size": 20786
+  },
+  "Cliff Badge": {
+   "file": "Cliff Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/3/39/Cliff_Badge.png",
+   "w": 148,
+   "h": 148,
+   "size": 7151
+  },
+  "Rumble Badge": {
+   "file": "Rumble Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/d/d4/Rumble_Badge.png",
+   "w": 188,
+   "h": 188,
+   "size": 7642
+  },
+  "Plant Badge": {
+   "file": "Plant Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/7/7d/Plant_Badge.png",
+   "w": 135,
+   "h": 135,
+   "size": 21410
+  },
+  "Voltage Badge": {
+   "file": "Voltage Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/f/fc/Voltage_Badge.png",
+   "w": 154,
+   "h": 154,
+   "size": 27410
+  },
+  "Fairy Badge": {
+   "file": "Fairy Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/d/d1/Fairy_Badge.png",
+   "w": 224,
+   "h": 224,
+   "size": 18836
+  },
+  "Psychic Badge": {
+   "file": "Psychic Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/1/13/Psychic_Badge.png",
+   "w": 138,
+   "h": 138,
+   "size": 16961
+  },
+  "Iceberg Badge": {
+   "file": "Iceberg Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/8/84/Iceberg_Badge.png",
+   "w": 178,
+   "h": 178,
+   "size": 29237
+  },
+  "Grass Badge": {
+   "file": "Grass Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/0/00/Grass_Badge.png",
+   "w": 522,
+   "h": 522,
+   "size": 80811
+  },
+  "Water Badge": {
+   "file": "Water Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/7/7a/Water_Badge.png",
+   "w": 522,
+   "h": 522,
+   "size": 70487
+  },
+  "Fire Badge": {
+   "file": "Fire Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/c/cc/Fire_Badge.png",
+   "w": 522,
+   "h": 522,
+   "size": 89166
+  },
+  "Fighting Badge": {
+   "file": "Fighting Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/2/20/Fighting_Badge.png",
+   "w": 522,
+   "h": 522,
+   "size": 116907
+  },
+  "Ghost Badge": {
+   "file": "Ghost Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/3/30/Ghost_Badge.png",
+   "w": 522,
+   "h": 522,
+   "size": 104782
+  },
+  "Rock Badge": {
+   "file": "Rock Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/3/3e/Rock_Badge.png",
+   "w": 522,
+   "h": 522,
+   "size": 76313
+  },
+  "Ice Badge": {
+   "file": "Ice Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/4/43/Ice_Badge.png",
+   "w": 522,
+   "h": 522,
+   "size": 67200
+  },
+  "Dark Badge": {
+   "file": "Dark Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/4/4d/Dark_Badge.png",
+   "w": 522,
+   "h": 522,
+   "size": 81026
+  },
+  "Dragon Badge": {
+   "file": "Dragon Badge.png",
+   "url": "https://archives.bulbagarden.net/media/upload/2/27/Dragon_Badge.png",
+   "w": 522,
+   "h": 522,
+   "size": 96774
+  }
+ },
+ "_miss": [
+  "Normalium Z",
+  "Fightinium Z",
+  "Waterium Z",
+  "Rockium Z",
+  "Firium Z",
+  "Grassium Z",
+  "Electrium Z",
+  "Darkinium Z",
+  "Ghostium Z",
+  "Fairium Z",
+  "Groundium Z",
+  "Electric Badge",
+  "Normal Badge"
+ ]
+}

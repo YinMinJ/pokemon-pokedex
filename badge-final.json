@@ -1,0 +1,685 @@
+{
+ "badges": {
+  "1|Boulder Badge": {
+   "slug": "g1_boulder_badge",
+   "src": "fandom",
+   "badgeCn": "灰色徽章",
+   "px": "160x157",
+   "from": "1280x1280",
+   "kb": 6.4
+  },
+  "1|Cascade Badge": {
+   "slug": "g1_cascade_badge",
+   "src": "fandom",
+   "badgeCn": "蓝色徽章",
+   "px": "107x160",
+   "from": "858x1280",
+   "kb": 4.8
+  },
+  "1|Thunder Badge": {
+   "slug": "g1_thunder_badge",
+   "src": "fandom",
+   "badgeCn": "橙色徽章",
+   "px": "154x160",
+   "from": "1280x1280",
+   "kb": 9.2
+  },
+  "1|Rainbow Badge": {
+   "slug": "g1_rainbow_badge",
+   "src": "fandom",
+   "badgeCn": "彩虹徽章",
+   "px": "160x159",
+   "from": "1280x1280",
+   "kb": 9.3
+  },
+  "1|Soul Badge": {
+   "slug": "g1_soul_badge",
+   "src": "fandom",
+   "badgeCn": "粉色徽章",
+   "px": "140x160",
+   "from": "1280x1280",
+   "kb": 6.0
+  },
+  "1|Marsh Badge": {
+   "slug": "g1_marsh_badge",
+   "src": "fandom",
+   "badgeCn": "金色徽章",
+   "px": "160x160",
+   "from": "1280x1280",
+   "kb": 7.8
+  },
+  "1|Volcano Badge": {
+   "slug": "g1_volcano_badge",
+   "src": "fandom",
+   "badgeCn": "火山徽章",
+   "px": "146x160",
+   "from": "1280x1280",
+   "kb": 7.6
+  },
+  "1|Earth Badge": {
+   "slug": "g1_earth_badge",
+   "src": "fandom",
+   "badgeCn": "绿色徽章",
+   "px": "160x149",
+   "from": "1280x1190",
+   "kb": 7.0
+  },
+  "2|Zephyr Badge": {
+   "slug": "g2_zephyr_badge",
+   "src": "bulba",
+   "badgeCn": "飞翼徽章",
+   "px": "160x156",
+   "from": "192x187",
+   "kb": 12.2
+  },
+  "2|Hive Badge": {
+   "slug": "g2_hive_badge",
+   "src": "bulba",
+   "badgeCn": "昆虫徽章",
+   "px": "159x160",
+   "from": "189x190",
+   "kb": 13.7
+  },
+  "2|Plain Badge": {
+   "slug": "g2_plain_badge",
+   "src": "bulba",
+   "badgeCn": "常规徽章",
+   "px": "160x154",
+   "from": "205x197",
+   "kb": 9.2
+  },
+  "2|Fog Badge": {
+   "slug": "g2_fog_badge",
+   "src": "bulba",
+   "badgeCn": "雾滴徽章",
+   "px": "160x141",
+   "from": "190x168",
+   "kb": 11.8
+  },
+  "2|Storm Badge": {
+   "slug": "g2_storm_badge",
+   "src": "bulba",
+   "badgeCn": "风暴徽章",
+   "px": "160x131",
+   "from": "227x186",
+   "kb": 10.9
+  },
+  "2|Mineral Badge": {
+   "slug": "g2_mineral_badge",
+   "src": "bulba",
+   "badgeCn": "矿物徽章",
+   "px": "157x160",
+   "from": "187x190",
+   "kb": 12.8
+  },
+  "2|Glacier Badge": {
+   "slug": "g2_glacier_badge",
+   "src": "bulba",
+   "badgeCn": "冰河徽章",
+   "px": "139x160",
+   "from": "174x201",
+   "kb": 11.5
+  },
+  "2|Rising Badge": {
+   "slug": "g2_rising_badge",
+   "src": "bulba",
+   "badgeCn": "升龙徽章",
+   "px": "145x160",
+   "from": "760x841",
+   "kb": 7.2
+  },
+  "3|Stone Badge": {
+   "slug": "g3_stone_badge",
+   "src": "fandom",
+   "badgeCn": "岩石徽章",
+   "px": "160x160",
+   "from": "346x345",
+   "kb": 7.1
+  },
+  "3|Knuckle Badge": {
+   "slug": "g3_knuckle_badge",
+   "src": "fandom",
+   "badgeCn": "拳击徽章",
+   "px": "160x148",
+   "from": "310x286",
+   "kb": 7.4
+  },
+  "3|Dynamo Badge": {
+   "slug": "g3_dynamo_badge",
+   "src": "fandom",
+   "badgeCn": "电力徽章",
+   "px": "125x160",
+   "from": "268x343",
+   "kb": 8.6
+  },
+  "3|Heat Badge": {
+   "slug": "g3_heat_badge",
+   "src": "fandom",
+   "badgeCn": "热量徽章",
+   "px": "158x160",
+   "from": "348x353",
+   "kb": 8.3
+  },
+  "3|Balance Badge": {
+   "slug": "g3_balance_badge",
+   "src": "fandom",
+   "badgeCn": "平衡徽章",
+   "px": "160x160",
+   "from": "346x345",
+   "kb": 7.9
+  },
+  "3|Feather Badge": {
+   "slug": "g3_feather_badge",
+   "src": "bulba",
+   "badgeCn": "羽毛徽章",
+   "px": "147x160",
+   "from": "139x139",
+   "kb": 9.4
+  },
+  "3|Mind Badge": {
+   "slug": "g3_mind_badge",
+   "src": "bulba",
+   "badgeCn": "心灵徽章",
+   "px": "160x154",
+   "from": "143x143",
+   "kb": 9.9
+  },
+  "3|Rain Badge": {
+   "slug": "g3_rain_badge",
+   "src": "bulba",
+   "badgeCn": "雨滴徽章",
+   "px": "153x160",
+   "from": "146x146",
+   "kb": 11.4
+  },
+  "4|Coal Badge": {
+   "slug": "g4_coal_badge",
+   "src": "bulba",
+   "badgeCn": "煤炭徽章",
+   "px": "160x151",
+   "from": "736x688",
+   "kb": 8.7
+  },
+  "4|Forest Badge": {
+   "slug": "g4_forest_badge",
+   "src": "bulba",
+   "badgeCn": "森林徽章",
+   "px": "160x149",
+   "from": "749x698",
+   "kb": 8.5
+  },
+  "4|Cobble Badge": {
+   "slug": "g4_cobble_badge",
+   "src": "bulba",
+   "badgeCn": "圆石徽章",
+   "px": "157x160",
+   "from": "713x725",
+   "kb": 7.8
+  },
+  "4|Fen Badge": {
+   "slug": "g4_fen_badge",
+   "src": "bulba",
+   "badgeCn": "沼泽徽章",
+   "px": "160x159",
+   "from": "665x659",
+   "kb": 10.4
+  },
+  "4|Relic Badge": {
+   "slug": "g4_relic_badge",
+   "src": "bulba",
+   "badgeCn": "遗迹徽章",
+   "px": "160x145",
+   "from": "764x692",
+   "kb": 9.3
+  },
+  "4|Mine Badge": {
+   "slug": "g4_mine_badge",
+   "src": "bulba",
+   "badgeCn": "矿山徽章",
+   "px": "160x148",
+   "from": "739x683",
+   "kb": 11.1
+  },
+  "4|Icicle Badge": {
+   "slug": "g4_icicle_badge",
+   "src": "bulba",
+   "badgeCn": "冰河徽章",
+   "px": "160x145",
+   "from": "713x648",
+   "kb": 10.2
+  },
+  "4|Beacon Badge": {
+   "slug": "g4_beacon_badge",
+   "src": "bulba",
+   "badgeCn": "灯塔徽章",
+   "px": "160x154",
+   "from": "702x677",
+   "kb": 10.7
+  },
+  "5|Trio Badge": {
+   "slug": "g5_trio_badge",
+   "src": "fandom",
+   "badgeCn": "三角徽章",
+   "px": "180x180",
+   "from": "45x45",
+   "kb": 3.0
+  },
+  "5|Basic Badge": {
+   "slug": "g5_basic_badge",
+   "src": "fandom",
+   "badgeCn": "基础徽章",
+   "px": "180x180",
+   "from": "45x45",
+   "kb": 3.2
+  },
+  "5|Insect Badge": {
+   "slug": "g5_insect_badge",
+   "src": "fandom",
+   "badgeCn": "昆虫徽章",
+   "px": "180x180",
+   "from": "45x45",
+   "kb": 3.6
+  },
+  "5|Bolt Badge": {
+   "slug": "g5_bolt_badge",
+   "src": "fandom",
+   "badgeCn": "螺栓徽章",
+   "px": "180x180",
+   "from": "45x45",
+   "kb": 3.5
+  },
+  "5|Quake Badge": {
+   "slug": "g5_quake_badge",
+   "src": "fandom",
+   "badgeCn": "震动徽章",
+   "px": "180x180",
+   "from": "45x45",
+   "kb": 3.5
+  },
+  "5|Jet Badge": {
+   "slug": "g5_jet_badge",
+   "src": "fandom",
+   "badgeCn": "喷射徽章",
+   "px": "180x180",
+   "from": "45x45",
+   "kb": 3.7
+  },
+  "5|Legend Badge": {
+   "slug": "g5_legend_badge",
+   "src": "fandom",
+   "badgeCn": "传说徽章",
+   "px": "180x180",
+   "from": "45x45",
+   "kb": 3.8
+  },
+  "5|Wave Badge": {
+   "slug": "g5_wave_badge",
+   "src": "fandom",
+   "badgeCn": "波浪徽章",
+   "px": "137x160",
+   "from": "192x224",
+   "kb": 8.1
+  },
+  "6|Bug Badge": {
+   "slug": "g6_bug_badge",
+   "src": "fandom",
+   "badgeCn": "虫虫徽章",
+   "px": "141x160",
+   "from": "221x221",
+   "kb": 7.5
+  },
+  "6|Cliff Badge": {
+   "slug": "g6_cliff_badge",
+   "src": "fandom",
+   "badgeCn": "岩壁徽章",
+   "px": "116x160",
+   "from": "221x221",
+   "kb": 2.2
+  },
+  "6|Rumble Badge": {
+   "slug": "g6_rumble_badge",
+   "src": "bulba",
+   "badgeCn": "战斗徽章",
+   "px": "160x99",
+   "from": "188x188",
+   "kb": 3.1
+  },
+  "6|Plant Badge": {
+   "slug": "g6_plant_badge",
+   "src": "fandom",
+   "badgeCn": "植物徽章",
+   "px": "148x160",
+   "from": "256x256",
+   "kb": 9.7
+  },
+  "6|Voltage Badge": {
+   "slug": "g6_voltage_badge",
+   "src": "fandom",
+   "badgeCn": "电压徽章",
+   "px": "160x159",
+   "from": "256x256",
+   "kb": 11.1
+  },
+  "6|Fairy Badge": {
+   "slug": "g6_fairy_badge",
+   "src": "fandom",
+   "badgeCn": "妖精徽章",
+   "px": "160x41",
+   "from": "256x256",
+   "kb": 4.3
+  },
+  "6|Psychic Badge": {
+   "slug": "g6_psychic_badge",
+   "src": "fandom",
+   "badgeCn": "超能徽章",
+   "px": "159x160",
+   "from": "256x256",
+   "kb": 9.9
+  },
+  "6|Iceberg Badge": {
+   "slug": "g6_iceberg_badge",
+   "src": "fandom",
+   "badgeCn": "冰山徽章",
+   "px": "142x160",
+   "from": "221x221",
+   "kb": 10.7
+  },
+  "7|Normalium Z": {
+   "slug": "g7_normalium_z",
+   "src": "fandom",
+   "badgeCn": "一般Z",
+   "px": "124x160",
+   "from": "160x199",
+   "kb": 4.9
+  },
+  "7|Fightinium Z": {
+   "slug": "g7_fightinium_z",
+   "src": "fandom",
+   "badgeCn": "格斗Z",
+   "px": "115x160",
+   "from": "147x252",
+   "kb": 5.4
+  },
+  "7|Waterium Z": {
+   "slug": "g7_waterium_z",
+   "src": "fandom",
+   "badgeCn": "水Z",
+   "px": "160x95",
+   "from": "80x45",
+   "kb": 4.5
+  },
+  "7|Rockium Z": {
+   "slug": "g7_rockium_z",
+   "src": "fandom",
+   "badgeCn": "岩石Z",
+   "px": "128x160",
+   "from": "156x197",
+   "kb": 6.0
+  },
+  "7|Firium Z": {
+   "slug": "g7_firium_z",
+   "src": "fandom",
+   "badgeCn": "火Z",
+   "px": "160x97",
+   "from": "80x45",
+   "kb": 4.3
+  },
+  "7|Grassium Z": {
+   "slug": "g7_grassium_z",
+   "src": "fandom",
+   "badgeCn": "草Z",
+   "px": "160x96",
+   "from": "80x45",
+   "kb": 4.3
+  },
+  "7|Electrium Z": {
+   "slug": "g7_electrium_z",
+   "src": "fandom",
+   "badgeCn": "电Z",
+   "px": "160x94",
+   "from": "80x45",
+   "kb": 4.5
+  },
+  "7|Darkinium Z": {
+   "slug": "g7_darkinium_z",
+   "src": "fandom",
+   "badgeCn": "恶Z",
+   "px": "160x97",
+   "from": "80x45",
+   "kb": 3.2
+  },
+  "7|Ghostium Z": {
+   "slug": "g7_ghostium_z",
+   "src": "fandom",
+   "badgeCn": "幽灵Z",
+   "px": "160x94",
+   "from": "80x45",
+   "kb": 4.1
+  },
+  "7|Fairium Z": {
+   "slug": "g7_fairium_z",
+   "src": "fandom",
+   "badgeCn": "妖精Z",
+   "px": "127x160",
+   "from": "590x590",
+   "kb": 7.2
+  },
+  "7|Groundium Z": {
+   "slug": "g7_groundium_z",
+   "src": "fandom",
+   "badgeCn": "地面Z",
+   "px": "160x97",
+   "from": "80x45",
+   "kb": 4.3
+  },
+  "8|Grass Badge": {
+   "slug": "g8_grass_badge",
+   "src": "fandom",
+   "badgeCn": "草之徽章",
+   "px": "160x137",
+   "from": "522x522",
+   "kb": 6.4
+  },
+  "8|Water Badge": {
+   "slug": "g8_water_badge",
+   "src": "fandom",
+   "badgeCn": "水之徽章",
+   "px": "139x160",
+   "from": "522x522",
+   "kb": 6.8
+  },
+  "8|Fire Badge": {
+   "slug": "g8_fire_badge",
+   "src": "fandom",
+   "badgeCn": "火之徽章",
+   "px": "103x160",
+   "from": "522x522",
+   "kb": 5.9
+  },
+  "8|Fighting Badge": {
+   "slug": "g8_fighting_badge",
+   "src": "fandom",
+   "badgeCn": "格斗徽章",
+   "px": "136x160",
+   "from": "522x522",
+   "kb": 6.6
+  },
+  "8|Ghost Badge": {
+   "slug": "g8_ghost_badge",
+   "src": "fandom",
+   "badgeCn": "幽灵徽章",
+   "px": "136x160",
+   "from": "522x522",
+   "kb": 6.9
+  },
+  "8|Fairy Badge": {
+   "slug": "g8_fairy_badge",
+   "src": "fandom",
+   "badgeCn": "妖精徽章",
+   "px": "113x160",
+   "from": "522x522",
+   "kb": 6.1
+  },
+  "8|Rock Badge": {
+   "slug": "g8_rock_badge",
+   "src": "fandom",
+   "badgeCn": "岩石徽章",
+   "px": "160x120",
+   "from": "522x522",
+   "kb": 6.5
+  },
+  "8|Ice Badge": {
+   "slug": "g8_ice_badge",
+   "src": "fandom",
+   "badgeCn": "冰之徽章",
+   "px": "160x120",
+   "from": "522x522",
+   "kb": 6.4
+  },
+  "8|Dark Badge": {
+   "slug": "g8_dark_badge",
+   "src": "fandom",
+   "badgeCn": "恶之徽章",
+   "px": "101x160",
+   "from": "522x522",
+   "kb": 6.3
+  },
+  "8|Dragon Badge": {
+   "slug": "g8_dragon_badge",
+   "src": "fandom",
+   "badgeCn": "龙之徽章",
+   "px": "91x160",
+   "from": "522x522",
+   "kb": 6.1
+  },
+  "9|Bug Badge": {
+   "slug": "g9_bug_badge",
+   "src": "fandom",
+   "badgeCn": "虫徽章",
+   "px": "160x160",
+   "from": "360x360",
+   "kb": 14.8
+  },
+  "9|Grass Badge": {
+   "slug": "g9_grass_badge",
+   "src": "fandom",
+   "badgeCn": "草徽章",
+   "px": "160x160",
+   "from": "360x360",
+   "kb": 15.0
+  },
+  "9|Electric Badge": {
+   "slug": "g9_electric_badge",
+   "src": "fandom",
+   "badgeCn": "电徽章",
+   "px": "160x160",
+   "from": "360x360",
+   "kb": 14.7
+  },
+  "9|Water Badge": {
+   "slug": "g9_water_badge",
+   "src": "fandom",
+   "badgeCn": "水徽章",
+   "px": "160x160",
+   "from": "360x360",
+   "kb": 15.0
+  },
+  "9|Normal Badge": {
+   "slug": "g9_normal_badge",
+   "src": "fandom",
+   "badgeCn": "一般徽章",
+   "px": "160x160",
+   "from": "360x360",
+   "kb": 15.2
+  },
+  "9|Ghost Badge": {
+   "slug": "g9_ghost_badge",
+   "src": "fandom",
+   "badgeCn": "幽灵徽章",
+   "px": "160x160",
+   "from": "360x360",
+   "kb": 14.9
+  },
+  "9|Psychic Badge": {
+   "slug": "g9_psychic_badge",
+   "src": "fandom",
+   "badgeCn": "超能力徽章",
+   "px": "160x160",
+   "from": "360x360",
+   "kb": 15.5
+  },
+  "9|Ice Badge": {
+   "slug": "g9_ice_badge",
+   "src": "fandom",
+   "badgeCn": "冰徽章",
+   "px": "160x160",
+   "from": "360x360",
+   "kb": 15.5
+  }
+ },
+ "plain": {
+  "Boulder Badge": "g1_boulder_badge",
+  "Cascade Badge": "g1_cascade_badge",
+  "Thunder Badge": "g1_thunder_badge",
+  "Rainbow Badge": "g1_rainbow_badge",
+  "Soul Badge": "g1_soul_badge",
+  "Marsh Badge": "g1_marsh_badge",
+  "Volcano Badge": "g1_volcano_badge",
+  "Earth Badge": "g1_earth_badge",
+  "Zephyr Badge": "g2_zephyr_badge",
+  "Hive Badge": "g2_hive_badge",
+  "Plain Badge": "g2_plain_badge",
+  "Fog Badge": "g2_fog_badge",
+  "Storm Badge": "g2_storm_badge",
+  "Mineral Badge": "g2_mineral_badge",
+  "Glacier Badge": "g2_glacier_badge",
+  "Rising Badge": "g2_rising_badge",
+  "Stone Badge": "g3_stone_badge",
+  "Knuckle Badge": "g3_knuckle_badge",
+  "Dynamo Badge": "g3_dynamo_badge",
+  "Heat Badge": "g3_heat_badge",
+  "Balance Badge": "g3_balance_badge",
+  "Feather Badge": "g3_feather_badge",
+  "Mind Badge": "g3_mind_badge",
+  "Rain Badge": "g3_rain_badge",
+  "Coal Badge": "g4_coal_badge",
+  "Forest Badge": "g4_forest_badge",
+  "Cobble Badge": "g4_cobble_badge",
+  "Fen Badge": "g4_fen_badge",
+  "Relic Badge": "g4_relic_badge",
+  "Mine Badge": "g4_mine_badge",
+  "Icicle Badge": "g4_icicle_badge",
+  "Beacon Badge": "g4_beacon_badge",
+  "Trio Badge": "g5_trio_badge",
+  "Basic Badge": "g5_basic_badge",
+  "Insect Badge": "g5_insect_badge",
+  "Bolt Badge": "g5_bolt_badge",
+  "Quake Badge": "g5_quake_badge",
+  "Jet Badge": "g5_jet_badge",
+  "Legend Badge": "g5_legend_badge",
+  "Wave Badge": "g5_wave_badge",
+  "Cliff Badge": "g6_cliff_badge",
+  "Rumble Badge": "g6_rumble_badge",
+  "Plant Badge": "g6_plant_badge",
+  "Voltage Badge": "g6_voltage_badge",
+  "Iceberg Badge": "g6_iceberg_badge",
+  "Normalium Z": "g7_normalium_z",
+  "Fightinium Z": "g7_fightinium_z",
+  "Waterium Z": "g7_waterium_z",
+  "Rockium Z": "g7_rockium_z",
+  "Firium Z": "g7_firium_z",
+  "Grassium Z": "g7_grassium_z",
+  "Electrium Z": "g7_electrium_z",
+  "Darkinium Z": "g7_darkinium_z",
+  "Ghostium Z": "g7_ghostium_z",
+  "Fairium Z": "g7_fairium_z",
+  "Groundium Z": "g7_groundium_z",
+  "Fire Badge": "g8_fire_badge",
+  "Fighting Badge": "g8_fighting_badge",
+  "Rock Badge": "g8_rock_badge",
+  "Dark Badge": "g8_dark_badge",
+  "Dragon Badge": "g8_dragon_badge",
+  "Electric Badge": "g9_electric_badge",
+  "Normal Badge": "g9_normal_badge"
+ }
+}

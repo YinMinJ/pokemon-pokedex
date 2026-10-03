@@ -1,0 +1,544 @@
+{
+ "leaders": {
+  "Brock": {
+   "slug": "brock",
+   "file": "showdown/brock.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.8
+  },
+  "Misty": {
+   "slug": "misty",
+   "file": "showdown/misty.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.3
+  },
+  "Lt. Surge": {
+   "slug": "lt-surge",
+   "file": "showdown/ltsurge.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.6
+  },
+  "Erika": {
+   "slug": "erika",
+   "file": "showdown/erika.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.2
+  },
+  "Koga": {
+   "slug": "koga",
+   "file": "showdown/koga.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.4
+  },
+  "Sabrina": {
+   "slug": "sabrina",
+   "file": "showdown/sabrina.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.0
+  },
+  "Blaine": {
+   "slug": "blaine",
+   "file": "showdown/blaine.png",
+   "w": 80,
+   "h": 80,
+   "kb": 5.9
+  },
+  "Giovanni": {
+   "slug": "giovanni",
+   "file": "showdown/giovanni.png",
+   "w": 80,
+   "h": 80,
+   "kb": 4.4
+  },
+  "Falkner": {
+   "slug": "falkner",
+   "file": "showdown/falkner.png",
+   "w": 80,
+   "h": 80,
+   "kb": 8.0
+  },
+  "Bugsy": {
+   "slug": "bugsy",
+   "file": "showdown/bugsy.png",
+   "w": 80,
+   "h": 80,
+   "kb": 8.4
+  },
+  "Whitney": {
+   "slug": "whitney",
+   "file": "showdown/whitney.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.3
+  },
+  "Morty": {
+   "slug": "morty",
+   "file": "showdown/morty.png",
+   "w": 80,
+   "h": 80,
+   "kb": 5.2
+  },
+  "Chuck": {
+   "slug": "chuck",
+   "file": "showdown/chuck.png",
+   "w": 80,
+   "h": 80,
+   "kb": 9.2
+  },
+  "Jasmine": {
+   "slug": "jasmine",
+   "file": "showdown/jasmine.png",
+   "w": 80,
+   "h": 80,
+   "kb": 5.3
+  },
+  "Pryce": {
+   "slug": "pryce",
+   "file": "showdown/pryce.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.2
+  },
+  "Clair": {
+   "slug": "clair",
+   "file": "showdown/clair.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.3
+  },
+  "Roxanne": {
+   "slug": "roxanne",
+   "file": "showdown/roxanne.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.9
+  },
+  "Brawly": {
+   "slug": "brawly",
+   "file": "showdown/brawly.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.4
+  },
+  "Wattson": {
+   "slug": "wattson",
+   "file": "showdown/wattson.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.6
+  },
+  "Flannery": {
+   "slug": "flannery",
+   "file": "showdown/flannery.png",
+   "w": 80,
+   "h": 80,
+   "kb": 9.3
+  },
+  "Norman": {
+   "slug": "norman",
+   "file": "showdown/norman.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.3
+  },
+  "Winona": {
+   "slug": "winona",
+   "file": "showdown/winona.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.1
+  },
+  "Tate & Liza": {
+   "slug": "tate-liza",
+   "file": "showdown/tate.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.9
+  },
+  "Juan": {
+   "slug": "juan",
+   "file": "showdown/juan.png",
+   "w": 80,
+   "h": 80,
+   "kb": 5.5
+  },
+  "Roark": {
+   "slug": "roark",
+   "file": "showdown/roark.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.1
+  },
+  "Gardenia": {
+   "slug": "gardenia",
+   "file": "showdown/gardenia.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.0
+  },
+  "Maylene": {
+   "slug": "maylene",
+   "file": "showdown/maylene.png",
+   "w": 80,
+   "h": 80,
+   "kb": 3.0
+  },
+  "Crasher Wake": {
+   "slug": "crasher-wake",
+   "file": "showdown/crasherwake.png",
+   "w": 80,
+   "h": 80,
+   "kb": 9.0
+  },
+  "Fantina": {
+   "slug": "fantina",
+   "file": "showdown/fantina.png",
+   "w": 80,
+   "h": 80,
+   "kb": 8.4
+  },
+  "Byron": {
+   "slug": "byron",
+   "file": "showdown/byron.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.7
+  },
+  "Candice": {
+   "slug": "candice",
+   "file": "showdown/candice.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.9
+  },
+  "Volkner": {
+   "slug": "volkner",
+   "file": "showdown/volkner.png",
+   "w": 80,
+   "h": 80,
+   "kb": 5.8
+  },
+  "Cilan / Chili / Cress": {
+   "slug": "cilan-chili-cress",
+   "file": "showdown/cilan.png",
+   "w": 80,
+   "h": 80,
+   "kb": 4.4
+  },
+  "Lenora": {
+   "slug": "lenora",
+   "file": "showdown/lenora.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.6
+  },
+  "Burgh": {
+   "slug": "burgh",
+   "file": "showdown/burgh.png",
+   "w": 80,
+   "h": 80,
+   "kb": 9.4
+  },
+  "Elesa": {
+   "slug": "elesa",
+   "file": "showdown/elesa.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.4
+  },
+  "Clay": {
+   "slug": "clay",
+   "file": "showdown/clay.png",
+   "w": 80,
+   "h": 80,
+   "kb": 9.1
+  },
+  "Skyla": {
+   "slug": "skyla",
+   "file": "showdown/skyla.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.2
+  },
+  "Brycen": {
+   "slug": "brycen",
+   "file": "showdown/brycen.png",
+   "w": 80,
+   "h": 80,
+   "kb": 9.9
+  },
+  "Iris": {
+   "slug": "iris",
+   "file": "showdown/iris.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.9
+  },
+  "Viola": {
+   "slug": "viola",
+   "file": "showdown/viola.png",
+   "w": 80,
+   "h": 80,
+   "kb": 5.4
+  },
+  "Grant": {
+   "slug": "grant",
+   "file": "showdown/grant.png",
+   "w": 80,
+   "h": 80,
+   "kb": 4.7
+  },
+  "Korrina": {
+   "slug": "korrina",
+   "file": "showdown/korrina.png",
+   "w": 80,
+   "h": 80,
+   "kb": 8.8
+  },
+  "Ramos": {
+   "slug": "ramos",
+   "file": "showdown/ramos.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.7
+  },
+  "Clemont": {
+   "slug": "clemont",
+   "file": "showdown/clemont.png",
+   "w": 80,
+   "h": 80,
+   "kb": 13.1
+  },
+  "Valerie": {
+   "slug": "valerie",
+   "file": "showdown/valerie.png",
+   "w": 80,
+   "h": 80,
+   "kb": 11.1
+  },
+  "Olympia": {
+   "slug": "olympia",
+   "file": "showdown/olympia.png",
+   "w": 80,
+   "h": 80,
+   "kb": 8.7
+  },
+  "Wulfric": {
+   "slug": "wulfric",
+   "file": "showdown/wulfric.png",
+   "w": 80,
+   "h": 80,
+   "kb": 9.9
+  },
+  "Ilima": {
+   "slug": "ilima",
+   "file": "showdown/ilima.png",
+   "w": 80,
+   "h": 80,
+   "kb": 5.8
+  },
+  "Hala": {
+   "slug": "hala",
+   "file": "showdown/hala.png",
+   "w": 80,
+   "h": 80,
+   "kb": 9.1
+  },
+  "Lana": {
+   "slug": "lana",
+   "file": "showdown/lana.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.0
+  },
+  "Olivia": {
+   "slug": "olivia",
+   "file": "showdown/olivia.png",
+   "w": 80,
+   "h": 80,
+   "kb": 5.9
+  },
+  "Kiawe": {
+   "slug": "kiawe",
+   "file": "showdown/kiawe.png",
+   "w": 80,
+   "h": 80,
+   "kb": 5.2
+  },
+  "Mallow": {
+   "slug": "mallow",
+   "file": "showdown/mallow.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.8
+  },
+  "Sophocles": {
+   "slug": "sophocles",
+   "file": "showdown/sophocles.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.3
+  },
+  "Nanu": {
+   "slug": "nanu",
+   "file": "showdown/nanu.png",
+   "w": 80,
+   "h": 80,
+   "kb": 5.7
+  },
+  "Acerola": {
+   "slug": "acerola",
+   "file": "showdown/acerola.png",
+   "w": 80,
+   "h": 80,
+   "kb": 5.4
+  },
+  "Mina": {
+   "slug": "mina",
+   "file": "showdown/mina.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.8
+  },
+  "Hapu": {
+   "slug": "hapu",
+   "file": "showdown/hapu.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.5
+  },
+  "Milo": {
+   "slug": "milo",
+   "file": "showdown/milo.png",
+   "w": 80,
+   "h": 80,
+   "kb": 8.8
+  },
+  "Nessa": {
+   "slug": "nessa",
+   "file": "showdown/nessa.png",
+   "w": 80,
+   "h": 80,
+   "kb": 9.4
+  },
+  "Kabu": {
+   "slug": "kabu",
+   "file": "showdown/kabu.png",
+   "w": 80,
+   "h": 80,
+   "kb": 5.9
+  },
+  "Bea": {
+   "slug": "bea",
+   "file": "showdown/bea.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.7
+  },
+  "Allister": {
+   "slug": "allister",
+   "file": "showdown/allister.png",
+   "w": 80,
+   "h": 80,
+   "kb": 5.7
+  },
+  "Opal": {
+   "slug": "opal",
+   "file": "showdown/opal.png",
+   "w": 80,
+   "h": 80,
+   "kb": 7.6
+  },
+  "Gordie": {
+   "slug": "gordie",
+   "file": "showdown/gordie.png",
+   "w": 80,
+   "h": 80,
+   "kb": 8.8
+  },
+  "Melony": {
+   "slug": "melony",
+   "file": "showdown/melony.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.7
+  },
+  "Piers": {
+   "slug": "piers",
+   "file": "showdown/piers.png",
+   "w": 80,
+   "h": 80,
+   "kb": 8.8
+  },
+  "Raihan": {
+   "slug": "raihan",
+   "file": "showdown/raihan.png",
+   "w": 80,
+   "h": 80,
+   "kb": 9.1
+  },
+  "Katy": {
+   "slug": "katy",
+   "file": "showdown/katy.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.2
+  },
+  "Brassius": {
+   "slug": "brassius",
+   "file": "showdown/brassius.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.5
+  },
+  "Iono": {
+   "slug": "iono",
+   "file": "showdown/iono.png",
+   "w": 80,
+   "h": 80,
+   "kb": 10.9
+  },
+  "Kofu": {
+   "slug": "kofu",
+   "file": "showdown/kofu.png",
+   "w": 80,
+   "h": 80,
+   "kb": 10.2
+  },
+  "Larry": {
+   "slug": "larry",
+   "file": "showdown/larry.png",
+   "w": 80,
+   "h": 80,
+   "kb": 4.3
+  },
+  "Ryme": {
+   "slug": "ryme",
+   "file": "showdown/ryme.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.4
+  },
+  "Tulip": {
+   "slug": "tulip",
+   "file": "showdown/tulip.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.5
+  },
+  "Grusha": {
+   "slug": "grusha",
+   "file": "showdown/grusha.png",
+   "w": 80,
+   "h": 80,
+   "kb": 6.9
+  }
+ },
+ "badges": {}
+}

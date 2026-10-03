@@ -1,0 +1,19 @@
+{
+  "name": "pokemon-pokedex",
+  "version": "1.0.0",
+  "private": true,
+  "description": "全世代宝可梦图鉴 · 单文件 HTML（第 1~9 世代 / 1351 条形态记录 / 中文）",
+  "scripts": {
+    "build": "python build_site.py",
+    "check": "node final-check.js",
+    "check:ui": "node shot-ui.js",
+    "check:daily": "node shot-daily.js"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.62.1"
+  },
+  "remarks": {
+    "构建依赖": "Python 3.13 + Pillow（图片压缩）、Node.js（数据抓取脚本）",
+    "浏览器": "验证脚本用本机已安装的 Chrome，playwright-core 不自带浏览器"
+  }
+}

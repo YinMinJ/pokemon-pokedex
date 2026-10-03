@@ -1,0 +1,940 @@
+{
+ "Boulder Badge": [
+  {
+   "file": "Boulder Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/d/dd/Boulder_Badge.png/revision/latest?cb=20241015140145",
+   "w": 1280,
+   "h": 1280,
+   "size": 107530
+  },
+  {
+   "file": "Boulder Badge PA RGB005.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/e/ee/Boulder_Badge_PA_RGB005.png/revision/latest?cb=20241015133720",
+   "w": 249,
+   "h": 239,
+   "size": 18779
+  }
+ ],
+ "Cascade Badge": [
+  {
+   "file": "Cascade Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/9/9c/Cascade_Badge.png/revision/latest?cb=20241015140805",
+   "w": 858,
+   "h": 1280,
+   "size": 96855
+  }
+ ],
+ "Thunder Badge": [
+  {
+   "file": "Thunder Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/a/a6/Thunder_Badge.png/revision/latest?cb=20241015141106",
+   "w": 1280,
+   "h": 1280,
+   "size": 243077
+  }
+ ],
+ "Rainbow Badge": [
+  {
+   "file": "Rainbow Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/b/b5/Rainbow_Badge.png/revision/latest?cb=20241015141116",
+   "w": 1280,
+   "h": 1280,
+   "size": 251561
+  }
+ ],
+ "Soul Badge": [
+  {
+   "file": "Soul Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/7/7d/Soul_Badge.png/revision/latest?cb=20241015141124",
+   "w": 1280,
+   "h": 1280,
+   "size": 124082
+  }
+ ],
+ "Marsh Badge": [
+  {
+   "file": "Marsh Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/6/6b/Marsh_Badge.png/revision/latest?cb=20241015141132",
+   "w": 1280,
+   "h": 1280,
+   "size": 188912
+  }
+ ],
+ "Volcano Badge": [
+  {
+   "file": "Volcano Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/1/12/Volcano_Badge.png/revision/latest?cb=20241015141139",
+   "w": 1280,
+   "h": 1280,
+   "size": 216379
+  }
+ ],
+ "Earth Badge": [
+  {
+   "file": "Earth Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/7/78/Earth_Badge.png/revision/latest?cb=20241015141830",
+   "w": 1280,
+   "h": 1190,
+   "size": 182043
+  }
+ ],
+ "Zephyr Badge": [
+  {
+   "file": "Zephyr Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/4/4a/Zephyr_Badge.png/revision/latest?cb=20081229171509",
+   "w": 40,
+   "h": 37,
+   "size": 3802
+  }
+ ],
+ "Hive Badge": [
+  {
+   "file": "Hive Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/0/08/Hive_Badge.png/revision/latest?cb=20081229171030",
+   "w": 40,
+   "h": 41,
+   "size": 3070
+  }
+ ],
+ "Plain Badge": [
+  {
+   "file": "Plain Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/a/a7/Plain_Badge.png/revision/latest?cb=20081229171221",
+   "w": 40,
+   "h": 37,
+   "size": 2538
+  }
+ ],
+ "Fog Badge": [
+  {
+   "file": "Fog Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/4/48/Fog_Badge.png/revision/latest?cb=20081229170948",
+   "w": 40,
+   "h": 35,
+   "size": 3223
+  }
+ ],
+ "Storm Badge": [
+  {
+   "file": "Storm Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/b/b9/Storm_Badge.png/revision/latest?cb=20081229171417",
+   "w": 40,
+   "h": 34,
+   "size": 2984
+  }
+ ],
+ "Mineral Badge": [
+  {
+   "file": "Mineral Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/7/7b/Mineral_Badge.png/revision/latest?cb=20081229171159",
+   "w": 40,
+   "h": 40,
+   "size": 2777
+  }
+ ],
+ "Glacier Badge": [
+  {
+   "file": "Glacier Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/e/e6/Glacier_Badge.png/revision/latest?cb=20081229170955",
+   "w": 40,
+   "h": 46,
+   "size": 4533
+  }
+ ],
+ "Rising Badge": [
+  {
+   "file": "Rising Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/5/58/Rising_Badge.png/revision/latest?cb=20081229171321",
+   "w": 40,
+   "h": 43,
+   "size": 3447
+  }
+ ],
+ "Stone Badge": [
+  {
+   "file": "Stone badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/b/bb/Stone_badge.png/revision/latest?cb=20240418182340",
+   "w": 346,
+   "h": 345,
+   "size": 82412
+  },
+  {
+   "file": "Stone Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/6/63/Stone_Badge.png/revision/latest?cb=20081229171405",
+   "w": 40,
+   "h": 36,
+   "size": 3159
+  }
+ ],
+ "Knuckle Badge": [
+  {
+   "file": "Knuckle badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/b/b4/Knuckle_badge.png/revision/latest?cb=20240418182219",
+   "w": 310,
+   "h": 286,
+   "size": 70735
+  },
+  {
+   "file": "Knuckle Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/9/97/Knuckle_Badge.png/revision/latest?cb=20240620135936",
+   "w": 143,
+   "h": 129,
+   "size": 17706
+  },
+  {
+   "file": "Knuckle Badge Nuzlocke.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/7/77/Knuckle_Badge_Nuzlocke.png/revision/latest?cb=20200521185910",
+   "w": 1200,
+   "h": 900,
+   "size": 291422
+  }
+ ],
+ "Dynamo Badge": [
+  {
+   "file": "Dynamo Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/3/34/Dynamo_Badge.png/revision/latest?cb=20081229170852",
+   "w": 40,
+   "h": 50,
+   "size": 4341
+  },
+  {
+   "file": "Dynamo badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/b/b4/Dynamo_badge.png/revision/latest?cb=20240418181515",
+   "w": 268,
+   "h": 343,
+   "size": 89998
+  }
+ ],
+ "Heat Badge": [
+  {
+   "file": "Heat Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/c/c4/Heat_Badge.png/revision/latest?cb=20081229171021",
+   "w": 40,
+   "h": 40,
+   "size": 2870
+  },
+  {
+   "file": "Heat badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/b/be/Heat_badge.png/revision/latest?cb=20240418181823",
+   "w": 348,
+   "h": 353,
+   "size": 87928
+  }
+ ],
+ "Balance Badge": [
+  {
+   "file": "Balance badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/a/af/Balance_badge.png/revision/latest?cb=20240418182027",
+   "w": 346,
+   "h": 345,
+   "size": 92672
+  },
+  {
+   "file": "Balance Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/6/63/Balance_Badge.png/revision/latest?cb=20081229170701",
+   "w": 40,
+   "h": 39,
+   "size": 2234
+  }
+ ],
+ "Feather Badge": [
+  {
+   "file": "Feather Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/6/62/Feather_Badge.png/revision/latest?cb=20081229170908",
+   "w": 40,
+   "h": 40,
+   "size": 3002
+  }
+ ],
+ "Mind Badge": [
+  {
+   "file": "Mind Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/c/cc/Mind_Badge.png/revision/latest?cb=20081229171131",
+   "w": 40,
+   "h": 38,
+   "size": 2931
+  }
+ ],
+ "Rain Badge": [
+  {
+   "file": "Rain Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/9/9b/Rain_Badge.png/revision/latest?cb=20081229171231",
+   "w": 40,
+   "h": 48,
+   "size": 4265
+  }
+ ],
+ "Coal Badge": [
+  {
+   "file": "Coal Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/0/0b/Coal_Badge.png/revision/latest?cb=20081229170818",
+   "w": 40,
+   "h": 40,
+   "size": 3867
+  }
+ ],
+ "Forest Badge": [
+  {
+   "file": "Forest Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/8/8c/Forest_Badge.png/revision/latest?cb=20081229170947",
+   "w": 40,
+   "h": 40,
+   "size": 3046
+  }
+ ],
+ "Cobble Badge": [
+  {
+   "file": "Cobble Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/2/27/Cobble_Badge.png/revision/latest?cb=20081229170827",
+   "w": 40,
+   "h": 40,
+   "size": 2572
+  }
+ ],
+ "Fen Badge": [
+  {
+   "file": "Fen Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/1/13/Fen_Badge.png/revision/latest?cb=20081229170915",
+   "w": 40,
+   "h": 40,
+   "size": 3418
+  }
+ ],
+ "Relic Badge": [
+  {
+   "file": "Relic Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/2/28/Relic_Badge.png/revision/latest?cb=20081229171313",
+   "w": 40,
+   "h": 40,
+   "size": 3166
+  }
+ ],
+ "Mine Badge": [
+  {
+   "file": "Mine Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/f/fe/Mine_Badge.png/revision/latest?cb=20081229171149",
+   "w": 40,
+   "h": 40,
+   "size": 3607
+  }
+ ],
+ "Icicle Badge": [
+  {
+   "file": "Icicle Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/0/09/Icicle_Badge.png/revision/latest?cb=20081229171040",
+   "w": 40,
+   "h": 40,
+   "size": 3049
+  }
+ ],
+ "Beacon Badge": [
+  {
+   "file": "Beacon Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/0/0c/Beacon_Badge.png/revision/latest?cb=20081229170708",
+   "w": 40,
+   "h": 40,
+   "size": 3545
+  }
+ ],
+ "Trio Badge": [
+  {
+   "file": "Trio Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/7/74/Trio_Badge.png/revision/latest?cb=20101019231550",
+   "w": 45,
+   "h": 45,
+   "size": 2638
+  }
+ ],
+ "Basic Badge": [
+  {
+   "file": "Basic Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/8/85/Basic_Badge.png/revision/latest?cb=20101019231708",
+   "w": 45,
+   "h": 45,
+   "size": 3374
+  }
+ ],
+ "Insect Badge": [
+  {
+   "file": "Insect Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/8/8a/Insect_Badge.png/revision/latest?cb=20101019231914",
+   "w": 45,
+   "h": 45,
+   "size": 2801
+  }
+ ],
+ "Bolt Badge": [
+  {
+   "file": "Bolt Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/5/5b/Bolt_Badge.png/revision/latest?cb=20110211044603",
+   "w": 45,
+   "h": 45,
+   "size": 2770
+  }
+ ],
+ "Quake Badge": [
+  {
+   "file": "Quake Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/2/29/Quake_Badge.png/revision/latest?cb=20110211044640",
+   "w": 45,
+   "h": 45,
+   "size": 2992
+  }
+ ],
+ "Jet Badge": [
+  {
+   "file": "Jet Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/9/9c/Jet_Badge.png/revision/latest?cb=20110211044713",
+   "w": 45,
+   "h": 45,
+   "size": 2892
+  }
+ ],
+ "Legend Badge": [
+  {
+   "file": "Legend Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/c/c0/Legend_Badge.png/revision/latest?cb=20110211044929",
+   "w": 45,
+   "h": 45,
+   "size": 2978
+  }
+ ],
+ "Wave Badge": [
+  {
+   "file": "Wave Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/0/00/Wave_Badge.png/revision/latest?cb=20120623053139",
+   "w": 192,
+   "h": 224,
+   "size": 24935
+  }
+ ],
+ "Bug Badge": [
+  {
+   "file": "Bug Badge SV.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/0/01/Bug_Badge_SV.png/revision/latest?cb=20240416045857",
+   "w": 360,
+   "h": 360,
+   "size": 234930
+  },
+  {
+   "file": "Bug Badge Viola.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/3/3c/Bug_Badge_Viola.png/revision/latest?cb=20131020201253",
+   "w": 221,
+   "h": 221,
+   "size": 14636
+  }
+ ],
+ "Cliff Badge": [
+  {
+   "file": "Cliff Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/3/39/Cliff_Badge.png/revision/latest?cb=20131029043723",
+   "w": 221,
+   "h": 221,
+   "size": 4446
+  }
+ ],
+ "Rumble Badge": [
+  {
+   "file": "Rumble Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/d/d4/Rumble_Badge.png/revision/latest?cb=20171006161933",
+   "w": 50,
+   "h": 50,
+   "size": 2203
+  }
+ ],
+ "Plant Badge": [
+  {
+   "file": "Plant Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/7/7d/Plant_Badge.png/revision/latest?cb=20240323090933",
+   "w": 256,
+   "h": 256,
+   "size": 60113
+  }
+ ],
+ "Voltage Badge": [
+  {
+   "file": "Voltage Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/f/fc/Voltage_Badge.png/revision/latest?cb=20240323091031",
+   "w": 256,
+   "h": 256,
+   "size": 52949
+  }
+ ],
+ "Fairy Badge": [
+  {
+   "file": "Fairy Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/d/d1/Fairy_Badge.png/revision/latest?cb=20191124174250",
+   "w": 522,
+   "h": 522,
+   "size": 58619
+  },
+  {
+   "file": "Fairy Badge XY.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/b/bb/Fairy_Badge_XY.png/revision/latest?cb=20240323091112",
+   "w": 256,
+   "h": 256,
+   "size": 26071
+  }
+ ],
+ "Psychic Badge": [
+  {
+   "file": "Psychic Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/1/13/Psychic_Badge.png/revision/latest?cb=20240323091150",
+   "w": 256,
+   "h": 256,
+   "size": 44837
+  },
+  {
+   "file": "Psychic Badge SV.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/3/36/Psychic_Badge_SV.png/revision/latest?cb=20240416051307",
+   "w": 360,
+   "h": 360,
+   "size": 242774
+  }
+ ],
+ "Iceberg Badge": [
+  {
+   "file": "Iceberg Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/8/84/Iceberg_Badge.png/revision/latest?cb=20131105162357",
+   "w": 221,
+   "h": 221,
+   "size": 19918
+  }
+ ],
+ "Normalium Z": [
+  {
+   "file": "Normalium Z.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/8/81/Normalium_Z.png/revision/latest?cb=20160909215730",
+   "w": 160,
+   "h": 199,
+   "size": 28379
+  },
+  {
+   "file": "Normalium Z Dream.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/4/4b/Normalium_Z_Dream.png/revision/latest?cb=20170101021202",
+   "w": 80,
+   "h": 45,
+   "size": 3960
+  },
+  {
+   "file": "Normalium Z sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/7/7f/Normalium_Z_sprite.png/revision/latest?cb=20200827040346",
+   "w": 24,
+   "h": 24,
+   "size": 446
+  },
+  {
+   "file": "Normalium Z Held sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/6/68/Normalium_Z_Held_sprite.png/revision/latest?cb=20210209021555",
+   "w": 24,
+   "h": 24,
+   "size": 203
+  }
+ ],
+ "Fightinium Z": [
+  {
+   "file": "Fightinium Z.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/2/22/Fightinium_Z.png/revision/latest?cb=20160909215609",
+   "w": 147,
+   "h": 252,
+   "size": 37545
+  },
+  {
+   "file": "Fightinium Z sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/b/b7/Fightinium_Z_sprite.png/revision/latest?cb=20200909073521",
+   "w": 24,
+   "h": 24,
+   "size": 283
+  },
+  {
+   "file": "Fightinium Z 2.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/9/9d/Fightinium_Z_2.png/revision/latest?cb=20161115072247",
+   "w": 614,
+   "h": 243,
+   "size": 156089
+  },
+  {
+   "file": "Fightinium Z Dream.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/f/fd/Fightinium_Z_Dream.png/revision/latest?cb=20170101021047",
+   "w": 80,
+   "h": 45,
+   "size": 3764
+  },
+  {
+   "file": "Fightinium Z Held sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/e/e7/Fightinium_Z_Held_sprite.png/revision/latest?cb=20210209020955",
+   "w": 24,
+   "h": 24,
+   "size": 197
+  }
+ ],
+ "Waterium Z": [
+  {
+   "file": "Waterium Z sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/3/3b/Waterium_Z_sprite.png/revision/latest?cb=20200909075651",
+   "w": 24,
+   "h": 24,
+   "size": 279
+  },
+  {
+   "file": "Waterium Z Dream.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/b/bc/Waterium_Z_Dream.png/revision/latest?cb=20170101021204",
+   "w": 80,
+   "h": 45,
+   "size": 4006
+  },
+  {
+   "file": "Waterium Z Held sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/8/8b/Waterium_Z_Held_sprite.png/revision/latest?cb=20210209040652",
+   "w": 24,
+   "h": 24,
+   "size": 198
+  }
+ ],
+ "Rockium Z": [
+  {
+   "file": "Rockium Z.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/9/9c/Rockium_Z.png/revision/latest?cb=20160909215849",
+   "w": 156,
+   "h": 197,
+   "size": 38780
+  },
+  {
+   "file": "Rockium Z 2.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/0/05/Rockium_Z_2.png/revision/latest?cb=20161115072903",
+   "w": 320,
+   "h": 183,
+   "size": 73494
+  },
+  {
+   "file": "Rockium Z sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/9/9b/Rockium_Z_sprite.png/revision/latest?cb=20200909075650",
+   "w": 24,
+   "h": 24,
+   "size": 273
+  },
+  {
+   "file": "Rockium Z Dream.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/4/42/Rockium_Z_Dream.png/revision/latest?cb=20170101021203",
+   "w": 80,
+   "h": 45,
+   "size": 3701
+  },
+  {
+   "file": "Rockium Z Held sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/f/f0/Rockium_Z_Held_sprite.png/revision/latest?cb=20210209040553",
+   "w": 24,
+   "h": 24,
+   "size": 205
+  }
+ ],
+ "Firium Z": [
+  {
+   "file": "Firium Z sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/c/c2/Firium_Z_sprite.png/revision/latest?cb=20200909073522",
+   "w": 24,
+   "h": 24,
+   "size": 287
+  },
+  {
+   "file": "Firium Z Dream.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/3/3f/Firium_Z_Dream.png/revision/latest?cb=20170101021047",
+   "w": 80,
+   "h": 45,
+   "size": 3387
+  },
+  {
+   "file": "Firium Z Held sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/c/c4/Firium_Z_Held_sprite.png/revision/latest?cb=20210209021024",
+   "w": 24,
+   "h": 24,
+   "size": 202
+  }
+ ],
+ "Grassium Z": [
+  {
+   "file": "Grassium Z sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/2/2f/Grassium_Z_sprite.png/revision/latest?cb=20200909073523",
+   "w": 24,
+   "h": 24,
+   "size": 267
+  },
+  {
+   "file": "Grassium Z Dream.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/0/05/Grassium_Z_Dream.png/revision/latest?cb=20170101021049",
+   "w": 80,
+   "h": 45,
+   "size": 3650
+  },
+  {
+   "file": "Grassium Z Held sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/e/e9/Grassium_Z_Held_sprite.png/revision/latest?cb=20210209021304",
+   "w": 24,
+   "h": 24,
+   "size": 201
+  }
+ ],
+ "Electrium Z": [
+  {
+   "file": "Electrium Z sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/d/d3/Electrium_Z_sprite.png/revision/latest?cb=20200909073520",
+   "w": 24,
+   "h": 24,
+   "size": 263
+  },
+  {
+   "file": "Electrium Z Dream.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/7/70/Electrium_Z_Dream.png/revision/latest?cb=20170101021046",
+   "w": 80,
+   "h": 45,
+   "size": 3261
+  },
+  {
+   "file": "Electrium Z Held sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/9/91/Electrium_Z_Held_sprite.png/revision/latest?cb=20210209020554",
+   "w": 24,
+   "h": 24,
+   "size": 202
+  }
+ ],
+ "Darkinium Z": [
+  {
+   "file": "Darkinium Z sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/5/57/Darkinium_Z_sprite.png/revision/latest?cb=20200909073520",
+   "w": 24,
+   "h": 24,
+   "size": 285
+  },
+  {
+   "file": "Darkinium Z Dream.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/1/1b/Darkinium_Z_Dream.png/revision/latest?cb=20170101021045",
+   "w": 80,
+   "h": 45,
+   "size": 3416
+  },
+  {
+   "file": "Darkinium Z Held sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/8/8f/Darkinium_Z_Held_sprite.png/revision/latest?cb=20210209004436",
+   "w": 24,
+   "h": 24,
+   "size": 203
+  }
+ ],
+ "Ghostium Z": [
+  {
+   "file": "Ghostium Z sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/d/db/Ghostium_Z_sprite.png/revision/latest?cb=20200909073523",
+   "w": 24,
+   "h": 24,
+   "size": 285
+  },
+  {
+   "file": "Ghostium Z Dream.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/c/cd/Ghostium_Z_Dream.png/revision/latest?cb=20170102030429",
+   "w": 80,
+   "h": 45,
+   "size": 3717
+  },
+  {
+   "file": "Ghostium Z and Poisonium Z.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/5/5f/Ghostium_Z_and_Poisonium_Z.png/revision/latest?cb=20211108034055",
+   "w": 1920,
+   "h": 1079,
+   "size": 1927903
+  },
+  {
+   "file": "Ghostium Z Held sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/b/b0/Ghostium_Z_Held_sprite.png/revision/latest?cb=20210209021225",
+   "w": 24,
+   "h": 24,
+   "size": 202
+  }
+ ],
+ "Fairium Z": [
+  {
+   "file": "Fairium Z sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/e/e9/Fairium_Z_sprite.png/revision/latest?cb=20200909073521",
+   "w": 24,
+   "h": 24,
+   "size": 279
+  },
+  {
+   "file": "Fairium Z.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/9/9c/Fairium_Z.png/revision/latest?cb=20211114162939",
+   "w": 590,
+   "h": 590,
+   "size": 160107
+  },
+  {
+   "file": "Fairium Z Dream.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/b/ba/Fairium_Z_Dream.png/revision/latest?cb=20170101021046",
+   "w": 80,
+   "h": 45,
+   "size": 3631
+  },
+  {
+   "file": "Fairium Z Held sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/c/c3/Fairium_Z_Held_sprite.png/revision/latest?cb=20210209020657",
+   "w": 24,
+   "h": 24,
+   "size": 207
+  },
+  {
+   "file": "Fairium Z anime.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/d/d7/Fairium_Z_anime.png/revision/latest?cb=20211108033937",
+   "w": 1920,
+   "h": 1079,
+   "size": 1909723
+  }
+ ],
+ "Groundium Z": [
+  {
+   "file": "Groundium Z sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/f/f6/Groundium_Z_sprite.png/revision/latest?cb=20200909075648",
+   "w": 24,
+   "h": 24,
+   "size": 268
+  },
+  {
+   "file": "Groundium Z Dream.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/7/7b/Groundium_Z_Dream.png/revision/latest?cb=20170101021202",
+   "w": 80,
+   "h": 45,
+   "size": 3519
+  },
+  {
+   "file": "Groundium Z Held sprite.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/5/5c/Groundium_Z_Held_sprite.png/revision/latest?cb=20210209021404",
+   "w": 24,
+   "h": 24,
+   "size": 198
+  }
+ ],
+ "Grass Badge": [
+  {
+   "file": "Grass Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/0/00/Grass_Badge.png/revision/latest?cb=20191124174202",
+   "w": 522,
+   "h": 522,
+   "size": 80811
+  },
+  {
+   "file": "Grass Badge SV.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/d/d3/Grass_Badge_SV.png/revision/latest?cb=20240416050002",
+   "w": 360,
+   "h": 360,
+   "size": 235561
+  }
+ ],
+ "Water Badge": [
+  {
+   "file": "Water Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/7/7a/Water_Badge.png/revision/latest?cb=20191124174225",
+   "w": 522,
+   "h": 522,
+   "size": 70487
+  },
+  {
+   "file": "Water Badge SV.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/6/63/Water_Badge_SV.png/revision/latest?cb=20240416050309",
+   "w": 360,
+   "h": 360,
+   "size": 233564
+  }
+ ],
+ "Fire Badge": [
+  {
+   "file": "Fire Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/c/cc/Fire_Badge.png/revision/latest?cb=20191124174232",
+   "w": 522,
+   "h": 522,
+   "size": 89166
+  }
+ ],
+ "Fighting Badge": [
+  {
+   "file": "Fighting Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/2/20/Fighting_Badge.png/revision/latest?cb=20191124174241",
+   "w": 522,
+   "h": 522,
+   "size": 116907
+  }
+ ],
+ "Ghost Badge": [
+  {
+   "file": "Ghost Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/3/30/Ghost_Badge.png/revision/latest?cb=20191124174335",
+   "w": 522,
+   "h": 522,
+   "size": 104782
+  },
+  {
+   "file": "Ghost Badge SV.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/3/39/Ghost_Badge_SV.png/revision/latest?cb=20240416050531",
+   "w": 360,
+   "h": 360,
+   "size": 231415
+  }
+ ],
+ "Rock Badge": [
+  {
+   "file": "Rock Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/3/3e/Rock_Badge.png/revision/latest?cb=20191124174258",
+   "w": 522,
+   "h": 522,
+   "size": 76313
+  }
+ ],
+ "Ice Badge": [
+  {
+   "file": "Ice Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/4/43/Ice_Badge.png/revision/latest?cb=20191124174342",
+   "w": 522,
+   "h": 522,
+   "size": 67200
+  },
+  {
+   "file": "Ice Badge SV.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/8/81/Ice_Badge_SV.png/revision/latest?cb=20240416051337",
+   "w": 360,
+   "h": 360,
+   "size": 241594
+  }
+ ],
+ "Dark Badge": [
+  {
+   "file": "Dark Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/4/4d/Dark_Badge.png/revision/latest?cb=20191124174305",
+   "w": 522,
+   "h": 522,
+   "size": 81026
+  }
+ ],
+ "Dragon Badge": [
+  {
+   "file": "Dragon Badge.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/2/27/Dragon_Badge.png/revision/latest?cb=20191124174311",
+   "w": 522,
+   "h": 522,
+   "size": 96774
+  }
+ ],
+ "Electric Badge": [
+  {
+   "file": "Electric Badge SV.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/a/a1/Electric_Badge_SV.png/revision/latest?cb=20240416050105",
+   "w": 360,
+   "h": 360,
+   "size": 235185
+  }
+ ],
+ "Normal Badge": [
+  {
+   "file": "Normal Badge SV.png",
+   "url": "https://static.wikia.nocookie.net/pokemon/images/a/ad/Normal_Badge_SV.png/revision/latest?cb=20240416050434",
+   "w": 360,
+   "h": 360,
+   "size": 231496
+  }
+ ]
+}

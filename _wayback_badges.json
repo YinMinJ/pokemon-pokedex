@@ -1,0 +1,72 @@
+{
+ "Rising Badge": {
+  "file": "Rising Badge.png",
+  "slug": "rising.png",
+  "bytes": 1206698,
+  "src_w": 760,
+  "src_h": 841
+ },
+ "Stone Badge": {
+  "file": "Stone Badge.png",
+  "slug": "stone.png",
+  "bytes": 24238,
+  "src_w": 154,
+  "src_h": 154
+ },
+ "Knuckle Badge": {
+  "file": "Knuckle Badge.png",
+  "slug": "knuckle.png",
+  "bytes": 18963,
+  "src_w": 141,
+  "src_h": 141
+ },
+ "Dynamo Badge": {
+  "file": "Dynamo Badge.png",
+  "slug": "dynamo.png",
+  "bytes": 26549,
+  "src_w": 151,
+  "src_h": 151
+ },
+ "Heat Badge": {
+  "file": "Heat Badge.png",
+  "slug": "heat.png",
+  "bytes": 26032,
+  "src_w": 149,
+  "src_h": 149
+ },
+ "Balance Badge": {
+  "file": "Balance Badge.png",
+  "slug": "balance.png",
+  "bytes": 24247,
+  "src_w": 147,
+  "src_h": 147
+ },
+ "Jet Badge": {
+  "file": "Jet Badge.png",
+  "slug": "jet.png",
+  "bytes": 1927,
+  "src_w": 49,
+  "src_h": 49
+ },
+ "Legend Badge": {
+  "file": "Legend Badge.png",
+  "slug": "legend.png",
+  "bytes": 1823,
+  "src_w": 47,
+  "src_h": 47
+ },
+ "Fairy Badge": {
+  "file": "Fairy Badge.png",
+  "slug": "fairy.png",
+  "bytes": 18836,
+  "src_w": 224,
+  "src_h": 224
+ },
+ "Psychic Badge": {
+  "file": "Psychic Badge.png",
+  "slug": "psychic.png",
+  "bytes": 16961,
+  "src_w": 138,
+  "src_h": 138
+ }
+}

@@ -1,0 +1,792 @@
+{
+ "badges": {
+  "1": {
+   "小刚": {
+    "file": "Boulder Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/d/dd/Boulder_Badge.png/revision/latest?cb=20241015140145",
+    "w": 1280,
+    "h": 1280,
+    "size": 107530,
+    "badgeEn": "Boulder Badge",
+    "badgeCn": "灰色徽章",
+    "pick": "同名主图"
+   },
+   "小霞": {
+    "file": "Cascade Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/9/9c/Cascade_Badge.png/revision/latest?cb=20241015140805",
+    "w": 858,
+    "h": 1280,
+    "size": 96855,
+    "badgeEn": "Cascade Badge",
+    "badgeCn": "蓝色徽章",
+    "pick": "同名主图"
+   },
+   "马志士": {
+    "file": "Thunder Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/a/a6/Thunder_Badge.png/revision/latest?cb=20241015141106",
+    "w": 1280,
+    "h": 1280,
+    "size": 243077,
+    "badgeEn": "Thunder Badge",
+    "badgeCn": "橙色徽章",
+    "pick": "同名主图"
+   },
+   "莉佳": {
+    "file": "Rainbow Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/b/b5/Rainbow_Badge.png/revision/latest?cb=20241015141116",
+    "w": 1280,
+    "h": 1280,
+    "size": 251561,
+    "badgeEn": "Rainbow Badge",
+    "badgeCn": "彩虹徽章",
+    "pick": "同名主图"
+   },
+   "阿桔": {
+    "file": "Soul Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/7/7d/Soul_Badge.png/revision/latest?cb=20241015141124",
+    "w": 1280,
+    "h": 1280,
+    "size": 124082,
+    "badgeEn": "Soul Badge",
+    "badgeCn": "粉色徽章",
+    "pick": "同名主图"
+   },
+   "娜姿": {
+    "file": "Marsh Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/6/6b/Marsh_Badge.png/revision/latest?cb=20241015141132",
+    "w": 1280,
+    "h": 1280,
+    "size": 188912,
+    "badgeEn": "Marsh Badge",
+    "badgeCn": "金色徽章",
+    "pick": "同名主图"
+   },
+   "夏伯": {
+    "file": "Volcano Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/1/12/Volcano_Badge.png/revision/latest?cb=20241015141139",
+    "w": 1280,
+    "h": 1280,
+    "size": 216379,
+    "badgeEn": "Volcano Badge",
+    "badgeCn": "火山徽章",
+    "pick": "同名主图"
+   },
+   "坂木": {
+    "file": "Earth Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/7/78/Earth_Badge.png/revision/latest?cb=20241015141830",
+    "w": 1280,
+    "h": 1190,
+    "size": 182043,
+    "badgeEn": "Earth Badge",
+    "badgeCn": "绿色徽章",
+    "pick": "同名主图"
+   }
+  },
+  "2": {
+   "阿速": {
+    "file": "Zephyr Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/4/4a/Zephyr_Badge.png/revision/latest?cb=20081229171509",
+    "w": 40,
+    "h": 37,
+    "size": 3802,
+    "badgeEn": "Zephyr Badge",
+    "badgeCn": "飞翼徽章",
+    "pick": "同名主图"
+   },
+   "阿笔": {
+    "file": "Hive Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/0/08/Hive_Badge.png/revision/latest?cb=20081229171030",
+    "w": 40,
+    "h": 41,
+    "size": 3070,
+    "badgeEn": "Hive Badge",
+    "badgeCn": "昆虫徽章",
+    "pick": "同名主图"
+   },
+   "小茜": {
+    "file": "Plain Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/a/a7/Plain_Badge.png/revision/latest?cb=20081229171221",
+    "w": 40,
+    "h": 37,
+    "size": 2538,
+    "badgeEn": "Plain Badge",
+    "badgeCn": "常规徽章",
+    "pick": "同名主图"
+   },
+   "松叶": {
+    "file": "Fog Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/4/48/Fog_Badge.png/revision/latest?cb=20081229170948",
+    "w": 40,
+    "h": 35,
+    "size": 3223,
+    "badgeEn": "Fog Badge",
+    "badgeCn": "雾滴徽章",
+    "pick": "同名主图"
+   },
+   "阿四": {
+    "file": "Storm Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/b/b9/Storm_Badge.png/revision/latest?cb=20081229171417",
+    "w": 40,
+    "h": 34,
+    "size": 2984,
+    "badgeEn": "Storm Badge",
+    "badgeCn": "风暴徽章",
+    "pick": "同名主图"
+   },
+   "阿蜜": {
+    "file": "Mineral Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/7/7b/Mineral_Badge.png/revision/latest?cb=20081229171159",
+    "w": 40,
+    "h": 40,
+    "size": 2777,
+    "badgeEn": "Mineral Badge",
+    "badgeCn": "矿物徽章",
+    "pick": "同名主图"
+   },
+   "柳伯": {
+    "file": "Glacier Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/e/e6/Glacier_Badge.png/revision/latest?cb=20081229170955",
+    "w": 40,
+    "h": 46,
+    "size": 4533,
+    "badgeEn": "Glacier Badge",
+    "badgeCn": "冰河徽章",
+    "pick": "同名主图"
+   },
+   "小椿": {
+    "file": "Rising Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/5/58/Rising_Badge.png/revision/latest?cb=20081229171321",
+    "w": 40,
+    "h": 43,
+    "size": 3447,
+    "badgeEn": "Rising Badge",
+    "badgeCn": "升龙徽章",
+    "pick": "同名主图"
+   }
+  },
+  "3": {
+   "杜娟": {
+    "file": "Stone badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/b/bb/Stone_badge.png/revision/latest?cb=20240418182340",
+    "w": 346,
+    "h": 345,
+    "size": 82412,
+    "badgeEn": "Stone Badge",
+    "badgeCn": "岩石徽章",
+    "pick": "同名主图"
+   },
+   "藤树": {
+    "file": "Knuckle badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/b/b4/Knuckle_badge.png/revision/latest?cb=20240418182219",
+    "w": 310,
+    "h": 286,
+    "size": 70735,
+    "badgeEn": "Knuckle Badge",
+    "badgeCn": "拳击徽章",
+    "pick": "同名主图"
+   },
+   "亚莎": {
+    "file": "Dynamo badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/b/b4/Dynamo_badge.png/revision/latest?cb=20240418181515",
+    "w": 268,
+    "h": 343,
+    "size": 89998,
+    "badgeEn": "Dynamo Badge",
+    "badgeCn": "电力徽章",
+    "pick": "同名主图"
+   },
+   "卡吉": {
+    "file": "Heat badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/b/be/Heat_badge.png/revision/latest?cb=20240418181823",
+    "w": 348,
+    "h": 353,
+    "size": 87928,
+    "badgeEn": "Heat Badge",
+    "badgeCn": "热量徽章",
+    "pick": "同名主图"
+   },
+   "千代": {
+    "file": "Balance badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/a/af/Balance_badge.png/revision/latest?cb=20240418182027",
+    "w": 346,
+    "h": 345,
+    "size": 92672,
+    "badgeEn": "Balance Badge",
+    "badgeCn": "平衡徽章",
+    "pick": "同名主图"
+   },
+   "娜琪": {
+    "file": "Feather Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/6/62/Feather_Badge.png/revision/latest?cb=20081229170908",
+    "w": 40,
+    "h": 40,
+    "size": 3002,
+    "badgeEn": "Feather Badge",
+    "badgeCn": "羽毛徽章",
+    "pick": "同名主图"
+   },
+   "小枫 & 小南": {
+    "file": "Mind Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/c/cc/Mind_Badge.png/revision/latest?cb=20081229171131",
+    "w": 40,
+    "h": 38,
+    "size": 2931,
+    "badgeEn": "Mind Badge",
+    "badgeCn": "心灵徽章",
+    "pick": "同名主图"
+   },
+   "米可利": {
+    "file": "Rain Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/9/9b/Rain_Badge.png/revision/latest?cb=20081229171231",
+    "w": 40,
+    "h": 48,
+    "size": 4265,
+    "badgeEn": "Rain Badge",
+    "badgeCn": "雨滴徽章",
+    "pick": "同名主图"
+   }
+  },
+  "4": {
+   "瓢太": {
+    "file": "Coal Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/0/0b/Coal_Badge.png/revision/latest?cb=20081229170818",
+    "w": 40,
+    "h": 40,
+    "size": 3867,
+    "badgeEn": "Coal Badge",
+    "badgeCn": "煤炭徽章",
+    "pick": "同名主图"
+   },
+   "菜种": {
+    "file": "Forest Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/8/8c/Forest_Badge.png/revision/latest?cb=20081229170947",
+    "w": 40,
+    "h": 40,
+    "size": 3046,
+    "badgeEn": "Forest Badge",
+    "badgeCn": "森林徽章",
+    "pick": "同名主图"
+   },
+   "阿李": {
+    "file": "Cobble Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/2/27/Cobble_Badge.png/revision/latest?cb=20081229170827",
+    "w": 40,
+    "h": 40,
+    "size": 2572,
+    "badgeEn": "Cobble Badge",
+    "badgeCn": "圆石徽章",
+    "pick": "同名主图"
+   },
+   "吉宪": {
+    "file": "Fen Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/1/13/Fen_Badge.png/revision/latest?cb=20081229170915",
+    "w": 40,
+    "h": 40,
+    "size": 3418,
+    "badgeEn": "Fen Badge",
+    "badgeCn": "沼泽徽章",
+    "pick": "同名主图"
+   },
+   "梅丽莎": {
+    "file": "Relic Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/2/28/Relic_Badge.png/revision/latest?cb=20081229171313",
+    "w": 40,
+    "h": 40,
+    "size": 3166,
+    "badgeEn": "Relic Badge",
+    "badgeCn": "遗迹徽章",
+    "pick": "同名主图"
+   },
+   "东瓜": {
+    "file": "Mine Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/f/fe/Mine_Badge.png/revision/latest?cb=20081229171149",
+    "w": 40,
+    "h": 40,
+    "size": 3607,
+    "badgeEn": "Mine Badge",
+    "badgeCn": "矿山徽章",
+    "pick": "同名主图"
+   },
+   "小菘": {
+    "file": "Icicle Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/0/09/Icicle_Badge.png/revision/latest?cb=20081229171040",
+    "w": 40,
+    "h": 40,
+    "size": 3049,
+    "badgeEn": "Icicle Badge",
+    "badgeCn": "冰河徽章",
+    "pick": "同名主图"
+   },
+   "电次": {
+    "file": "Beacon Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/0/0c/Beacon_Badge.png/revision/latest?cb=20081229170708",
+    "w": 40,
+    "h": 40,
+    "size": 3545,
+    "badgeEn": "Beacon Badge",
+    "badgeCn": "灯塔徽章",
+    "pick": "同名主图"
+   }
+  },
+  "5": {
+   "天桐·伯特·寇恩": {
+    "file": "Trio Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/7/74/Trio_Badge.png/revision/latest?cb=20101019231550",
+    "w": 45,
+    "h": 45,
+    "size": 2638,
+    "badgeEn": "Trio Badge",
+    "badgeCn": "三角徽章",
+    "pick": "同名主图"
+   },
+   "阿乐": {
+    "file": "Basic Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/8/85/Basic_Badge.png/revision/latest?cb=20101019231708",
+    "w": 45,
+    "h": 45,
+    "size": 3374,
+    "badgeEn": "Basic Badge",
+    "badgeCn": "基础徽章",
+    "pick": "同名主图"
+   },
+   "阿铁": {
+    "file": "Insect Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/8/8a/Insect_Badge.png/revision/latest?cb=20101019231914",
+    "w": 45,
+    "h": 45,
+    "size": 2801,
+    "badgeEn": "Insect Badge",
+    "badgeCn": "昆虫徽章",
+    "pick": "同名主图"
+   },
+   "小菊儿": {
+    "file": "Bolt Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/5/5b/Bolt_Badge.png/revision/latest?cb=20110211044603",
+    "w": 45,
+    "h": 45,
+    "size": 2770,
+    "badgeEn": "Bolt Badge",
+    "badgeCn": "螺栓徽章",
+    "pick": "同名主图"
+   },
+   "卡米兹": {
+    "file": "Quake Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/2/29/Quake_Badge.png/revision/latest?cb=20110211044640",
+    "w": 45,
+    "h": 45,
+    "size": 2992,
+    "badgeEn": "Quake Badge",
+    "badgeCn": "震动徽章",
+    "pick": "同名主图"
+   },
+   "莎莉": {
+    "file": "Jet Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/9/9c/Jet_Badge.png/revision/latest?cb=20110211044713",
+    "w": 45,
+    "h": 45,
+    "size": 2892,
+    "badgeEn": "Jet Badge",
+    "badgeCn": "喷射徽章",
+    "pick": "同名主图"
+   },
+   "大宇": {
+    "file": "Legend Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/c/c0/Legend_Badge.png/revision/latest?cb=20110211044929",
+    "w": 45,
+    "h": 45,
+    "size": 2978,
+    "badgeEn": "Legend Badge",
+    "badgeCn": "传说徽章",
+    "pick": "同名主图"
+   },
+   "艾莉丝": {
+    "file": "Wave Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/0/00/Wave_Badge.png/revision/latest?cb=20120623053139",
+    "w": 192,
+    "h": 224,
+    "size": 24935,
+    "badgeEn": "Wave Badge",
+    "badgeCn": "波浪徽章",
+    "pick": "同名主图"
+   }
+  },
+  "6": {
+   "薇薇安": {
+    "file": "Bug Badge Viola.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/3/3c/Bug_Badge_Viola.png/revision/latest?cb=20131020201253",
+    "w": 221,
+    "h": 221,
+    "size": 14636,
+    "badgeEn": "Bug Badge",
+    "badgeCn": "虫虫徽章",
+    "pick": "排除他代后首选"
+   },
+   "查克洛": {
+    "file": "Cliff Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/3/39/Cliff_Badge.png/revision/latest?cb=20131029043723",
+    "w": 221,
+    "h": 221,
+    "size": 4446,
+    "badgeEn": "Cliff Badge",
+    "badgeCn": "岩壁徽章",
+    "pick": "同名主图"
+   },
+   "可尔妮": {
+    "file": "Rumble Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/d/d4/Rumble_Badge.png/revision/latest?cb=20171006161933",
+    "w": 50,
+    "h": 50,
+    "size": 2203,
+    "badgeEn": "Rumble Badge",
+    "badgeCn": "战斗徽章",
+    "pick": "同名主图"
+   },
+   "玛绣": {
+    "file": "Plant Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/7/7d/Plant_Badge.png/revision/latest?cb=20240323090933",
+    "w": 256,
+    "h": 256,
+    "size": 60113,
+    "badgeEn": "Plant Badge",
+    "badgeCn": "植物徽章",
+    "pick": "同名主图"
+   },
+   "希特隆": {
+    "file": "Voltage Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/f/fc/Voltage_Badge.png/revision/latest?cb=20240323091031",
+    "w": 256,
+    "h": 256,
+    "size": 52949,
+    "badgeEn": "Voltage Badge",
+    "badgeCn": "电压徽章",
+    "pick": "同名主图"
+   },
+   "玛琪艾儿": {
+    "file": "Fairy Badge XY.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/b/bb/Fairy_Badge_XY.png/revision/latest?cb=20240323091112",
+    "w": 256,
+    "h": 256,
+    "size": 26071,
+    "badgeEn": "Fairy Badge",
+    "badgeCn": "妖精徽章",
+    "pick": "标签 XY"
+   },
+   "奥琳": {
+    "file": "Psychic Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/1/13/Psychic_Badge.png/revision/latest?cb=20240323091150",
+    "w": 256,
+    "h": 256,
+    "size": 44837,
+    "badgeEn": "Psychic Badge",
+    "badgeCn": "超能徽章",
+    "pick": "同名主图"
+   },
+   "乌尔夫": {
+    "file": "Iceberg Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/8/84/Iceberg_Badge.png/revision/latest?cb=20131105162357",
+    "w": 221,
+    "h": 221,
+    "size": 19918,
+    "badgeEn": "Iceberg Badge",
+    "badgeCn": "冰山徽章",
+    "pick": "同名主图"
+   }
+  },
+  "7": {
+   "伊利马": {
+    "file": "Normalium Z.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/8/81/Normalium_Z.png/revision/latest?cb=20160909215730",
+    "w": 160,
+    "h": 199,
+    "size": 28379,
+    "badgeEn": "Normalium Z",
+    "badgeCn": "一般Z",
+    "pick": "同名主图"
+   },
+   "哈拉": {
+    "file": "Fightinium Z.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/2/22/Fightinium_Z.png/revision/latest?cb=20160909215609",
+    "w": 147,
+    "h": 252,
+    "size": 37545,
+    "badgeEn": "Fightinium Z",
+    "badgeCn": "格斗Z",
+    "pick": "同名主图"
+   },
+   "水莲": {
+    "file": "Waterium Z Dream.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/b/bc/Waterium_Z_Dream.png/revision/latest?cb=20170101021204",
+    "w": 80,
+    "h": 45,
+    "size": 4006,
+    "badgeEn": "Waterium Z",
+    "badgeCn": "水Z",
+    "pick": "排除他代后首选"
+   },
+   "丽姿": {
+    "file": "Rockium Z.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/9/9c/Rockium_Z.png/revision/latest?cb=20160909215849",
+    "w": 156,
+    "h": 197,
+    "size": 38780,
+    "badgeEn": "Rockium Z",
+    "badgeCn": "岩石Z",
+    "pick": "同名主图"
+   },
+   "卡奇": {
+    "file": "Firium Z Dream.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/3/3f/Firium_Z_Dream.png/revision/latest?cb=20170101021047",
+    "w": 80,
+    "h": 45,
+    "size": 3387,
+    "badgeEn": "Firium Z",
+    "badgeCn": "火Z",
+    "pick": "排除他代后首选"
+   },
+   "玛奥": {
+    "file": "Grassium Z Dream.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/0/05/Grassium_Z_Dream.png/revision/latest?cb=20170101021049",
+    "w": 80,
+    "h": 45,
+    "size": 3650,
+    "badgeEn": "Grassium Z",
+    "badgeCn": "草Z",
+    "pick": "排除他代后首选"
+   },
+   "茉莉": {
+    "file": "Electrium Z Dream.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/7/70/Electrium_Z_Dream.png/revision/latest?cb=20170101021046",
+    "w": 80,
+    "h": 45,
+    "size": 3261,
+    "badgeEn": "Electrium Z",
+    "badgeCn": "电Z",
+    "pick": "排除他代后首选"
+   },
+   "纳普": {
+    "file": "Darkinium Z Dream.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/1/1b/Darkinium_Z_Dream.png/revision/latest?cb=20170101021045",
+    "w": 80,
+    "h": 45,
+    "size": 3416,
+    "badgeEn": "Darkinium Z",
+    "badgeCn": "恶Z",
+    "pick": "排除他代后首选"
+   },
+   "阿塞萝拉": {
+    "file": "Ghostium Z Dream.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/c/cd/Ghostium_Z_Dream.png/revision/latest?cb=20170102030429",
+    "w": 80,
+    "h": 45,
+    "size": 3717,
+    "badgeEn": "Ghostium Z",
+    "badgeCn": "幽灵Z",
+    "pick": "排除他代后首选"
+   },
+   "米娜": {
+    "file": "Fairium Z.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/9/9c/Fairium_Z.png/revision/latest?cb=20211114162939",
+    "w": 590,
+    "h": 590,
+    "size": 160107,
+    "badgeEn": "Fairium Z",
+    "badgeCn": "妖精Z",
+    "pick": "同名主图"
+   },
+   "哈普乌": {
+    "file": "Groundium Z Dream.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/7/7b/Groundium_Z_Dream.png/revision/latest?cb=20170101021202",
+    "w": 80,
+    "h": 45,
+    "size": 3519,
+    "badgeEn": "Groundium Z",
+    "badgeCn": "地面Z",
+    "pick": "排除他代后首选"
+   }
+  },
+  "8": {
+   "亚洛": {
+    "file": "Grass Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/0/00/Grass_Badge.png/revision/latest?cb=20191124174202",
+    "w": 522,
+    "h": 522,
+    "size": 80811,
+    "badgeEn": "Grass Badge",
+    "badgeCn": "草之徽章",
+    "pick": "同名主图"
+   },
+   "露璃娜": {
+    "file": "Water Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/7/7a/Water_Badge.png/revision/latest?cb=20191124174225",
+    "w": 522,
+    "h": 522,
+    "size": 70487,
+    "badgeEn": "Water Badge",
+    "badgeCn": "水之徽章",
+    "pick": "同名主图"
+   },
+   "卡芜": {
+    "file": "Fire Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/c/cc/Fire_Badge.png/revision/latest?cb=20191124174232",
+    "w": 522,
+    "h": 522,
+    "size": 89166,
+    "badgeEn": "Fire Badge",
+    "badgeCn": "火之徽章",
+    "pick": "同名主图"
+   },
+   "彩豆": {
+    "file": "Fighting Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/2/20/Fighting_Badge.png/revision/latest?cb=20191124174241",
+    "w": 522,
+    "h": 522,
+    "size": 116907,
+    "badgeEn": "Fighting Badge",
+    "badgeCn": "格斗徽章",
+    "pick": "同名主图"
+   },
+   "欧尼奥": {
+    "file": "Ghost Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/3/30/Ghost_Badge.png/revision/latest?cb=20191124174335",
+    "w": 522,
+    "h": 522,
+    "size": 104782,
+    "badgeEn": "Ghost Badge",
+    "badgeCn": "幽灵徽章",
+    "pick": "同名主图"
+   },
+   "波普": {
+    "file": "Fairy Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/d/d1/Fairy_Badge.png/revision/latest?cb=20191124174250",
+    "w": 522,
+    "h": 522,
+    "size": 58619,
+    "badgeEn": "Fairy Badge",
+    "badgeCn": "妖精徽章",
+    "pick": "同名主图"
+   },
+   "哥德": {
+    "file": "Rock Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/3/3e/Rock_Badge.png/revision/latest?cb=20191124174258",
+    "w": 522,
+    "h": 522,
+    "size": 76313,
+    "badgeEn": "Rock Badge",
+    "badgeCn": "岩石徽章",
+    "pick": "同名主图"
+   },
+   "美林": {
+    "file": "Ice Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/4/43/Ice_Badge.png/revision/latest?cb=20191124174342",
+    "w": 522,
+    "h": 522,
+    "size": 67200,
+    "badgeEn": "Ice Badge",
+    "badgeCn": "冰之徽章",
+    "pick": "同名主图"
+   },
+   "聂梓": {
+    "file": "Dark Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/4/4d/Dark_Badge.png/revision/latest?cb=20191124174305",
+    "w": 522,
+    "h": 522,
+    "size": 81026,
+    "badgeEn": "Dark Badge",
+    "badgeCn": "恶之徽章",
+    "pick": "同名主图"
+   },
+   "奇巴纳": {
+    "file": "Dragon Badge.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/2/27/Dragon_Badge.png/revision/latest?cb=20191124174311",
+    "w": 522,
+    "h": 522,
+    "size": 96774,
+    "badgeEn": "Dragon Badge",
+    "badgeCn": "龙之徽章",
+    "pick": "同名主图"
+   }
+  },
+  "9": {
+   "阿枫": {
+    "file": "Bug Badge SV.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/0/01/Bug_Badge_SV.png/revision/latest?cb=20240416045857",
+    "w": 360,
+    "h": 360,
+    "size": 234930,
+    "badgeEn": "Bug Badge",
+    "badgeCn": "虫徽章",
+    "pick": "标签 SV"
+   },
+   "寇沙": {
+    "file": "Grass Badge SV.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/d/d3/Grass_Badge_SV.png/revision/latest?cb=20240416050002",
+    "w": 360,
+    "h": 360,
+    "size": 235561,
+    "badgeEn": "Grass Badge",
+    "badgeCn": "草徽章",
+    "pick": "标签 SV"
+   },
+   "奇树": {
+    "file": "Electric Badge SV.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/a/a1/Electric_Badge_SV.png/revision/latest?cb=20240416050105",
+    "w": 360,
+    "h": 360,
+    "size": 235185,
+    "badgeEn": "Electric Badge",
+    "badgeCn": "电徽章",
+    "pick": "标签 SV"
+   },
+   "海岱": {
+    "file": "Water Badge SV.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/6/63/Water_Badge_SV.png/revision/latest?cb=20240416050309",
+    "w": 360,
+    "h": 360,
+    "size": 233564,
+    "badgeEn": "Water Badge",
+    "badgeCn": "水徽章",
+    "pick": "标签 SV"
+   },
+   "青木": {
+    "file": "Normal Badge SV.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/a/ad/Normal_Badge_SV.png/revision/latest?cb=20240416050434",
+    "w": 360,
+    "h": 360,
+    "size": 231496,
+    "badgeEn": "Normal Badge",
+    "badgeCn": "一般徽章",
+    "pick": "标签 SV"
+   },
+   "莱姆": {
+    "file": "Ghost Badge SV.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/3/39/Ghost_Badge_SV.png/revision/latest?cb=20240416050531",
+    "w": 360,
+    "h": 360,
+    "size": 231415,
+    "badgeEn": "Ghost Badge",
+    "badgeCn": "幽灵徽章",
+    "pick": "标签 SV"
+   },
+   "莉普": {
+    "file": "Psychic Badge SV.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/3/36/Psychic_Badge_SV.png/revision/latest?cb=20240416051307",
+    "w": 360,
+    "h": 360,
+    "size": 242774,
+    "badgeEn": "Psychic Badge",
+    "badgeCn": "超能力徽章",
+    "pick": "标签 SV"
+   },
+   "古鲁夏": {
+    "file": "Ice Badge SV.png",
+    "url": "https://static.wikia.nocookie.net/pokemon/images/8/81/Ice_Badge_SV.png/revision/latest?cb=20240416051337",
+    "w": 360,
+    "h": 360,
+    "size": 241594,
+    "badgeEn": "Ice Badge",
+    "badgeCn": "冰徽章",
+    "pick": "标签 SV"
+   }
+  }
+ }
+}

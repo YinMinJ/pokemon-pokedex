@@ -1,0 +1,534 @@
+{
+  "_note": "道馆馆主数据。team 里的 sp 用 PokeAPI 物种名（页面自动映射中文名+本地图片），moves 用 PokeAPI 招式名（页面自动映射中文名）。招式列的是各馆主的招牌/代表招式，实际游戏内招式随版本略有差异。",
+  "gens": [
+    {
+      "gen": 1,
+      "region": "关都",
+      "games": "Let's Go! 皮卡丘 / 伊布（Switch，2018）· 火红/叶绿（Switch，2026）",
+      "leaders": [
+        { "name": "小刚", "en": "Brock", "type": "rock", "city": "深灰市", "badge": "灰色徽章", "badgeEn": "Boulder Badge",
+          "team": [
+            { "sp": "geodude", "lv": 11, "moves": ["tackle", "defense-curl"] },
+            { "sp": "onix", "lv": 12, "moves": ["tackle", "screech", "bind", "rock-throw"] }
+          ] },
+        { "name": "小霞", "en": "Misty", "type": "water", "city": "华蓝市", "badge": "蓝色徽章", "badgeEn": "Cascade Badge",
+          "team": [
+            { "sp": "psyduck", "lv": 18, "moves": ["water-gun", "confusion", "tail-whip"] },
+            { "sp": "starmie", "lv": 19, "moves": ["water-gun", "rapid-spin", "swift", "bubble-beam"] }
+          ] },
+        { "name": "马志士", "en": "Lt. Surge", "type": "electric", "city": "枯叶市", "badge": "橙色徽章", "badgeEn": "Thunder Badge",
+          "team": [
+            { "sp": "voltorb", "lv": 25, "moves": ["thunder-shock", "screech", "sonic-boom"] },
+            { "sp": "magnemite", "lv": 25, "moves": ["thunder-shock", "supersonic", "magnet-bomb"] },
+            { "sp": "raichu", "lv": 26, "moves": ["thunderbolt", "quick-attack", "double-kick", "thunder-wave"] }
+          ] },
+        { "name": "莉佳", "en": "Erika", "type": "grass", "city": "彩虹市", "badge": "彩虹徽章", "badgeEn": "Rainbow Badge",
+          "team": [
+            { "sp": "oddish", "lv": 33, "moves": ["absorb", "acid", "poison-powder", "sleep-powder"] },
+            { "sp": "weepinbell", "lv": 33, "moves": ["razor-leaf", "poison-powder", "vine-whip"] },
+            { "sp": "tangela", "lv": 34, "moves": ["vine-whip", "constrict", "mega-drain"] }
+          ] },
+        { "name": "阿桔", "en": "Koga", "type": "poison", "city": "浅红市", "badge": "粉色徽章", "badgeEn": "Soul Badge",
+          "team": [
+            { "sp": "koffing", "lv": 38, "moves": ["smog", "sludge", "self-destruct", "toxic"] },
+            { "sp": "muk", "lv": 38, "moves": ["sludge", "minimize", "toxic", "disable"] },
+            { "sp": "weezing", "lv": 39, "moves": ["sludge", "smokescreen", "toxic", "explosion"] }
+          ] },
+        { "name": "娜姿", "en": "Sabrina", "type": "psychic", "city": "金黄市", "badge": "金色徽章", "badgeEn": "Marsh Badge",
+          "team": [
+            { "sp": "kadabra", "lv": 44, "moves": ["psybeam", "psychic", "calm-mind", "disable"] },
+            { "sp": "mr-mime", "lv": 44, "moves": ["psychic", "barrier", "light-screen", "reflect"] },
+            { "sp": "alakazam", "lv": 45, "moves": ["psychic", "psyshock", "calm-mind", "shadow-ball"] }
+          ] },
+        { "name": "夏伯", "en": "Blaine", "type": "fire", "city": "红莲镇", "badge": "火山徽章", "badgeEn": "Volcano Badge",
+          "team": [
+            { "sp": "ninetales", "lv": 47, "moves": ["flamethrower", "quick-attack", "will-o-wisp"] },
+            { "sp": "rapidash", "lv": 47, "moves": ["flame-wheel", "take-down", "agility", "fire-blast"] },
+            { "sp": "arcanine", "lv": 48, "moves": ["flamethrower", "fire-fang", "crunch", "extreme-speed"] }
+          ] },
+        { "name": "坂木", "en": "Giovanni", "type": "ground", "city": "常磐市", "badge": "绿色徽章", "badgeEn": "Earth Badge",
+          "team": [
+            { "sp": "persian", "lv": 49, "moves": ["slash", "fury-swipes", "screech", "bite"] },
+            { "sp": "nidoqueen", "lv": 49, "moves": ["earthquake", "body-slam", "poison-jab"] },
+            { "sp": "nidoking", "lv": 49, "moves": ["earthquake", "megahorn", "poison-jab"] },
+            { "sp": "rhydon", "lv": 50, "moves": ["earthquake", "rock-slide", "horn-drill", "megahorn"] }
+          ] }
+      ]
+    },
+    {
+      "gen": 2,
+      "region": "城都",
+      "games": "无 Switch 正统作品（GBC 金/银/水晶）",
+      "leaders": [
+        { "name": "阿速", "en": "Falkner", "type": "flying", "city": "桔梗市", "badge": "飞翼徽章", "badgeEn": "Zephyr Badge",
+          "team": [
+            { "sp": "pidgey", "lv": 7, "moves": ["tackle", "gust", "sand-attack"] },
+            { "sp": "pidgeotto", "lv": 9, "moves": ["gust", "quick-attack", "peck"] }
+          ] },
+        { "name": "阿笔", "en": "Bugsy", "type": "bug", "city": "桧皮镇", "badge": "昆虫徽章", "badgeEn": "Hive Badge",
+          "team": [
+            { "sp": "metapod", "lv": 14, "moves": ["tackle", "string-shot", "harden"] },
+            { "sp": "kakuna", "lv": 14, "moves": ["poison-sting", "string-shot", "harden"] },
+            { "sp": "scyther", "lv": 16, "moves": ["fury-cutter", "quick-attack", "leer"] }
+          ] },
+        { "name": "小茜", "en": "Whitney", "type": "normal", "city": "满金市", "badge": "常规徽章", "badgeEn": "Plain Badge",
+          "team": [
+            { "sp": "clefairy", "lv": 18, "moves": ["metronome", "double-slap", "encore"] },
+            { "sp": "miltank", "lv": 20, "moves": ["rollout", "attract", "stomp", "milk-drink"] }
+          ] },
+        { "name": "松叶", "en": "Morty", "type": "ghost", "city": "圆朱市", "badge": "雾滴徽章", "badgeEn": "Fog Badge",
+          "team": [
+            { "sp": "gastly", "lv": 21, "moves": ["lick", "hypnosis", "spite", "mean-look"] },
+            { "sp": "haunter", "lv": 21, "moves": ["lick", "hypnosis", "curse", "night-shade"] },
+            { "sp": "gengar", "lv": 25, "moves": ["shadow-ball", "hypnosis", "dream-eater", "lick"] }
+          ] },
+        { "name": "阿四", "en": "Chuck", "type": "fighting", "city": "湛蓝市", "badge": "风暴徽章", "badgeEn": "Storm Badge",
+          "team": [
+            { "sp": "primeape", "lv": 27, "moves": ["karate-chop", "low-kick", "fury-swipes"] },
+            { "sp": "poliwrath", "lv": 30, "moves": ["dynamic-punch", "surf", "hypnosis", "body-slam"] }
+          ] },
+        { "name": "阿蜜", "en": "Jasmine", "type": "steel", "city": "浅黄市", "badge": "矿物徽章", "badgeEn": "Mineral Badge",
+          "team": [
+            { "sp": "magnemite", "lv": 30, "moves": ["thunderbolt", "supersonic", "sonic-boom"] },
+            { "sp": "magnemite", "lv": 30, "moves": ["thunderbolt", "supersonic", "magnet-bomb"] },
+            { "sp": "steelix", "lv": 35, "moves": ["iron-tail", "rock-throw", "screech", "earthquake"] }
+          ] },
+        { "name": "柳伯", "en": "Pryce", "type": "ice", "city": "卡吉镇", "badge": "冰河徽章", "badgeEn": "Glacier Badge",
+          "team": [
+            { "sp": "seel", "lv": 27, "moves": ["icy-wind", "aurora-beam", "rest"] },
+            { "sp": "dewgong", "lv": 29, "moves": ["icy-wind", "aurora-beam", "rest", "take-down"] },
+            { "sp": "piloswine", "lv": 31, "moves": ["icy-wind", "fury-attack", "blizzard"] }
+          ] },
+        { "name": "小椿", "en": "Clair", "type": "dragon", "city": "烟墨市", "badge": "升龙徽章", "badgeEn": "Rising Badge",
+          "team": [
+            { "sp": "dragonair", "lv": 37, "moves": ["dragon-breath", "thunder-wave", "surf", "slam"] },
+            { "sp": "dragonair", "lv": 37, "moves": ["dragon-breath", "ice-beam", "thunder-wave"] },
+            { "sp": "dragonair", "lv": 37, "moves": ["dragon-breath", "thunderbolt", "slam"] },
+            { "sp": "kingdra", "lv": 40, "moves": ["dragon-breath", "hydro-pump", "smokescreen", "hyper-beam"] }
+          ] }
+      ]
+    },
+    {
+      "gen": 3,
+      "region": "丰缘",
+      "games": "无 Switch 正统作品（GBA 红/蓝/绿宝石 · 3DS 终极红宝石/始源蓝宝石）",
+      "leaders": [
+        { "name": "杜娟", "en": "Roxanne", "type": "rock", "city": "卡那兹市", "badge": "岩石徽章", "badgeEn": "Stone Badge",
+          "team": [
+            { "sp": "geodude", "lv": 14, "moves": ["tackle", "rock-throw", "rock-tomb"] },
+            { "sp": "nosepass", "lv": 15, "moves": ["rock-throw", "tackle", "harden", "rock-tomb"] }
+          ] },
+        { "name": "藤树", "en": "Brawly", "type": "fighting", "city": "武斗镇", "badge": "拳击徽章", "badgeEn": "Knuckle Badge",
+          "team": [
+            { "sp": "machop", "lv": 16, "moves": ["karate-chop", "low-kick", "seismic-toss"] },
+            { "sp": "makuhita", "lv": 19, "moves": ["vital-throw", "knock-off", "arm-thrust", "reversal"] }
+          ] },
+        { "name": "亚莎", "en": "Wattson", "type": "electric", "city": "紫堇市", "badge": "电力徽章", "badgeEn": "Dynamo Badge",
+          "team": [
+            { "sp": "magnemite", "lv": 22, "moves": ["thunder-shock", "sonic-boom", "thunder-wave"] },
+            { "sp": "voltorb", "lv": 20, "moves": ["spark", "sonic-boom", "rollout"] },
+            { "sp": "magneton", "lv": 23, "moves": ["thunderbolt", "supersonic", "sonic-boom"] }
+          ] },
+        { "name": "卡吉", "en": "Flannery", "type": "fire", "city": "釜炎镇", "badge": "热量徽章", "badgeEn": "Heat Badge",
+          "team": [
+            { "sp": "numel", "lv": 24, "moves": ["ember", "magnitude", "take-down"] },
+            { "sp": "slugma", "lv": 24, "moves": ["ember", "rock-throw", "light-screen"] },
+            { "sp": "torkoal", "lv": 29, "moves": ["flamethrower", "body-slam", "attract", "overheat"] }
+          ] },
+        { "name": "千代", "en": "Norman", "type": "normal", "city": "橙华市", "badge": "平衡徽章", "badgeEn": "Balance Badge",
+          "team": [
+            { "sp": "slaking", "lv": 28, "moves": ["facade", "counter", "yawn", "encore"] },
+            { "sp": "vigoroth", "lv": 30, "moves": ["slash", "facade", "encore"] },
+            { "sp": "slaking", "lv": 31, "moves": ["facade", "counter", "yawn", "feint-attack"] }
+          ] },
+        { "name": "娜琪", "en": "Winona", "type": "flying", "city": "茵郁市", "badge": "羽毛徽章", "badgeEn": "Feather Badge",
+          "team": [
+            { "sp": "swellow", "lv": 31, "moves": ["aerial-ace", "quick-attack", "double-team"] },
+            { "sp": "pelipper", "lv": 30, "moves": ["water-gun", "supersonic", "wing-attack"] },
+            { "sp": "skarmory", "lv": 32, "moves": ["steel-wing", "aerial-ace", "sand-attack"] },
+            { "sp": "altaria", "lv": 33, "moves": ["dragon-breath", "aerial-ace", "earthquake", "dragon-dance"] }
+          ] },
+        { "name": "小枫 & 小南", "en": "Tate & Liza", "type": "psychic", "city": "绿岭市", "badge": "心灵徽章", "badgeEn": "Mind Badge",
+          "team": [
+            { "sp": "solrock", "lv": 42, "moves": ["psychic", "sunny-day", "solar-beam", "flamethrower"] },
+            { "sp": "lunatone", "lv": 42, "moves": ["psychic", "light-screen", "ice-beam", "calm-mind"] }
+          ] },
+        { "name": "米可利", "en": "Juan", "type": "water", "city": "琉璃市", "badge": "雨滴徽章", "badgeEn": "Rain Badge",
+          "team": [
+            { "sp": "luvdisc", "lv": 41, "moves": ["water-pulse", "attract", "sweet-kiss"] },
+            { "sp": "whiscash", "lv": 41, "moves": ["water-pulse", "earthquake", "amnesia"] },
+            { "sp": "sealeo", "lv": 43, "moves": ["water-pulse", "body-slam", "aurora-beam"] },
+            { "sp": "kingdra", "lv": 46, "moves": ["water-pulse", "double-team", "ice-beam", "rest"] }
+          ] }
+      ]
+    },
+    {
+      "gen": 4,
+      "region": "神奥",
+      "games": "晶灿钻石 / 明亮珍珠（Switch，2021）",
+      "leaders": [
+        { "name": "瓢太", "en": "Roark", "type": "rock", "city": "黑金市", "badge": "煤炭徽章", "badgeEn": "Coal Badge",
+          "team": [
+            { "sp": "geodude", "lv": 12, "moves": ["rock-throw", "tackle", "stealth-rock"] },
+            { "sp": "onix", "lv": 12, "moves": ["rock-throw", "screech", "stealth-rock"] },
+            { "sp": "cranidos", "lv": 14, "moves": ["headbutt", "rock-tomb", "pursuit", "leer"] }
+          ] },
+        { "name": "菜种", "en": "Gardenia", "type": "grass", "city": "百代市", "badge": "森林徽章", "badgeEn": "Forest Badge",
+          "team": [
+            { "sp": "cherubi", "lv": 19, "moves": ["razor-leaf", "grass-knot", "growth"] },
+            { "sp": "turtwig", "lv": 19, "moves": ["razor-leaf", "grass-knot", "reflect"] },
+            { "sp": "roserade", "lv": 22, "moves": ["razor-leaf", "magical-leaf", "grass-knot", "poison-sting"] }
+          ] },
+        { "name": "阿李", "en": "Maylene", "type": "fighting", "city": "帷幕市", "badge": "圆石徽章", "badgeEn": "Cobble Badge",
+          "team": [
+            { "sp": "meditite", "lv": 27, "moves": ["drain-punch", "confusion", "meditate", "detect"] },
+            { "sp": "machoke", "lv": 27, "moves": ["karate-chop", "low-kick", "foresight", "rock-tomb"] },
+            { "sp": "lucario", "lv": 30, "moves": ["drain-punch", "metal-claw", "bone-rush", "force-palm"] }
+          ] },
+        { "name": "吉宪", "en": "Crasher Wake", "type": "water", "city": "滨海市", "badge": "沼泽徽章", "badgeEn": "Fen Badge",
+          "team": [
+            { "sp": "gyarados", "lv": 27, "moves": ["water-pulse", "bite", "dragon-rage", "brine"] },
+            { "sp": "quagsire", "lv": 27, "moves": ["water-pulse", "mud-shot", "slam"] },
+            { "sp": "floatzel", "lv": 30, "moves": ["water-pulse", "aqua-jet", "crunch", "ice-fang"] }
+          ] },
+        { "name": "梅丽莎", "en": "Fantina", "type": "ghost", "city": "缘朱市", "badge": "遗迹徽章", "badgeEn": "Relic Badge",
+          "team": [
+            { "sp": "duskull", "lv": 32, "moves": ["will-o-wisp", "shadow-sneak", "pursuit", "confuse-ray"] },
+            { "sp": "haunter", "lv": 34, "moves": ["shadow-claw", "hypnosis", "night-shade", "confuse-ray"] },
+            { "sp": "mismagius", "lv": 36, "moves": ["shadow-ball", "psywave", "magical-leaf", "confuse-ray"] }
+          ] },
+        { "name": "东瓜", "en": "Byron", "type": "steel", "city": "水脉市", "badge": "矿山徽章", "badgeEn": "Mine Badge",
+          "team": [
+            { "sp": "bronzor", "lv": 36, "moves": ["flash-cannon", "gyro-ball", "confuse-ray", "extrasensory"] },
+            { "sp": "steelix", "lv": 36, "moves": ["iron-tail", "earthquake", "screech", "ice-fang"] },
+            { "sp": "bastiodon", "lv": 39, "moves": ["metal-burst", "ancient-power", "iron-defense", "flash-cannon"] }
+          ] },
+        { "name": "小菘", "en": "Candice", "type": "ice", "city": "切锋市", "badge": "冰河徽章", "badgeEn": "Icicle Badge",
+          "team": [
+            { "sp": "snover", "lv": 38, "moves": ["ice-shard", "razor-leaf", "avalanche"] },
+            { "sp": "sneasel", "lv": 38, "moves": ["ice-shard", "slash", "feint-attack", "icy-wind"] },
+            { "sp": "medicham", "lv": 40, "moves": ["ice-punch", "brick-break", "detect"] },
+            { "sp": "abomasnow", "lv": 42, "moves": ["avalanche", "wood-hammer", "ice-shard", "blizzard"] }
+          ] },
+        { "name": "电次", "en": "Volkner", "type": "electric", "city": "名木市", "badge": "灯塔徽章", "badgeEn": "Beacon Badge",
+          "team": [
+            { "sp": "raichu", "lv": 46, "moves": ["thunderbolt", "quick-attack", "signal-beam", "thunder-wave"] },
+            { "sp": "ambipom", "lv": 47, "moves": ["shock-wave", "double-hit", "agility", "nasty-plot"] },
+            { "sp": "octillery", "lv": 47, "moves": ["octazooka", "charge-beam", "aurora-beam", "bullet-seed"] },
+            { "sp": "luxray", "lv": 49, "moves": ["discharge", "crunch", "ice-fang", "thunder-wave"] }
+          ] }
+      ]
+    },
+    {
+      "gen": 5,
+      "region": "合众",
+      "games": "无 Switch 正统作品（DS 黑/白 · 黑 2/白 2）",
+      "leaders": [
+        { "name": "天桐·伯特·寇恩", "en": "Cilan / Chili / Cress", "type": "grass", "city": "三曜市", "badge": "三角徽章", "badgeEn": "Trio Badge",
+          "note": "三兄弟分别使用草/火/水，按初始属性对战", "team": [
+            { "sp": "pansage", "lv": 12, "moves": ["vine-whip", "lick", "work-up", "fury-swipes"] },
+            { "sp": "pansear", "lv": 12, "moves": ["incinerate", "lick", "work-up", "fury-swipes"] },
+            { "sp": "panpour", "lv": 12, "moves": ["water-gun", "lick", "work-up", "fury-swipes"] }
+          ] },
+        { "name": "阿乐", "en": "Lenora", "type": "normal", "city": "七宝市", "badge": "基础徽章", "badgeEn": "Basic Badge",
+          "team": [
+            { "sp": "herdier", "lv": 18, "moves": ["take-down", "bite", "work-up", "leer"] },
+            { "sp": "watchog", "lv": 20, "moves": ["retaliate", "hypnosis", "crunch", "leer"] }
+          ] },
+        { "name": "阿铁", "en": "Burgh", "type": "bug", "city": "飞云市", "badge": "昆虫徽章", "badgeEn": "Insect Badge",
+          "team": [
+            { "sp": "whirlipede", "lv": 21, "moves": ["poison-sting", "struggle-bug", "screech", "pursuit"] },
+            { "sp": "dwebble", "lv": 21, "moves": ["smack-down", "bug-bite", "feint-attack", "rock-polish"] },
+            { "sp": "leavanny", "lv": 23, "moves": ["razor-leaf", "bug-bite", "protect", "string-shot"] }
+          ] },
+        { "name": "小菊儿", "en": "Elesa", "type": "electric", "city": "雷文市", "badge": "螺栓徽章", "badgeEn": "Bolt Badge",
+          "team": [
+            { "sp": "emolga", "lv": 25, "moves": ["volt-switch", "aerial-ace", "pursuit", "quick-attack"] },
+            { "sp": "emolga", "lv": 25, "moves": ["volt-switch", "aerial-ace", "spark", "quick-attack"] },
+            { "sp": "zebstrika", "lv": 27, "moves": ["spark", "flame-charge", "pursuit", "quick-attack"] }
+          ] },
+        { "name": "卡米兹", "en": "Clay", "type": "ground", "city": "帆巴市", "badge": "震动徽章", "badgeEn": "Quake Badge",
+          "team": [
+            { "sp": "krokorok", "lv": 29, "moves": ["bulldoze", "crunch", "sand-tomb", "swagger"] },
+            { "sp": "palpitoad", "lv": 29, "moves": ["bulldoze", "bubble-beam", "aqua-ring", "mud-shot"] },
+            { "sp": "excadrill", "lv": 31, "moves": ["bulldoze", "metal-claw", "slash", "rock-slide"] }
+          ] },
+        { "name": "莎莉", "en": "Skyla", "type": "flying", "city": "吹寄市", "badge": "喷射徽章", "badgeEn": "Jet Badge",
+          "team": [
+            { "sp": "swoobat", "lv": 33, "moves": ["acrobatics", "heart-stamp", "amnesia", "attract"] },
+            { "sp": "unfezant", "lv": 33, "moves": ["air-slash", "razor-wind", "quick-attack", "detect"] },
+            { "sp": "swanna", "lv": 35, "moves": ["bubble-beam", "aerial-ace", "roost", "water-pulse"] }
+          ] },
+        { "name": "大宇", "en": "Brycen", "type": "ice", "city": "雪花市", "badge": "传说徽章", "badgeEn": "Legend Badge",
+          "team": [
+            { "sp": "vanillish", "lv": 37, "moves": ["icy-wind", "mirror-shot", "taunt", "avalanche"] },
+            { "sp": "cryogonal", "lv": 37, "moves": ["ice-beam", "night-slash", "reflect", "rapid-spin"] },
+            { "sp": "beartic", "lv": 39, "moves": ["icicle-crash", "brine", "swagger", "slash"] }
+          ] },
+        { "name": "艾莉丝", "en": "Iris", "type": "dragon", "city": "双龙市", "badge": "波浪徽章", "badgeEn": "Wave Badge",
+          "team": [
+            { "sp": "fraxure", "lv": 41, "moves": ["dragon-dance", "dragon-claw", "slash", "assurance"] },
+            { "sp": "druddigon", "lv": 41, "moves": ["dragon-claw", "revenge", "night-slash", "chip-away"] },
+            { "sp": "axew", "lv": 43, "moves": ["dragon-dance", "dragon-claw", "assurance", "slash"] }
+          ] }
+      ]
+    },
+    {
+      "gen": 6,
+      "region": "卡洛斯",
+      "games": "无传统道馆的 Switch 作品（传说 Z-A 为密阿雷市，2025）· 原作 3DS X/Y",
+      "leaders": [
+        { "name": "薇薇安", "en": "Viola", "type": "bug", "city": "白檀市", "badge": "虫虫徽章", "badgeEn": "Bug Badge",
+          "team": [
+            { "sp": "surskit", "lv": 10, "moves": ["bubble", "quick-attack", "water-sport"] },
+            { "sp": "vivillon", "lv": 12, "moves": ["infestation", "tackle", "stun-spore", "gust"] }
+          ] },
+        { "name": "查克洛", "en": "Grant", "type": "rock", "city": "遥香市", "badge": "岩壁徽章", "badgeEn": "Cliff Badge",
+          "team": [
+            { "sp": "amaura", "lv": 25, "moves": ["aurora-beam", "rock-throw", "thunder-wave", "take-down"] },
+            { "sp": "tyrunt", "lv": 25, "moves": ["rock-tomb", "bite", "stomp", "stealth-rock"] }
+          ] },
+        { "name": "可尔妮", "en": "Korrina", "type": "fighting", "city": "娑罗市", "badge": "战斗徽章", "badgeEn": "Rumble Badge",
+          "team": [
+            { "sp": "mienfoo", "lv": 28, "moves": ["drain-punch", "fake-out", "power-up-punch"] },
+            { "sp": "machoke", "lv": 28, "moves": ["brick-break", "wake-up-slap", "rock-tomb"] },
+            { "sp": "hawlucha", "lv": 32, "moves": ["flying-press", "brick-break", "aerial-ace", "swords-dance"] }
+          ] },
+        { "name": "玛绣", "en": "Ramos", "type": "grass", "city": "香薰市", "badge": "植物徽章", "badgeEn": "Plant Badge",
+          "team": [
+            { "sp": "jumpluff", "lv": 30, "moves": ["acrobatics", "bullet-seed", "leech-seed", "cotton-guard"] },
+            { "sp": "weepinbell", "lv": 31, "moves": ["poison-powder", "razor-leaf", "acid", "knock-off"] },
+            { "sp": "gogoat", "lv": 34, "moves": ["bulldoze", "leaf-blade", "grass-knot", "take-down"] }
+          ] },
+        { "name": "希特隆", "en": "Clemont", "type": "electric", "city": "密阿雷市", "badge": "电压徽章", "badgeEn": "Voltage Badge",
+          "team": [
+            { "sp": "emolga", "lv": 35, "moves": ["volt-switch", "aerial-ace", "encore", "nuzzle"] },
+            { "sp": "magneton", "lv": 35, "moves": ["thunderbolt", "flash-cannon", "electric-terrain", "metal-sound"] },
+            { "sp": "heliolisk", "lv": 37, "moves": ["thunderbolt", "parabolic-charge", "quick-attack", "grass-knot"] }
+          ] },
+        { "name": "玛琪艾儿", "en": "Valerie", "type": "fairy", "city": "香薰市", "badge": "妖精徽章", "badgeEn": "Fairy Badge",
+          "team": [
+            { "sp": "mawile", "lv": 38, "moves": ["play-rough", "iron-head", "crunch", "sucker-punch"] },
+            { "sp": "mr-mime", "lv": 39, "moves": ["dazzling-gleam", "psychic", "light-screen", "reflect"] },
+            { "sp": "sylveon", "lv": 42, "moves": ["dazzling-gleam", "moonblast", "quick-attack", "shadow-ball"] }
+          ] },
+        { "name": "奥琳", "en": "Olympia", "type": "psychic", "city": "百刻市", "badge": "超能徽章", "badgeEn": "Psychic Badge",
+          "team": [
+            { "sp": "sigilyph", "lv": 44, "moves": ["psychic", "air-slash", "light-screen", "reflect"] },
+            { "sp": "slowking", "lv": 45, "moves": ["psychic", "power-gem", "yawn", "scald"] },
+            { "sp": "meowstic", "lv": 48, "moves": ["psychic", "shadow-ball", "fake-out", "thunderbolt"] }
+          ] },
+        { "name": "乌尔夫", "en": "Wulfric", "type": "ice", "city": "映雪市", "badge": "冰山徽章", "badgeEn": "Iceberg Badge",
+          "team": [
+            { "sp": "abomasnow", "lv": 56, "moves": ["wood-hammer", "ice-shard", "blizzard", "earthquake"] },
+            { "sp": "cryogonal", "lv": 55, "moves": ["ice-beam", "rapid-spin", "reflect", "light-screen"] },
+            { "sp": "avalugg", "lv": 59, "moves": ["avalanche", "gyro-ball", "crunch", "curse"] }
+          ] }
+      ]
+    },
+    {
+      "gen": 7,
+      "region": "阿罗拉",
+      "games": "无 Switch 正统作品（3DS 太阳/月亮 · 究极之日/究极之月）",
+      "noGym": true,
+      "gymNote": "阿罗拉没有道馆与徽章，取而代之的是「试炼」与「大试炼」。队长给的是 Z 纯晶，岛屿之王/女王负责大试炼。",
+      "leaders": [
+        { "name": "伊利马", "en": "Ilima", "type": "normal", "city": "葱郁洞窟（美乐美乐岛）", "badge": "一般Z", "badgeEn": "Normalium Z", "trial": true,
+          "team": [
+            { "sp": "gumshoos", "lv": 12, "moves": ["bite", "sand-attack", "leer"] },
+            { "sp": "smeargle", "lv": 11, "moves": ["tackle", "sketch", "tail-whip"] }
+          ] },
+        { "name": "哈拉", "en": "Hala", "type": "fighting", "city": "美乐美乐岛（大试炼）", "badge": "格斗Z", "badgeEn": "Fightinium Z", "trial": true,
+          "team": [
+            { "sp": "mankey", "lv": 14, "moves": ["karate-chop", "low-kick", "leer"] },
+            { "sp": "makuhita", "lv": 14, "moves": ["arm-thrust", "fake-out", "sand-attack"] },
+            { "sp": "crabrawler", "lv": 15, "moves": ["bubble", "rock-smash", "leer"] },
+            { "sp": "hariyama", "lv": 16, "moves": ["arm-thrust", "knock-off", "fake-out", "sand-attack"] }
+          ] },
+        { "name": "水莲", "en": "Lana", "type": "water", "city": "潺潺之丘（阿卡拉岛）", "badge": "水Z", "badgeEn": "Waterium Z", "trial": true,
+          "team": [
+            { "sp": "wishiwashi", "lv": 20, "moves": ["water-gun", "feint-attack", "brine", "aqua-ring"] }
+          ] },
+        { "name": "丽姿", "en": "Olivia", "type": "rock", "city": "阿卡拉岛（大试炼）", "badge": "岩石Z", "badgeEn": "Rockium Z", "trial": true,
+          "team": [
+            { "sp": "nosepass", "lv": 26, "moves": ["rock-slide", "thunder-wave", "tackle"] },
+            { "sp": "boldore", "lv": 26, "moves": ["rock-slide", "headbutt", "mud-slap"] },
+            { "sp": "lycanroc", "lv": 27, "moves": ["rock-throw", "bite", "rock-tomb", "accelerock"] }
+          ] },
+        { "name": "卡奇", "en": "Kiawe", "type": "fire", "city": "维拉火山（阿卡拉岛）", "badge": "火Z", "badgeEn": "Firium Z", "trial": true,
+          "team": [
+            { "sp": "marowak", "lv": 22, "moves": ["bone-club", "fire-spin", "flame-wheel", "bonemerang"] },
+            { "sp": "salazzle", "lv": 22, "moves": ["flame-burst", "dragon-rage", "toxic", "venoshock"] }
+          ] },
+        { "name": "玛奥", "en": "Mallow", "type": "grass", "city": "树果园（阿卡拉岛）", "badge": "草Z", "badgeEn": "Grassium Z", "trial": true,
+          "team": [
+            { "sp": "lurantis", "lv": 24, "moves": ["razor-leaf", "x-scissor", "leafage", "growth"] }
+          ] },
+        { "name": "茉莉", "en": "Sophocles", "type": "electric", "city": "辉克拉尼天文台（乌拉乌拉岛）", "badge": "电Z", "badgeEn": "Electrium Z", "trial": true,
+          "team": [
+            { "sp": "togedemaru", "lv": 33, "moves": ["spark", "iron-head", "spiky-shield", "zap-cannon"] },
+            { "sp": "vikavolt", "lv": 32, "moves": ["bug-buzz", "thunderbolt", "crunch", "agility"] }
+          ] },
+        { "name": "纳普", "en": "Nanu", "type": "dark", "city": "乌拉乌拉岛（大试炼）", "badge": "恶Z", "badgeEn": "Darkinium Z", "trial": true,
+          "team": [
+            { "sp": "sableye", "lv": 43, "moves": ["shadow-claw", "knock-off", "fake-out", "power-gem"] },
+            { "sp": "krokorok", "lv": 43, "moves": ["crunch", "earthquake", "sand-tomb"] },
+            { "sp": "persian", "lv": 44, "moves": ["dark-pulse", "power-gem", "fake-out", "nasty-plot"] }
+          ] },
+        { "name": "阿塞萝拉", "en": "Acerola", "type": "ghost", "city": "超值超市旧址（乌拉乌拉岛）", "badge": "幽灵Z", "badgeEn": "Ghostium Z", "trial": true,
+          "team": [
+            { "sp": "mimikyu", "lv": 33, "moves": ["play-rough", "shadow-claw", "shadow-sneak", "mimic"] }
+          ] },
+        { "name": "米娜", "en": "Mina", "type": "fairy", "city": "波尼古道（波尼岛）", "badge": "妖精Z", "badgeEn": "Fairium Z", "trial": true,
+          "team": [
+            { "sp": "ribombee", "lv": 51, "moves": ["dazzling-gleam", "bug-buzz", "quiver-dance", "pollen-puff"] }
+          ] },
+        { "name": "哈普乌", "en": "Hapu", "type": "ground", "city": "波尼岛（大试炼）", "badge": "地面Z", "badgeEn": "Groundium Z", "trial": true,
+          "team": [
+            { "sp": "dugtrio", "lv": 47, "moves": ["earthquake", "iron-head", "sucker-punch", "sand-tomb"] },
+            { "sp": "golurk", "lv": 47, "moves": ["earthquake", "phantom-force", "heavy-slam"] },
+            { "sp": "mudsdale", "lv": 48, "moves": ["earthquake", "heavy-slam", "rock-slide", "counter"] }
+          ] }
+      ]
+    },
+    {
+      "gen": 8,
+      "region": "伽勒尔",
+      "games": "剑 / 盾（Switch，2019）· 铠之孤岛 / 冠之雪原 DLC",
+      "leaders": [
+        { "name": "亚洛", "en": "Milo", "type": "grass", "city": "木杆镇", "badge": "草之徽章", "badgeEn": "Grass Badge",
+          "team": [
+            { "sp": "gossifleur", "lv": 19, "moves": ["magical-leaf", "round", "leafage", "sing"] },
+            { "sp": "eldegoss", "lv": 20, "moves": ["magical-leaf", "leafage", "round", "cotton-spore"] }
+          ] },
+        { "name": "露璃娜", "en": "Nessa", "type": "water", "city": "溯传镇", "badge": "水之徽章", "badgeEn": "Water Badge",
+          "team": [
+            { "sp": "goldeen", "lv": 22, "moves": ["water-pulse", "horn-attack", "aqua-ring"] },
+            { "sp": "arrokuda", "lv": 23, "moves": ["aqua-jet", "bite", "fury-attack"] },
+            { "sp": "drednaw", "lv": 24, "moves": ["razor-shell", "bite", "rock-tomb", "headbutt"] }
+          ] },
+        { "name": "卡芜", "en": "Kabu", "type": "fire", "city": "机擎市", "badge": "火之徽章", "badgeEn": "Fire Badge",
+          "team": [
+            { "sp": "ninetales", "lv": 25, "moves": ["will-o-wisp", "ember", "quick-attack", "fire-spin"] },
+            { "sp": "arcanine", "lv": 25, "moves": ["bite", "flame-wheel", "fire-fang", "agility"] },
+            { "sp": "centiskorch", "lv": 27, "moves": ["flame-wheel", "bug-bite", "coil", "smokescreen"] }
+          ] },
+        { "name": "彩豆", "en": "Bea", "type": "fighting", "city": "拳关市", "badge": "格斗徽章", "badgeEn": "Fighting Badge", "ver": "剑版",
+          "team": [
+            { "sp": "hitmontop", "lv": 34, "moves": ["fake-out", "triple-kick", "counter", "quick-attack"] },
+            { "sp": "pangoro", "lv": 34, "moves": ["karate-chop", "night-slash", "bullet-punch", "taunt"] },
+            { "sp": "sirfetchd", "lv": 35, "moves": ["brick-break", "fury-cutter", "detect", "brutal-swing"] },
+            { "sp": "machamp", "lv": 36, "moves": ["reversal", "knock-off", "rock-slide", "submission"] }
+          ] },
+        { "name": "欧尼奥", "en": "Allister", "type": "ghost", "city": "拳关市", "badge": "幽灵徽章", "badgeEn": "Ghost Badge", "ver": "盾版",
+          "team": [
+            { "sp": "yamask", "lv": 34, "moves": ["hex", "disable", "brutal-swing", "will-o-wisp"] },
+            { "sp": "mimikyu", "lv": 34, "moves": ["mimic", "shadow-claw", "baby-doll-eyes", "play-rough"] },
+            { "sp": "cursola", "lv": 35, "moves": ["hex", "will-o-wisp", "disable", "strength-sap"] },
+            { "sp": "gengar", "lv": 36, "moves": ["hex", "sludge-bomb", "shadow-ball", "hypnosis"] }
+          ] },
+        { "name": "波普", "en": "Opal", "type": "fairy", "city": "白丘镇", "badge": "妖精徽章", "badgeEn": "Fairy Badge",
+          "team": [
+            { "sp": "weezing-galar", "lv": 36, "moves": ["strange-steam", "fairy-wind", "sludge", "tackle"] },
+            { "sp": "mawile", "lv": 36, "moves": ["iron-defense", "fairy-wind", "baton-pass", "taunt"] },
+            { "sp": "togekiss", "lv": 37, "moves": ["fairy-wind", "ancient-power", "dazzling-gleam", "air-slash"] },
+            { "sp": "alcremie", "lv": 38, "moves": ["decorate", "dazzling-gleam", "aromatherapy", "acid-armor"] }
+          ] },
+        { "name": "哥德", "en": "Gordie", "type": "rock", "city": "溯传市", "badge": "岩石徽章", "badgeEn": "Rock Badge", "ver": "剑版",
+          "team": [
+            { "sp": "barbaracle", "lv": 40, "moves": ["shell-smash", "razor-shell", "rock-slide", "cross-chop"] },
+            { "sp": "shuckle", "lv": 40, "moves": ["rock-slide", "power-trick", "shell-smash", "struggle-bug"] },
+            { "sp": "stonjourner", "lv": 41, "moves": ["rock-slide", "stealth-rock", "body-press", "stone-edge"] },
+            { "sp": "coalossal", "lv": 42, "moves": ["rock-slide", "tar-shot", "flamethrower", "ancient-power"] }
+          ] },
+        { "name": "美林", "en": "Melony", "type": "ice", "city": "溯传市", "badge": "冰之徽章", "badgeEn": "Ice Badge", "ver": "盾版",
+          "team": [
+            { "sp": "frosmoth", "lv": 40, "moves": ["icy-wind", "bug-buzz", "hurricane", "aurora-veil"] },
+            { "sp": "darmanitan-galar-standard", "lv": 40, "moves": ["icicle-crash", "fire-fang", "avalanche", "superpower"] },
+            { "sp": "eiscue", "lv": 41, "moves": ["icicle-crash", "freeze-dry", "belly-drum", "headbutt"] },
+            { "sp": "lapras", "lv": 42, "moves": ["ice-beam", "body-slam", "sing", "hydro-pump"] }
+          ] },
+        { "name": "聂梓", "en": "Piers", "type": "dark", "city": "尖钉镇", "badge": "恶之徽章", "badgeEn": "Dark Badge",
+          "team": [
+            { "sp": "liepard", "lv": 44, "moves": ["fake-out", "snarl", "nasty-plot", "sucker-punch"] },
+            { "sp": "scrafty", "lv": 44, "moves": ["fake-out", "brick-break", "crunch", "torment"] },
+            { "sp": "malamar", "lv": 44, "moves": ["foul-play", "superpower", "psycho-cut", "octazooka"] },
+            { "sp": "obstagoon", "lv": 46, "moves": ["obstruct", "counter", "night-slash", "oblivion-wing"] }
+          ] },
+        { "name": "奇巴纳", "en": "Raihan", "type": "dragon", "city": "宫门市", "badge": "龙之徽章", "badgeEn": "Dragon Badge",
+          "team": [
+            { "sp": "gigalith", "lv": 46, "moves": ["stealth-rock", "rock-slide", "body-press", "sandstorm"] },
+            { "sp": "flygon", "lv": 46, "moves": ["earthquake", "dragon-claw", "crunch", "fire-punch"] },
+            { "sp": "sandaconda", "lv": 46, "moves": ["coil", "earthquake", "rock-slide", "glare"] },
+            { "sp": "duraludon", "lv": 48, "moves": ["dragon-pulse", "flash-cannon", "steel-beam", "stone-edge"] }
+          ] }
+      ]
+    },
+    {
+      "gen": 9,
+      "region": "帕底亚",
+      "games": "朱 / 紫（Switch，2022）· 零之秘宝 DLC · 传说 Z-A 为第 9 世代延伸作",
+      "leaders": [
+        { "name": "阿枫", "en": "Katy", "type": "bug", "city": "圆模镇", "badge": "虫徽章", "badgeEn": "Bug Badge",
+          "team": [
+            { "sp": "nymble", "lv": 14, "moves": ["struggle-bug", "double-kick", "leer"] },
+            { "sp": "tarountula", "lv": 14, "moves": ["bug-bite", "string-shot", "assurance"] },
+            { "sp": "teddiursa", "lv": 15, "moves": ["fury-swipes", "lick", "feint-attack", "sweet-scent"] }
+          ] },
+        { "name": "寇沙", "en": "Brassius", "type": "grass", "city": "深钵镇", "badge": "草徽章", "badgeEn": "Grass Badge",
+          "team": [
+            { "sp": "petilil", "lv": 16, "moves": ["magical-leaf", "sleep-powder", "growth"] },
+            { "sp": "smoliv", "lv": 16, "moves": ["razor-leaf", "tackle", "growth"] },
+            { "sp": "sudowoodo", "lv": 17, "moves": ["rock-throw", "trailblaze", "low-kick", "mimic"] }
+          ] },
+        { "name": "奇树", "en": "Iono", "type": "electric", "city": "酿光市", "badge": "电徽章", "badgeEn": "Electric Badge",
+          "team": [
+            { "sp": "wattrel", "lv": 23, "moves": ["pluck", "spark", "quick-attack", "tailwind"] },
+            { "sp": "luxio", "lv": 23, "moves": ["spark", "bite", "leer"] },
+            { "sp": "mismagius", "lv": 23, "moves": ["confuse-ray", "magical-leaf", "shadow-ball"] },
+            { "sp": "bellibolt", "lv": 24, "moves": ["water-gun", "thunder-shock", "slack-off", "mud-shot"] }
+          ] },
+        { "name": "海岱", "en": "Kofu", "type": "water", "city": "玻瓶市", "badge": "水徽章", "badgeEn": "Water Badge",
+          "team": [
+            { "sp": "veluza", "lv": 29, "moves": ["aqua-jet", "pluck", "water-pulse", "fillet-away"] },
+            { "sp": "wugtrio", "lv": 29, "moves": ["water-gun", "sucker-punch", "mud-slap"] },
+            { "sp": "crabominable", "lv": 30, "moves": ["bubble-beam", "ice-punch", "slam", "avalanche"] }
+          ] },
+        { "name": "青木", "en": "Larry", "type": "normal", "city": "锦汇镇", "badge": "一般徽章", "badgeEn": "Normal Badge",
+          "team": [
+            { "sp": "komala", "lv": 35, "moves": ["slam", "sucker-punch", "yawn", "sucker-punch"] },
+            { "sp": "dudunsparce", "lv": 35, "moves": ["glare", "body-slam", "drill-run", "coil"] },
+            { "sp": "staraptor", "lv": 36, "moves": ["aerial-ace", "facade", "quick-attack", "close-combat"] }
+          ] },
+        { "name": "莱姆", "en": "Ryme", "type": "ghost", "city": "霜抹山", "badge": "幽灵徽章", "badgeEn": "Ghost Badge",
+          "team": [
+            { "sp": "mimikyu", "lv": 41, "moves": ["shadow-claw", "play-rough", "shadow-sneak", "baby-doll-eyes"] },
+            { "sp": "banette", "lv": 41, "moves": ["shadow-ball", "sucker-punch", "will-o-wisp", "knock-off"] },
+            { "sp": "houndstone", "lv": 41, "moves": ["last-respects", "phantom-force", "crunch", "play-rough"] },
+            { "sp": "toxtricity", "lv": 42, "moves": ["boomburst", "sludge-bomb", "overdrive", "hex"] }
+          ] },
+        { "name": "莉普", "en": "Tulip", "type": "psychic", "city": "焙固镇", "badge": "超能力徽章", "badgeEn": "Psychic Badge",
+          "team": [
+            { "sp": "farigiraf", "lv": 44, "moves": ["twin-beam", "psychic", "crunch", "agility"] },
+            { "sp": "gardevoir", "lv": 44, "moves": ["psychic", "dazzling-gleam", "calm-mind", "shadow-ball"] },
+            { "sp": "espathra", "lv": 45, "moves": ["lumina-crash", "psychic", "dazzling-gleam", "quick-attack"] }
+          ] },
+        { "name": "古鲁夏", "en": "Grusha", "type": "ice", "city": "霜抹山", "badge": "冰徽章", "badgeEn": "Ice Badge",
+          "team": [
+            { "sp": "frosmoth", "lv": 47, "moves": ["blizzard", "bug-buzz", "hurricane", "tailwind"] },
+            { "sp": "beartic", "lv": 47, "moves": ["icicle-crash", "aqua-jet", "swagger", "superpower"] },
+            { "sp": "cetitan", "lv": 47, "moves": ["icicle-crash", "body-slam", "liquidation", "play-rough"] },
+            { "sp": "altaria", "lv": 48, "moves": ["dragon-pulse", "moonblast", "ice-beam", "roost"] }
+          ] }
+      ]
+    },
+    {
+      "gen": 10,
+      "region": "未发售",
+      "games": "宝可梦 风 / 浪（Nintendo Switch 2，2027）",
+      "upcoming": true,
+      "gymNote": "第十世代《宝可梦 风 / 浪》已于 2026 年 2 月 27 日（宝可梦 30 周年）正式公布，2027 年登陆 Switch 2。官方目前只公布了御三家（草·Browt / 火·Bombon / 水·Gecqua）与地区设定，道馆馆主、徽章等资料尚未公开，等官方放料后再补。",
+      "leaders": []
+    }
+  ]
+}
