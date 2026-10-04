@@ -4,6 +4,8 @@
 
 打开 `site/index.html` 即可使用（图片放在同级 `site/images/`）。
 
+**在线预览：<https://yinminj.github.io/pokemon-pokedex/>**
+
 ---
 
 ## 收录内容
