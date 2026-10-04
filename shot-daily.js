@@ -1,7 +1,7 @@
 /* 每日一宠卡片验证：默认是谁 / ↻ 换一只 / 倒计时文案 / 刷新保持 */
 const { chromium } = require('playwright-core');
 const URL = 'http://127.0.0.1:8899/index.html';
-const CHROME = 'C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chrome.exe';
+const CHROME = process.env.CHROME || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 
 (async () => {
   const b = await chromium.launch({ executablePath: CHROME, headless: true });

@@ -1,6 +1,9 @@
 /* 最终验收：键盘导航 / 分享链接 / 每日一宠 / 离线单文件版 */
 const { chromium } = require('playwright-core');
-const CHROME = 'C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chrome.exe';
+const path = require('path');
+const { pathToFileURL } = require('url');
+// 用本机已装的 Chrome（不下载 playwright 自带浏览器）；路径可用 CHROME 环境变量覆盖
+const CHROME = process.env.CHROME || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 
 (async () => {
   const browser = await chromium.launch({ executablePath: CHROME, headless: true });
@@ -54,7 +57,7 @@ const CHROME = 'C:/Users/Administrator/AppData/Local/Google/Chrome/Application/c
   const p2 = await browser.newPage({ viewport: { width: 1440, height: 900 } });
   p2.on('pageerror', e => errors.push('offline: ' + e.message.slice(0, 160)));
   const t0 = Date.now();
-  await p2.goto('file:///C:/Users/Administrator/WorkBuddy/2026-08-28-09-16-15/pokedex-offline.html',
+  await p2.goto(pathToFileURL(path.join(__dirname, 'pokedex-offline.html')).href,
     { waitUntil: 'domcontentloaded', timeout: 120000 });
   await p2.waitForTimeout(4000);
   const off = await p2.evaluate(() => {
